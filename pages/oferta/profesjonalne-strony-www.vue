@@ -1,9 +1,23 @@
 <template>
-  <div>
-    <h1>Profesjonalne strony www</h1>
+  <div class="page-content">
+    <WebsitesHero />
+    <WebsitesFeatures />
+    <WebsitesOffer />
+    <WebsitesExp />
+    <WebsitesPortfolio />
+    <WebsitesFaq />
+    <WebsitesSEOContent />
+    <WebsitesReview />
+    <CtaYellow />
   </div>
 </template>
 
-<script setup></script>
+<script></script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+  .cta__layout2 {
+    &--wrapper {
+      @apply -mt-36 pt-36;
+    }
+  }
+</style>

@@ -1,9 +1,20 @@
 <template>
-  <div>
-    <h1>Opieka nad stronami internetowymi</h1>
+  <div class="page-content">
+    <AdministrationHero />
+    <AdministrationFeatures />
+    <AdministrationOffer />
+    <!-- cennik -->
+    <AdministrationFaq />
+    <CtaYellow />
   </div>
 </template>
 
-<script setup></script>
+<script></script>
 
-<style scoped></style>
+<style lang="scss" scoped>
+  .cta__layout2 {
+    &--wrapper {
+      @apply -mt-36 pt-36;
+    }
+  }
+</style>

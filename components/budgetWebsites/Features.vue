@@ -3,8 +3,8 @@
     <div class="budget-websites-features--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto">
-          Dodatkowo strona będzie poprawnie wyświetlać się również na telefonach
-          komórkowych oraz tabletach
+          Nienaganne wyświetlanie na telefonie oraz laptopie ? responsywność to
+          podstawa!
         </h3>
         <img
           class="pt-3 mx-auto"
@@ -15,37 +15,60 @@
 
       <div class="budget-websites-features--items mt-32">
         <div class="budget-websites-features--row--wrapper">
-          <div class="budget-websites-features--row lg:border-r-0">
-            <h4>Szybki czas realizacji</h4>
-            <p class="text-3xl">opis</p>
+          <div class="budget-websites-features--row w-full">
+            <h4>Strona www od doświadczonego freelancera</h4>
+            <p class="text-3xl">
+              Jestem w branży od ponad 10 lat. Od wielu lat wdrażam autorsko
+              strony www dla agencji interaktywnych. Pracuje w złożonym teamie
+              składającym się z designerów / marketerów / managerów. Wiem jak
+              wygląda tworzenie ogromnych projektów od kuchni. Zauważam dużo
+              błędów w największych agencjach i przekuwam je w autorski workflow
+              pracy bezpośrednio z klientem
+            </p>
           </div>
 
-          <div class="budget-websites-features--row lg:border-r-0">
-            <h4>Jasna komunikacja</h4>
-          </div>
+          <div class="flex gap-3 mb-3">
+            <div class="budget-websites-features--row w-6/12">
+              <h4>Pełna responsywność</h4>
+              <p class="text-3xl">
+                Strony internetowe testuje na realnych urządzeniach oraz w
+                narzędziach do testowania i automatyzacji. Strony wykonane prze
+                ze mnie dopasowują się do ekranu na którym są wyświetlana
+              </p>
+            </div>
 
-          <div class="budget-websites-features--row">
-            <h4>Indywidualne podejście</h4>
+            <div class="budget-websites-features--row w-6/12">
+              <h4>Szybki czas realizacji</h4>
+              <p class="text-3xl">
+                Z doświadczenia wiem, że można drastycznie zminimalizować czas
+                realizacji oraz koszty. Wystarczy współpracować face 2 face z
+                freelancerem zamiast z agencją , która zatrudnia freelancera.
+                Brak aparatu administracyjnego i szybki przepływ informacji to
+                klucz do szybkiego wdrożenia strony www
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="budget-websites-features--items">
-        <div class="budget-websites-features--row--wrapper">
+        <div class="flex gap-3">
           <div
-            class="budget-websites-features--row lg:border-r-0 lg:border-t-0"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
           >
-            <h4>Elastyczność</h4>
+            <h4 class="text-4xl">Elastyczność</h4>
           </div>
 
           <div
-            class="budget-websites-features--row lg:border-r-0 lg:border-t-0"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
           >
-            <h4>Jasne warunki rozliczenia</h4>
+            <h4 class="text-4xl">Jasne warunki rozliczenia</h4>
           </div>
 
-          <div class="budget-websites-features--row lg:border-t-0">
-            <h4>Szybkość działania</h4>
+          <div
+            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+          >
+            <h4 class="text-4xl">Szybkość działania</h4>
           </div>
         </div>
       </div>
@@ -68,10 +91,10 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-4/12 border border-dark-3;
+      @apply flex flex-col  gap-10 items-start justify-between p-8  border border-dark-3;
 
       &--wrapper {
-        @apply flex;
+        @apply flex flex-col gap-3;
       }
 
       h4 {

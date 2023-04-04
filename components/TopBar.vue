@@ -74,9 +74,12 @@
   }
 
   .top-bar {
-    @apply text-dark-3 w-screen h-11 fixed left-0 top-0 p-8 flex items-center justify-between z-20;
-
+    @apply text-dark-3 w-screen h-11 fixed left-0 top-0 p-8 flex items-center justify-between z-20 transition-all;
     background-color: transparent;
+
+    &__sticky {
+      @apply bg-yellow pt-3 pl-8 pr-8 pb-3;
+    }
 
     &--contact-wrapper {
       position: relative;

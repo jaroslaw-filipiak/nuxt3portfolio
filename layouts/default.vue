@@ -15,7 +15,7 @@
 
 <script setup>
   import { useNavStore } from '~~/stores/nav';
-  import { watch } from 'vue';
+  import { watch, onMounted } from 'vue';
   import { useRoute } from 'vue-router';
 
   const store = useNavStore();
@@ -23,6 +23,15 @@
 
   watch(route, () => {
     store.closeNav();
+  });
+
+  onMounted(() => {
+    console.log('on mounted');
+
+    window.addEventListener('scroll', () => {
+      let header = document.querySelector('.top-bar');
+      header.classList.toggle('top-bar__sticky', window.scrollY > 0);
+    });
   });
 </script>
 

@@ -16,6 +16,25 @@
             >
           </NuxtLink>
         </li>
+
+        <li>
+          <NuxtLink class="offer-menu--item" to="/oferta/tanie-strony-www">
+            <div class="flex items-center">
+              <div>Tanie / Budżetowe strony www</div>
+              <div
+                class="hidden lg:block bg-yellow rounded-full pl-4 pr-4 pb-1 pt-1 text-base ml-4"
+              >
+                Oferta testowa , ograniczona czasowo
+              </div>
+            </div>
+
+            <span
+              >Strony www z budżetem skrojonym na miarę , dobry start do
+              emarketingu , który szybko się zwróci</span
+            ></NuxtLink
+          >
+        </li>
+
         <li>
           <NuxtLink
             class="offer-menu--item"
@@ -29,38 +48,7 @@
         </li>
 
         <li>
-          <NuxtLink class="offer-menu--item" to="/oferta/tanie-strony-www">
-            <div class="flex items-center">
-              <div>Tanie / Budżetowe strony www</div>
-              <div
-                class="hidden lg:block bg-yellow rounded-full pl-4 pr-4 pb-2 pt-2 text-base ml-4"
-              >
-                Oferta testowa , ograniczona czasowo
-              </div>
-            </div>
-
-            <span
-              >Strony www z budżetem skrojonym na miarę , dobry start do
-              emarketingu , który szybko się zwróci</span
-            ></NuxtLink
-          >
-        </li>
-        <li>
-          <NuxtLink class="offer-menu--item" to="/oferta/aplikacje-webowe"
-            >Front-end : Vue.js / Nuxt.js<span
-              >SPA , ekosystem Vue.js , headlessy i o wiele więcej</span
-            >
-          </NuxtLink>
-        </li>
-        <li>
-          <NuxtLink class="offer-menu--item" to="/oferta/kodowanie-do-wordpress"
-            >Wdrażenie PSD/Figma do WordPress<span
-              >Autorskie kodowanie z projektu graficznego
-            </span></NuxtLink
-          >
-        </li>
-        <li class="hidden">
-          <NuxtLink class="offer-menu--item" to="#"
+          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
             >Programista ad hoc na godziny<span
               >Masz FUCKUP ? zbliża się DEADLINE ? chętnie wyczyszczę pare
               tasków z Jiry</span

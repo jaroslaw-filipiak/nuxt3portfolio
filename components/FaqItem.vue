@@ -7,7 +7,7 @@
     }"
   >
     <header @click="toggle">
-      <div class="faq--title">dadsa</div>
+      <div class="faq--title">{{ title }}</div>
       <div class="faq--btn">
         <!-- <img src="@/assets/uploads/arrow-down-circle 1.svg" alt="" /> -->
       </div>
@@ -15,13 +15,7 @@
 
     <div class="faq--content">
       <p>
-        Strona internetowa to jedno z najlepszych narzędzi współczesnego
-        marketingu, ale tylko pod warunkiem, że traktujesz to narzędzie na
-        poważnie. Relacja z Klientem bywa krucha i trudna. Konkurencja jest
-        bardzo duża. Jaki w tej relacji udział ma Twoja strona? Daj się znaleźć.
-        Wszystko zaczyna się od pierwszego spotkania. Twój Klient musi Cię
-        znaleźć. To szczególnie trudne, jeśli nie wie, że istniejesz. Tu z
-        pomocą przychodzi szereg narzędzi (optymalizacja strony, Kampanie Googl;
+        {{ content }}
       </p>
     </div>
   </div>
@@ -31,7 +25,7 @@
   import { reactive } from 'vue';
 
   const state = reactive({ isExpanded: false });
-  const props = defineProps(['color']);
+  const props = defineProps(['color', 'title', 'content']);
 
   function toggle() {
     state.isExpanded = !state.isExpanded;

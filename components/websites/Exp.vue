@@ -1,17 +1,16 @@
 <template>
-  <div class="budget-websites__exp">
-    <div class="budget-websites__exp--inner">
+  <div class="websites__exp">
+    <div class="websites__exp--inner">
       <div class="section--title">
         <h1>
-          Jestem w branży od 10 lat. <br />90% moich klientów zostaje ze mną na
-          dłużej niż 1 projekt
+          Od ponad 5 lat obsługuję większe agencje typu 360 oraz software
+          house-y
         </h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Dodatkowo jestem również polecamy innym klientom - to wszystko sprawia
-        że praca jest dla mnie niesamowitym wyzwaniem ale również i spełneniem
+        Jako podwykonawca wdrażam strony dla topowych marek.
       </h2>
     </div>
   </div>
@@ -24,7 +23,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .budget-websites__exp {
+  .websites__exp {
     @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;

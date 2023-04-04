@@ -1,17 +1,14 @@
 <template>
-  <div class="budget-websites__exp">
-    <div class="budget-websites__exp--inner">
+  <div class="hero__websites">
+    <div class="hero__websites--inner">
       <div class="section--title">
-        <h1>
-          Jestem w branży od 10 lat. <br />90% moich klientów zostaje ze mną na
-          dłużej niż 1 projekt
-        </h1>
+        <h1>Dostarczę Tobie profesjonalną , dedykowaną stronę www</h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Dodatkowo jestem również polecamy innym klientom - to wszystko sprawia
-        że praca jest dla mnie niesamowitym wyzwaniem ale również i spełneniem
+        Profesjonalna , niezwykle szybka , bezpieczna strona www która da
+        Twojemu biznesowi potencjał to rozwoju
       </h2>
     </div>
   </div>
@@ -24,7 +21,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .budget-websites__exp {
+  .hero__websites {
     @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;

@@ -1,8 +1,8 @@
 <template>
-  <div class="about__offer--wrapper">
-    <div class="about__offer--inner">
+  <div class="websites__offer--wrapper">
+    <div class="websites__offer--inner">
       <div class="section--title max-w-4xl">
-        <h3>Dlaczego warto skorzystać z oferty na tanie strony www ?</h3>
+        <h3>Dlaczego warto skorzystać z oferty na autorskie strony www ?</h3>
         <img class="pt-3" src="~/assets/uploads/smush.svg" alt="" />
       </div>
 
@@ -20,14 +20,14 @@
         </div>
       </div>
 
-      <div class="about__offer--items mt-20">
-        <div class="about__offer--row--wrapper">
+      <div class="websites__offer--items mt-20">
+        <div class="websites__offer--row--wrapper">
           <div
-            class="about__offer--row xl:border-b-0 2xl:border-b 2xl:w-6/12 3xl:w-7/12"
+            class="websites__offer--row xl:border-b-0 2xl:border-b 2xl:w-6/12 3xl:w-7/12"
           >
             <div>
               <div>
-                <h4>Niska cena! , już od 799 zł netto + VAT - zobacz cennik</h4>
+                <h4>Responsywność</h4>
               </div>
               <div>
                 <img
@@ -44,13 +44,20 @@
                 www , w pełni przygotowaną pod SEO wraz ze specjalnym pakietem
                 bezpieczeństwa.
               </p>
+              <p class="text-2xl mt-8">
+                Po zakończeniu współpracy możesz skorzystać z administracji w
+                abonamencie , wykupić pakiet SEO , pakiet bezpieczeństwa oraz o
+                wiele więcej. Stronę można dowolnie rozbudowywać w każdym
+                momencie samodzielnie lub z moją pomocą. Zobacz również obsługa
+                ad-hoc na godziny
+              </p>
             </div>
           </div>
 
-          <div class="about__offer--row 2xl:w-6/12 3xl:w-5/12">
+          <div class="websites__offer--row 2xl:w-6/12 3xl:w-5/12">
             <div>
               <div>
-                <h4>Panel administracyjny</h4>
+                <h4>Przystosowanie strony pod SEO</h4>
               </div>
               <div>
                 <img
@@ -60,18 +67,14 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
-                Dzięki któremu możesz samodzielnie zarządzać stwoją witryną ,
-                dodawać nowe wpisy , strony , podglądać statystyki czy zarządzać
-                dogłębnie SEO swojej witryny.
-              </p>
+              <p class="text-3xl">..</p>
             </div>
           </div>
 
-          <div class="about__offer--row w-full xl:border-t-0">
+          <div class="websites__offer--row w-full xl:border-t-0">
             <div>
               <div>
-                <h4>Wdrożenie strony na serwer</h4>
+                <h4>Bezpieczeństwo Twoich danych</h4>
               </div>
               <div>
                 <img
@@ -100,7 +103,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .about__offer {
+  .websites__offer {
     &--wrapper {
       @apply pt-20 pb-20  w-full;
     }
