@@ -3,12 +3,10 @@
     <AboutHero />
     <AboutExp />
     <AboutTools />
-    <AboutOffer />
+    <OfferDark />
     <CtaYellow />
   </div>
 </template>
-
-<script></script>
 
 <style>
   .about--wrapper {

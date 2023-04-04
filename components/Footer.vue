@@ -8,7 +8,9 @@
           <li>
             <a href="mailto:info@j-filipiak.pl">Email: info@j-filipiak.pl</a>
           </li>
-          <li><NuxtLink to="/brief"> Formularz kontaktowy</NuxtLink></li>
+          <li class="hidden">
+            <NuxtLink to="/brief"> Formularz kontaktowy</NuxtLink>
+          </li>
           <li>
             <a
               target="_blank"
@@ -44,12 +46,18 @@
             >
           </li>
           <li>
-            <NuxtLink class="text-xl font-Atkinson" to="#">
+            <NuxtLink
+              class="text-xl font-Atkinson"
+              to="/oferta/profesjonalne-strony-www"
+            >
               Strony www WordPress</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink class="text-xl font-Atkinson" to="#">
+            <NuxtLink
+              class="text-xl font-Atkinson"
+              to="/pferta/opieka-nad-stronami-internetowymi"
+            >
               Administracja stronami www
             </NuxtLink>
           </li>
@@ -71,18 +79,20 @@
               >Tanie / Budżetowe strony www</NuxtLink
             >
           </li>
-          <li>
+          <li class="hidden">
             <NuxtLink class="text-xl font-Atkinson" to="#"
               >Front-end : Vue.js / Nuxt.js
             </NuxtLink>
           </li>
-          <li>
+          <li class="hidden">
             <NuxtLink class="text-xl font-Atkinson" to="#"
               >Wdrażenie PSD/Figma do WordPress</NuxtLink
             >
           </li>
           <li>
-            <NuxtLink class="text-xl font-Atkinson" to="#"
+            <NuxtLink
+              class="text-xl font-Atkinson"
+              to="/oferta/programista-na-godziny"
               >Programista ad hoc na godziny</NuxtLink
             >
           </li>
@@ -127,7 +137,7 @@
         <div>
           <div>
             <NuxtLink class="text-sm" to="https://www.j-filipiak.pl"
-              >j-filipiak.pl - projektowanie stron www
+              >j-filipiak.pl - projektowanie stron www | ver beta( mvp ) 0.0.8
             </NuxtLink>
 
             <NuxtLink class="text-sm hidden" to="/docs/regulamin"
@@ -213,7 +223,7 @@
 
       li {
         a {
-          @apply uppercase text-sm font-Atkinson pb-2 inline-block;
+          @apply text-sm font-Atkinson pb-2 inline-block;
           &::after {
             content: '';
             @apply w-0 bg-white block;

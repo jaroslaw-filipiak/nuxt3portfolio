@@ -7,8 +7,8 @@
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Profesjonalna , niezwykle szybka , bezpieczna strona www która da
-        Twojemu biznesowi potencjał to rozwoju
+        Profesjonalna , niezwykle szybka , bezpieczna strona www która
+        przyniesie Twojemu biznesowi potencjał to rozwoju
       </h2>
     </div>
   </div>

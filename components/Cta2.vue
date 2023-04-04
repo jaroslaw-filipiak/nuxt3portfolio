@@ -85,7 +85,7 @@
             <line x1="12" y1="12" x2="12" y2="12.01"></line>
             <path d="M3 13a20 20 0 0 0 18 0"></path>
           </svg>
-          <NuxtLink class="link-with-undeline" to="/brief"
+          <NuxtLink class="link-with-undeline hidden" to="/brief"
             >formularz kontaktowy</NuxtLink
           >
         </div>

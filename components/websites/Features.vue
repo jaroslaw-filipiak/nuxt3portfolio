@@ -18,33 +18,35 @@
       <div class="websites-features--items">
         <div class="flex">
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-3/12 border border-dark-3"
           >
             <h4 class="text-4xl">W pełni indywidualne podejście</h4>
-            <p class="text-xl">Autorska strona www od projektu po wdrożenie</p>
+            <p class="text-2xl">Autorska strona www od projektu po wdrożenie</p>
           </div>
 
           <div
             class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
           >
             <h4 class="text-4xl">Pełna responsywność</h4>
-            <p class="text-xl">
+            <p class="text-2xl">
               Strony internetowe testuje na realnych urządzeniach oraz w
-              narzędziach do testowania i automatyzacji. Strony wykonane prze ze
-              mnie dopasowują się do ekranu na którym są wyświetlana
+              narzędziach do testowania i automatyzacji. Strony wykonane przeze
+              mnie dopasowują się do ekranu na którym są wyświetlane
             </p>
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-5/12 border border-dark-3"
           >
             <h4 class="text-4xl">Bezpieczeństwo Twoich danych</h4>
-            <p class="text-xl">
+            <p class="text-2xl">
               Z doświadczenia wiem, że można drastycznie zminimalizować czas
               realizacji oraz koszty. Wystarczy współpracować face 2 face z
-              freelancerem zamiast z agencją , która zatrudnia freelancera. Brak
-              aparatu administracyjnego i szybki przepływ informacji to klucz do
-              szybkiego wdrożenia strony www
+              freelancerem zamiast z agencją... która zatrudnia freelancerów.
+            </p>
+            <p class="text-2xl">
+              Brak aparatu administracyjnego i szybki przepływ informacji to
+              klucz do szybkiego wdrożenia strony www
             </p>
           </div>
         </div>
