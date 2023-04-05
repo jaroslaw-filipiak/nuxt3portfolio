@@ -85,7 +85,7 @@
       }
 
       a {
-        @apply text-2xl pl-3;
+        @apply text-2xl lg:pl-3;
       }
     }
 

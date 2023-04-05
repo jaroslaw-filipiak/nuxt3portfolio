@@ -16,11 +16,11 @@
       <div class="why-freelancer--items mt-32">
         <div class="why-freelancer--row--wrapper">
           <div class="why-freelancer--row lg:border-r-0">
-            <h4 class="text-5xl font-Atkinson">
+            <h4 class="text-2xl lg:text-5xl font-Atkinson">
               Nie wszystkie projekty wymagają zatrudnienia agencji kreatywnej
               lub zespołu
             </h4>
-            <p class="text-3xl">
+            <p class="text-xl lg:text-3xl">
               Dowiedz się dlaczego warto współpracować z
               <strong>dobrym </strong> freelancerem
             </p>
@@ -70,14 +70,10 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-4/12 border border-dark-3;
+      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3;
 
       &--wrapper {
-        @apply flex;
-      }
-
-      h4 {
-        @apply text-4xl;
+        @apply flex flex-col lg:flex-row;
       }
 
       li {

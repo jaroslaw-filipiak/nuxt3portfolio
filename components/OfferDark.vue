@@ -7,8 +7,8 @@
       </div>
 
       <div class="flex items-end mt-20 mb-20">
-        <div class="w-6/12">
-          <h4 class="text-white text-5xl">
+        <div class="w-full lg:w-6/12">
+          <h4 class="text-white text-2xl lg:text-5xl">
             Od 2014 roku sukcesywnie pomagam firmom w ulepszeniu ich wizerunku.
             Chętnie pomogę również Tobie
           </h4>
@@ -125,10 +125,10 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-4/12 border border-light;
+      @apply flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-light;
 
       &--wrapper {
-        @apply flex;
+        @apply flex flex-col lg:flex-row;
       }
 
       h4 {

@@ -117,7 +117,7 @@
         <div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-copyright"
+            class="icon icon-tabler icon-tabler-copyright hidden lg:block"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -135,8 +135,10 @@
           </svg>
         </div>
         <div>
-          <div>
-            <NuxtLink class="text-sm" to="https://www.j-filipiak.pl"
+          <div class="text-center lg:text-left opacity-30 lg:opacity-100">
+            <NuxtLink
+              class="text-sm footer--version"
+              to="https://www.j-filipiak.pl"
               >j-filipiak.pl - projektowanie stron www | ver beta( mvp ) 0.0.8
             </NuxtLink>
 

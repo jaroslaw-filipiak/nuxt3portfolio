@@ -1,7 +1,6 @@
 <template>
   <div class="template-default-wrapper">
     <TopBar />
-
     <div>
       <div class="content">
         <div class="hidden lg:flex"><Footer /></div>
@@ -38,12 +37,16 @@
     @apply pb-9;
 
     h1,
-    h2,
+    h2 {
+      @apply text-5xl lg:text-7xl;
+    }
+
     h3,
     h4,
     h5 {
-      @apply text-5xl lg:text-7xl;
+      @apply text-2xl lg:text-7xl;
     }
+
     img {
       @apply relative lg:left-48 top-3;
     }
