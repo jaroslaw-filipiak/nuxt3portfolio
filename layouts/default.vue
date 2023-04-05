@@ -26,8 +26,6 @@
   });
 
   onMounted(() => {
-    console.log('on mounted');
-
     window.addEventListener('scroll', () => {
       let header = document.querySelector('.top-bar');
       header.classList.toggle('top-bar__sticky', window.scrollY > 0);
@@ -44,7 +42,7 @@
     h3,
     h4,
     h5 {
-      @apply text-7xl;
+      @apply text-5xl lg:text-7xl;
     }
     img {
       @apply relative lg:left-48 top-3;
