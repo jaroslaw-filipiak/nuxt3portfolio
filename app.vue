@@ -4,6 +4,8 @@
   </NuxtLayout>
 </template>
 
+<script setup></script>
+
 <style>
   .page-enter-active,
   .page-leave-active {
@@ -24,4 +26,5 @@
       margin-bottom: 600px;
     }
   }
+  /*  ============= */
 </style>

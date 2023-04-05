@@ -9,8 +9,8 @@
       <div class="flex items-end mt-20 mb-20">
         <div class="w-6/12">
           <h4 class="text-white text-5xl">
-            Od ponad 10 lat sukcesywnie pomagam firmom w ulepszeniu ich
-            wizerunku. Chętnie pomogę również Tobie
+            Od 2014 roku sukcesywnie pomagam firmom w ulepszeniu ich wizerunku.
+            Chętnie pomogę również Tobie
           </h4>
         </div>
       </div>

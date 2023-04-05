@@ -2,12 +2,12 @@
   <div class="hero__websites">
     <div class="hero__websites--inner">
       <div class="section--title">
-        <h1>Dostarczę Tobie profesjonalną , dedykowaną stronę www</h1>
+        <h1>Dostarczę Tobie profesjonalną , dedykowaną stronę www.</h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Profesjonalna , niezwykle szybka , bezpieczna strona www która
+        Profesjonalna, niezwykle szybka, bezpieczna strona internetowa która
         przyniesie Twojemu biznesowi potencjał to rozwoju
       </h2>
     </div>

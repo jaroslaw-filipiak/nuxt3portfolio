@@ -3,8 +3,8 @@
     <div class="websites-features--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto">
-          Dedykowane strony www to moja mocna strona. Zaprojektuje ,
-          zaprogramuje oraz wdroże {feature.props } stronę www
+          Dedykowane strony www to moja mocna strona. Zaprojektuje, zaprogramuje
+          oraz wdrożę profesjonalną stronę www.
         </h3>
         <img
           class="pt-3 mx-auto"
@@ -21,7 +21,11 @@
             class="flex flex-col gap-10 items-start justify-between p-8 w-3/12 border border-dark-3"
           >
             <h4 class="text-4xl">W pełni indywidualne podejście</h4>
-            <p class="text-2xl">Autorska strona www od projektu po wdrożenie</p>
+            <p class="text-2xl">
+              Autorska strona www od projektu po wdrożenie. Zrobiona przez
+              osobę, która zna się na rzeczy i wie jak projektować strony zgodne
+              z najnowszymi standardami branżowymi.
+            </p>
           </div>
 
           <div
@@ -31,22 +35,23 @@
             <p class="text-2xl">
               Strony internetowe testuje na realnych urządzeniach oraz w
               narzędziach do testowania i automatyzacji. Strony wykonane przeze
-              mnie dopasowują się do ekranu na którym są wyświetlane
+              mnie dopasowują się do ekranu na którym są wyświetlane.
             </p>
           </div>
 
           <div
             class="flex flex-col gap-10 items-start justify-between p-8 w-5/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Bezpieczeństwo Twoich danych</h4>
+            <h4 class="text-4xl">Optymalizacja na wielu płaszczyznach</h4>
             <p class="text-2xl">
-              Z doświadczenia wiem, że można drastycznie zminimalizować czas
-              realizacji oraz koszty. Wystarczy współpracować face 2 face z
-              freelancerem zamiast z agencją... która zatrudnia freelancerów.
+              Autorskie strony są optymalizowane już przy samym projektowaniu:
+              optymalizuję scieżkę usera czyli: wg. klasycznej zasady: "jak
+              najmniej klikania, jak najmniej szukania". Optymalizacja szybkości
+              wczytywania to kolejny etap.
             </p>
             <p class="text-2xl">
-              Brak aparatu administracyjnego i szybki przepływ informacji to
-              klucz do szybkiego wdrożenia strony www
+              Finalnie kończymy na optymalizacji pod kątem SEO aby Twoja strona
+              nie była oglądana tylko przez Ciebie.
             </p>
           </div>
         </div>

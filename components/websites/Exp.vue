@@ -3,15 +3,21 @@
     <div class="websites__exp--inner">
       <div class="section--title">
         <h1>
-          Od ponad 5 lat obsługuję większe agencje typu 360 oraz software
-          house-y
+          Od 2014 roku obsługuję większe agencje typu 360 oraz software house-y.
         </h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Jako podwykonawca wdrażam strony dla topowych marek.
+        Odciążam takie firmy wykonując zarówno pomniejsze zlecenia jak i
+        przejmuje całe projekty. Blisko współpracuje wówczas z project
+        managerem, grafikami, osobami od marketingu itp.
       </h2>
+
+      <p class="text-2xl mt-8">
+        Działam jako partner technologiczny chociaż dziś na takie osoby mówi się
+        GIGer.
+      </p>
     </div>
   </div>
 </template>

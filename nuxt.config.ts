@@ -15,5 +15,8 @@ export default defineNuxtConfig({
     '~/assets/css/vue-slider-component-theme.css',
     '~/assets/scss/main.scss',
   ],
+  build: {
+    transpile: ['gsap'],
+  },
   modules: ['@pinia/nuxt'],
 });

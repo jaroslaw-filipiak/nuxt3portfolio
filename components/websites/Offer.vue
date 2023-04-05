@@ -9,13 +9,12 @@
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
           <h4 class="text-white text-5xl">
-            Decydując się na wybór taniej strony internetowej, pewnie boisz się
-            tego, że trafisz na bubel? Bez obaw, wszystkie strony, które tworzę,
-            są wykonane zgodnie ze sztuką.
+            Decydując się na wybór profesjonalnej strony internetowej masz
+            pewność, żę projekt będzie szybki, bezpieczny oraz w pełni stabilny.
           </h4>
           <h4 class="text-white text-4xl mt-10 max-w-6xl">
-            U mnie tanio to także znaczy dobrze. Świadczą o tym liczne opinie
-            moich Klientów oraz wysokie oceny mojej firmy w Internecie.
+            Skoro wydajesz pieniądze na stronę www to upewnij się, że zostanie
+            ona wykonana przez profesjonalistę.
           </h4>
         </div>
       </div>
@@ -39,17 +38,16 @@
 
             <div>
               <p class="text-3xl">
-                Pełnoprawna , w pełni profesjonalna strona www w przystępnej
-                cenie ? Oczywiście że to możliwe! Oferuje profesjonalną stronę
-                www , w pełni przygotowaną pod SEO wraz ze specjalnym pakietem
-                bezpieczeństwa.
+                Responsywność to tak naprawdę wygoda oraz dostępność.
+                Użytkownicy bedą mogli oglądać Twoją stronę na różnych
+                urządzeniach niezależnie od rodzaju. Sama wygoda to nie jedyne
+                korzyści wynikające z posiadania responsywnej strony. Pamiętaj,
+                że takie strony mają lepsze wyniki w wyszukiwarkach oraz lepsze
+                statystyki odwiedzin.
               </p>
               <p class="text-2xl mt-8">
-                Po zakończeniu współpracy możesz skorzystać z administracji w
-                abonamencie , wykupić pakiet SEO , pakiet bezpieczeństwa oraz o
-                wiele więcej. Stronę można dowolnie rozbudowywać w każdym
-                momencie samodzielnie lub z moją pomocą. Zobacz również obsługa
-                ad-hoc na godziny
+                Dokładnie testuje za pomocą automatycznych narzędzi sposób
+                wyświetlania strony na najpopularniejszych urządzeniach.
               </p>
             </div>
           </div>
@@ -67,14 +65,23 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">..</p>
+              <p class="text-3xl">
+                Zwiększona widoczność to więcej odwiedzin a więcej odwiedzin to
+                więcej okazji do sprzedania swojego produktu lub usługi. Dobra
+                optymalizacja pod SEO jest jak lokata - wraz z czasem zyskujesz
+                coraz więcej.
+              </p>
+              <p class="text-xl mt-8">
+                Długoterminowe korzyści to najważniejszy aspekt dobrej
+                optymalizacji strony pod wyniki wyszukiwania.
+              </p>
             </div>
           </div>
 
           <div class="websites__offer--row w-full xl:border-t-0">
             <div>
               <div>
-                <h4>Bezpieczeństwo Twoich danych</h4>
+                <h4>Bezpieczeństwo to podstawa</h4>
               </div>
               <div>
                 <img
@@ -85,10 +92,20 @@
             </div>
             <div>
               <p class="text-3xl">
-                Sama strona internetowa to nie wszystko. Aby zaistniała ona w
-                sieci potrzebny jest serwer , odpowiednia konfiguracja , a także
-                domena i certyfikat ssl . Wraz z serwerem trzeba skonfigurować
-                pocztę email . Wszystkie te usługi otrzymasz w cenie
+                Strona musi być dobrze zabezpieczona przed najpopularniejszymi
+                atakami oraz powinna mieć kopie zapasową nie tylko plików ale
+                także bazy danych. Stała współpraca to bezpieczeństwo Twoich
+                danych, szybka reakcja na awarie, regularne kopie zapasowe oraz
+                stały monitoring statusu witryny.
+              </p>
+              <p class="text-2xl mt-8">
+                Każda wykonana strona jest mocno zabezpieczona. Jeżeli chcesz
+                aby dodatkowo ktoś nad nią czuwał skorzystaj z oferty na
+                <NuxtLink
+                  class="link-with-undeline"
+                  to="/oferta/opieka-nad-stronami-internetowymi"
+                  >Opiekę nad stronami internetowymi.</NuxtLink
+                >
               </p>
             </div>
           </div>

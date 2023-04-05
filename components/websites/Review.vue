@@ -3,8 +3,8 @@
     <div class="budget-websites-review--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto italic">
-          Współpraca na najwyższym poziomie. Zarówno realizacja zlecenia jak i
-          rekomendacje usprawnień projektu. Polecam.
+          "Współpraca na najwyższym poziomie. Zarówno realizacja zlecenia jak i
+          rekomendacje usprawnień projektu. Polecam."
         </h3>
         <img
           class="pt-3 mx-auto"

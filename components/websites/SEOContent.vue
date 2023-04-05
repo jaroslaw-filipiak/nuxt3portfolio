@@ -31,7 +31,10 @@
       <div class="flex w-full">
         <div class="w-10/12 text-3xl border border-black p-8 lg:border-t-0">
           <ul>
-            <li>optymalizację SEO — przygotowanie strony do pozycjonowania,</li>
+            <li>
+              optymalizację SEO — przygotowanie strony do pozycjonowania +
+              pakiet bezpieczeństwa
+            </li>
           </ul>
         </div>
 
@@ -47,11 +50,10 @@
           Autorskie strony www to przewaga nad konkurencją
         </h3>
         <p class="text-3xl mt-12">
-          Potrzebujesz strony internetowej na wczoraj? Postaw na profesjonalne i
-          tanie strony www dla swojej firmy. Oferuję kompleksową usługę
-          stworzenia strony internetowej, w oparciu o system WordPress oraz
-          autorskie rozwiązania. Postaw na doświadczenie i sprawdzone
-          technologie.
+          Każdy biznes potrzebuje dzisiaj strony internetowej. Nie zastanawiaj
+          się dłużej tylko skorzystaj z oferty na wykonanie profesjonalnej
+          strony www, zwiększ widoczność swojej firmy w sieci wyróżniając się
+          autorską, w pełni profesjonalną stroną internetową.
         </p>
       </div>
     </div>
