@@ -8,13 +8,13 @@
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
-      <h2 class="lg:text-3xl mt-2 font-normal mb-6">
+      <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6">
         Odciążam takie firmy wykonując zarówno pomniejsze zlecenia jak i
         przejmuje całe projekty. Blisko współpracuje wówczas z project
         managerem, grafikami, osobami od marketingu itp.
       </h2>
 
-      <p class="text-2xl mt-8">
+      <p class="text-base lg:text-2xl mt-8">
         Działam jako partner technologiczny chociaż dziś na takie osoby mówi się
         GIGer.
       </p>

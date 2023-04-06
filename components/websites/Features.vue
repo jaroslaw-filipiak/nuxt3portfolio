@@ -16,12 +16,12 @@
       <div class="websites-features--items mt-32"></div>
 
       <div class="websites-features--items">
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row">
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-3/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-3/12 border border-dark-3 border-b-0 lg:border-b"
           >
-            <h4 class="text-4xl">W pełni indywidualne podejście</h4>
-            <p class="text-2xl">
+            <h4 class="text-3xl">W pełni indywidualne podejście</h4>
+            <p class="text-xl">
               Autorska strona www od projektu po wdrożenie. Zrobiona przez
               osobę, która zna się na rzeczy i wie jak projektować strony zgodne
               z najnowszymi standardami branżowymi.
@@ -29,10 +29,10 @@
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3 border-b-0 lg:border-b"
           >
-            <h4 class="text-4xl">Pełna responsywność</h4>
-            <p class="text-2xl">
+            <h4 class="text-3xl">Pełna responsywność</h4>
+            <p class="text-xl">
               Strony internetowe testuje na realnych urządzeniach oraz w
               narzędziach do testowania i automatyzacji. Strony wykonane przeze
               mnie dopasowują się do ekranu na którym są wyświetlane.
@@ -40,16 +40,16 @@
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-5/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-5/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Optymalizacja na wielu płaszczyznach</h4>
-            <p class="text-2xl">
+            <h4 class="text-3xl">Optymalizacja na wielu płaszczyznach</h4>
+            <p class="text-xl">
               Autorskie strony są optymalizowane już przy samym projektowaniu:
               optymalizuję scieżkę usera czyli: wg. klasycznej zasady: "jak
               najmniej klikania, jak najmniej szukania". Optymalizacja szybkości
               wczytywania to kolejny etap.
             </p>
-            <p class="text-2xl">
+            <p class="text-xl">
               Finalnie kończymy na optymalizacji pod kątem SEO aby Twoja strona
               nie była oglądana tylko przez Ciebie.
             </p>

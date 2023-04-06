@@ -44,7 +44,7 @@
     h3,
     h4,
     h5 {
-      @apply text-2xl lg:text-7xl;
+      @apply text-4xl lg:text-7xl;
     }
 
     img {

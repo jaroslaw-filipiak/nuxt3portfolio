@@ -6,14 +6,18 @@
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
-      <div class="flex mt-8">
-        <div class="w-6/12 text-5xl border border-black p-8">
+      <div class="flex flex-col lg:flex-row mt-8 w-full">
+        <div
+          class="w-full lg:w-6/12 text-3xl lg:text-5xl border border-black p-8 border-b-0 lg:border-b"
+        >
           <ul>
             <li>Wybierając moją ofertę otrzymujesz :</li>
           </ul>
         </div>
 
-        <div class="w-4/12 text-3xl border border-black p-8">
+        <div
+          class="w-full lg:w-4/12 text-xl lg:text-3xl border border-black p-8 border-b-0 lg:border-b"
+        >
           <ul>
             <li>
               wysoką jakość projektu strony, opartą o autorskie rozwiązania,
@@ -21,15 +25,19 @@
           </ul>
         </div>
 
-        <div class="w-4/12 text-3xl border border-black p-8">
+        <div
+          class="w-full lg:w-4/12 text-xl lg:text-3xl border border-black p-8 border-b-0 lg:border-b"
+        >
           <ul>
             <li>szybkie wdrożenie strony internetowej,</li>
           </ul>
         </div>
       </div>
 
-      <div class="flex w-full">
-        <div class="w-10/12 text-3xl border border-black p-8 lg:border-t-0">
+      <div class="flex flex-col lg:flex-row w-full">
+        <div
+          class="w-full lg:w-10/12 text-xl lg:text-3xl border border-black p-8 lg:border-t-0 border-b-0 lg:border-b"
+        >
           <ul>
             <li>
               optymalizację SEO — przygotowanie strony do pozycjonowania +
@@ -38,7 +46,9 @@
           </ul>
         </div>
 
-        <div class="w-2/12 text-3xl border border-black p-8 lg:border-t-0">
+        <div
+          class="w-full lg:w-2/12 text-xl lg:text-3xl border border-black p-8 lg:border-t-0"
+        >
           <ul>
             <li>Gwarancję</li>
           </ul>
@@ -46,10 +56,10 @@
       </div>
 
       <div class="w-full mt-32">
-        <h3 class="text-6xl">
+        <h3 class="text-3xl lg:text-6xl">
           Autorskie strony www to przewaga nad konkurencją
         </h3>
-        <p class="text-3xl mt-12">
+        <p class="text-xl lg:text-3xl mt-12">
           Każdy biznes potrzebuje dzisiaj strony internetowej. Nie zastanawiaj
           się dłużej tylko skorzystaj z oferty na wykonanie profesjonalnej
           strony www, zwiększ widoczność swojej firmy w sieci wyróżniając się

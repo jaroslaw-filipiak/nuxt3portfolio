@@ -2,9 +2,6 @@
   <div id="cta" class="cta__yellow--wrapper">
     <div class="cta__yellow--inner">
       <div class="cta__yellow--header">
-        <div class="pr-5">
-          <!-- <img src="~/assets/uploads/jarek-avatar.png" alt="" /> -->
-        </div>
         <div class="mx-auto flex flex-col items-center justify-start">
           <div class="dark-label">darmowa wycena</div>
           <div>

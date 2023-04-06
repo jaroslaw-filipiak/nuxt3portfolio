@@ -8,11 +8,11 @@
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
-          <h4 class="text-white text-5xl">
+          <h4 class="text-white text-2xl lg:text-5xl">
             Decydując się na wybór profesjonalnej strony internetowej masz
             pewność, żę projekt będzie szybki, bezpieczny oraz w pełni stabilny.
           </h4>
-          <h4 class="text-white text-4xl mt-10 max-w-6xl">
+          <h4 class="text-white text-xl lg:text-4xl mt-10 max-w-6xl">
             Skoro wydajesz pieniądze na stronę www to upewnij się, że zostanie
             ona wykonana przez profesjonalistę.
           </h4>
@@ -22,11 +22,11 @@
       <div class="websites__offer--items mt-20">
         <div class="websites__offer--row--wrapper">
           <div
-            class="websites__offer--row xl:border-b-0 2xl:border-b 2xl:w-6/12 3xl:w-7/12"
+            class="websites__offer--row xl:border-b-0 2xl:border-b w-full 2xl:w-6/12 3xl:w-7/12"
           >
             <div>
               <div>
-                <h4>Responsywność</h4>
+                <h4 class="text-3xl lg:text-4xl">Responsywność</h4>
               </div>
               <div>
                 <img
@@ -37,7 +37,7 @@
             </div>
 
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Responsywność to tak naprawdę wygoda oraz dostępność.
                 Użytkownicy bedą mogli oglądać Twoją stronę na różnych
                 urządzeniach niezależnie od rodzaju. Sama wygoda to nie jedyne
@@ -45,17 +45,19 @@
                 że takie strony mają lepsze wyniki w wyszukiwarkach oraz lepsze
                 statystyki odwiedzin.
               </p>
-              <p class="text-2xl mt-8">
+              <p class="text-base lg:text-2xl mt-8">
                 Dokładnie testuje za pomocą automatycznych narzędzi sposób
                 wyświetlania strony na najpopularniejszych urządzeniach.
               </p>
             </div>
           </div>
 
-          <div class="websites__offer--row 2xl:w-6/12 3xl:w-5/12">
+          <div class="websites__offer--row w-full 2xl:w-6/12 3xl:w-5/12">
             <div>
               <div>
-                <h4>Przystosowanie strony pod SEO</h4>
+                <h4 class="text-3xl lg:text-4xl">
+                  Przystosowanie strony pod SEO
+                </h4>
               </div>
               <div>
                 <img
@@ -65,13 +67,13 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Zwiększona widoczność to więcej odwiedzin a więcej odwiedzin to
                 więcej okazji do sprzedania swojego produktu lub usługi. Dobra
                 optymalizacja pod SEO jest jak lokata - wraz z czasem zyskujesz
                 coraz więcej.
               </p>
-              <p class="text-xl mt-8">
+              <p class="text-base lg:text-xl mt-8">
                 Długoterminowe korzyści to najważniejszy aspekt dobrej
                 optymalizacji strony pod wyniki wyszukiwania.
               </p>
@@ -81,7 +83,7 @@
           <div class="websites__offer--row w-full xl:border-t-0">
             <div>
               <div>
-                <h4>Bezpieczeństwo to podstawa</h4>
+                <h4 class="text-3xl lg:text-4xl">Bezpieczeństwo to podstawa</h4>
               </div>
               <div>
                 <img
@@ -91,14 +93,14 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Strona musi być dobrze zabezpieczona przed najpopularniejszymi
                 atakami oraz powinna mieć kopie zapasową nie tylko plików ale
                 także bazy danych. Stała współpraca to bezpieczeństwo Twoich
                 danych, szybka reakcja na awarie, regularne kopie zapasowe oraz
                 stały monitoring statusu witryny.
               </p>
-              <p class="text-2xl mt-8">
+              <p class="text-base lg:text-2xl mt-8">
                 Każda wykonana strona jest mocno zabezpieczona. Jeżeli chcesz
                 aby dodatkowo ktoś nad nią czuwał skorzystaj z oferty na
                 <NuxtLink
@@ -133,7 +135,7 @@
       @apply flex flex-col  gap-10 items-start justify-between p-8  border border-light;
 
       &--wrapper {
-        @apply flex flex-wrap;
+        @apply flex flex-col lg:flex-row flex-wrap;
       }
 
       h4 {
