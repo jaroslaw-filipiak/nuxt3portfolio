@@ -56,7 +56,7 @@
           <li>
             <NuxtLink
               class="text-xl font-Atkinson"
-              to="/pferta/opieka-nad-stronami-internetowymi"
+              to="/oferta/opieka-nad-stronami-internetowymi"
             >
               Administracja stronami www
             </NuxtLink>

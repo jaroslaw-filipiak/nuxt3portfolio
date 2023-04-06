@@ -6,7 +6,7 @@
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
-      <h2 class="lg:text-3xl mt-2 font-normal mb-6">
+      <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6">
         I zajmij się rozwijaniem swojego biznesu. Ja zadbam o kwestie
         technologiczną
       </h2>

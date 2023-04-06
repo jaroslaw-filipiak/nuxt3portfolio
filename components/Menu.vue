@@ -4,13 +4,14 @@
       <ul
         class="offer-menu flex flex-wrap flex-col items-start justify-center w-full h-full"
       >
-        <li>
+        <p class="text-xs mt-8 lg:hidden">Co mogę Tobie zaoferować ?</p>
+        <li class="border-t-0">
           <NuxtLink
             class="offer-menu--item"
             to="/oferta/profesjonalne-strony-www"
           >
             Strony www WordPress
-            <span
+            <span class="hidden lg:block"
               >Kompleksowo zrealizuje dla Ciebie szybką , bezpieczną i
               profesjonalną stronę www</span
             >
@@ -28,7 +29,7 @@
               </div>
             </div>
 
-            <span
+            <span class="hidden lg:block"
               >Strony www z budżetem skrojonym na miarę , dobry start do
               emarketingu , który szybko się zwróci</span
             ></NuxtLink
@@ -40,7 +41,7 @@
             class="offer-menu--item"
             to="/oferta/opieka-nad-stronami-internetowymi"
           >
-            Administracja stronami www<span
+            Administracja stronami www<span class="hidden lg:block"
               >Chesz mieć pewność, że ktoś czuwa nad Twoją stroną www ? zleć do
               profesjonaliście i zajmij się prowadzeniem biznesu</span
             >
@@ -49,10 +50,30 @@
 
         <li>
           <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
-            >Programista ad hoc na godziny<span
+            >Programista ad hoc na godziny<span class="hidden lg:block"
               >Masz FUCKUP ? zbliża się DEADLINE ? chętnie wyczyszczę pare
               tasków z Jiry</span
             ></NuxtLink
+          >
+        </li>
+
+        <p class="text-xs mt-8 lg:hidden">Dowiedz się kim jestem</p>
+        <li class="border-t-0 lg:hidden">
+          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
+            >O mnie<span>Dowiedz się troszkę więcej o mnie</span></NuxtLink
+          >
+        </li>
+        <p class="text-xs mt-8 lg:hidden">
+          Skontaktuj się ze mną szybko i sprawnie:
+        </p>
+        <li class="border-t-0 lg:hidden">
+          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
+            >info@j-filipiak.pl</NuxtLink
+          >
+        </li>
+        <li class="lg:hidden">
+          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
+            >+48 663 568 828</NuxtLink
           >
         </li>
       </ul>
@@ -100,7 +121,7 @@
     }
 
     .offer-menu--item {
-      @apply flex flex-col items-start justify-center text-3xl 2xl:text-5xl font-Atkinson h-32 xl:h-20 2xl:h-28;
+      @apply flex flex-col items-start justify-center text-xl lg:text-3xl 2xl:text-5xl font-Atkinson pt-3 pb-3 lg:pt-0 lg:pb-9 lg:h-32 xl:h-20 2xl:h-28;
 
       span {
         @apply text-base 2xl:text-xl;
