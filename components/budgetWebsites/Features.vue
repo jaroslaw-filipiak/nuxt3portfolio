@@ -16,8 +16,10 @@
       <div class="budget-websites-features--items mt-32">
         <div class="budget-websites-features--row--wrapper">
           <div class="budget-websites-features--row w-full">
-            <h4>Strona www od doświadczonego freelancera</h4>
-            <p class="text-3xl">
+            <h4 class="text-3xl lg:text-5xl">
+              Strona www od doświadczonego freelancera
+            </h4>
+            <p class="text-xl lg:text-3xl">
               Jestem w branży od ponad 10 lat. Od wielu lat wdrażam autorsko
               strony www dla agencji interaktywnych. Pracuje w złożonym teamie
               składającym się z designerów / marketerów / managerów. Wiem jak
@@ -27,19 +29,19 @@
             </p>
           </div>
 
-          <div class="flex gap-3 mb-3">
-            <div class="budget-websites-features--row w-6/12">
-              <h4>Pełna responsywność</h4>
-              <p class="text-3xl">
+          <div class="flex flex-col lg:flex-row gap-3 mb-3">
+            <div class="budget-websites-features--row w-full lg:w-6/12">
+              <h4 class="text-3xl lg:text-5xl">Pełna responsywność</h4>
+              <p class="text-xl lg:text-3xl">
                 Strony internetowe testuje na realnych urządzeniach oraz w
                 narzędziach do testowania i automatyzacji. Strony wykonane prze
                 ze mnie dopasowują się do ekranu na którym są wyświetlana
               </p>
             </div>
 
-            <div class="budget-websites-features--row w-6/12">
-              <h4>Szybki czas realizacji</h4>
-              <p class="text-3xl">
+            <div class="budget-websites-features--row w-full lg:w-6/12">
+              <h4 class="text-3xl lg:text-5xl">Szybki czas realizacji</h4>
+              <p class="text-xl lg:text-3xl">
                 Z doświadczenia wiem, że można drastycznie zminimalizować czas
                 realizacji oraz koszty. Wystarczy współpracować face 2 face z
                 freelancerem zamiast z agencją , która zatrudnia freelancera.
@@ -52,23 +54,23 @@
       </div>
 
       <div class="budget-websites-features--items">
-        <div class="flex gap-3">
+        <div class="flex flex-col lg:flex-row gap-3">
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Elastyczność</h4>
+            <h4 class="text-xl lg:text-5xl">Elastyczność</h4>
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Jasne warunki rozliczenia</h4>
+            <h4 class="text-xl lg:text-5xl">Jasne warunki rozliczenia</h4>
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Szybkość działania</h4>
+            <h4 class="text-xl lg:text-5xl">Szybkość działania</h4>
           </div>
         </div>
       </div>

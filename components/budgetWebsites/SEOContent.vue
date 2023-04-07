@@ -6,14 +6,18 @@
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
-      <div class="flex mt-8">
-        <div class="w-6/12 text-5xl border border-black p-8">
+      <div class="flex flex-col lg:flex-row mt-8">
+        <div
+          class="w-full lg:w-6/12 text-2xl lg:text-5xl border border-black p-8"
+        >
           <ul>
             <li>Wybierając moją ofertę otrzymujesz :</li>
           </ul>
         </div>
 
-        <div class="w-4/12 text-3xl border border-black p-8">
+        <div
+          class="w-full lg:w-4/12 text-xl lg:text-3xl border border-black p-8"
+        >
           <ul>
             <li>
               wysoką jakość projektu strony, opartą o autorskie rozwiązania,
@@ -21,21 +25,27 @@
           </ul>
         </div>
 
-        <div class="w-4/12 text-3xl border border-black p-8">
+        <div
+          class="w-full lg:w-4/12 text-xl lg:text-3xl border border-black p-8"
+        >
           <ul>
             <li>szybkie wdrożenie strony internetowej,</li>
           </ul>
         </div>
       </div>
 
-      <div class="flex w-full">
-        <div class="w-10/12 text-3xl border border-black p-8 lg:border-t-0">
+      <div class="flex flex-col lg:flex-row w-full">
+        <div
+          class="w-full lg:w-10/12 text-xl lg:text-3xl border border-black p-8 lg:border-t-0"
+        >
           <ul>
             <li>optymalizację SEO — przygotowanie strony do pozycjonowania,</li>
           </ul>
         </div>
 
-        <div class="w-2/12 text-3xl border border-black p-8 lg:border-t-0">
+        <div
+          class="w-full lg:w-2/12 text-xl lg:text-3xl border border-black p-8 lg:border-t-0"
+        >
           <ul>
             <li>Gwarancję</li>
           </ul>
@@ -43,8 +53,10 @@
       </div>
 
       <div class="w-full mt-32">
-        <h3 class="text-6xl">Tanie strony www, tanie szablony WordPress</h3>
-        <p class="text-3xl mt-12">
+        <h3 class="text-4xl lg:text-6xl">
+          Tanie strony www, tanie szablony WordPress
+        </h3>
+        <p class="text-xl lg:text-3xl mt-12">
           Potrzebujesz strony internetowej na wczoraj? Postaw na profesjonalne i
           tanie strony www dla swojej firmy. Oferuję kompleksową usługę
           stworzenia strony internetowej, w oparciu o system WordPress oraz

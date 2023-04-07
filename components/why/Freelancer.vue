@@ -16,7 +16,7 @@
       <div class="why-freelancer--items mt-32">
         <div class="why-freelancer--row--wrapper">
           <div class="why-freelancer--row lg:border-r-0">
-            <h4 class="text-2xl lg:text-5xl font-Atkinson">
+            <h4 class="text-3xl lg:text-5xl font-Atkinson">
               Nie wszystkie projekty wymagają zatrudnienia agencji kreatywnej
               lub zespołu
             </h4>

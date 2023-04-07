@@ -11,13 +11,13 @@
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
-          <h4 class="text-white text-5xl">
+          <h4 class="text-white text-2xl lg:text-5xl">
             Powierzenie strony www w ręce osób wykwalifikowanych to oszczędność
             czasu, kosztów oraz zasobów. Stały kontakt ze specjalistami to
             doskonała okazja aby powiększyć zakres kompetencji w swojej firmie
             bez Tworzenia dodatkowego etatu.
           </h4>
-          <h4 class="text-white text-4xl mt-10 max-w-6xl">
+          <h4 class="text-white text-xl lg:text-4xl mt-10 max-w-6xl">
             Do bezpieczeństwa oraz ochrony danych w czasach RODO należy
             przyłożyć się porządnie. Uważam, że dziś każda firma powinna
             korzystać z obsługi prawnej, księgowej oraz informatycznej.
@@ -43,13 +43,13 @@
             </div>
 
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Korzystanie z outsourcingu IT do zarządzania i administracją
                 swojej strony to również możliwość szybkiego zlecenia
                 dodatkowych prac programistycznych i rozwijania swojego
                 projektu.
               </p>
-              <p class="text-2xl mt-8">
+              <p class="text-base lg:text-2xl mt-8">
                 Łatwo możesz zarządzać przerobem roboczogodzinowym nad Twoim
                 projektem mając pewność startu prac praktycznie od ręki.
               </p>
@@ -69,7 +69,7 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Korzystam z wielu płatnych narzędzi do zarządzania,
                 monitorowania i sprawdzania projektów. Dodatkowo blisko
                 współpracuje z moimi partnerami, którzy to uzupełniają moje
@@ -77,7 +77,7 @@
                 kwestiami prawnymi a także całą otoczką serwerową znaną jako
                 DevOps.
               </p>
-              <p class="text-2xl mt-8">
+              <p class="text-base lg:text-2xl mt-8">
                 Współpracując z freelancerem współpracujesz również z moimi
                 partnerami.
               </p>
@@ -97,14 +97,14 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Kompleksowa opieka oferuje ogromną ilośc usług: aktualizacje,
                 bezpieczeństwo, konfiguracje skrzynek pocztowych, przekierownie
                 DNSów, instalacje SSL, administracja serwerami, przypominanie o
                 wygasających usługach a także konsultacje w zakresie poprawy
                 jakośći, kwestie dostępności, SEO oraz o wiele więcej.
               </p>
-              <p class="text-2xl mt-8">
+              <p class="text-base lg:text-2xl mt-8">
                 Pełen informatyczny konglomerat w jednym miejscu. Zyskaj
                 wartościowego partnera technologicznego.
               </p>

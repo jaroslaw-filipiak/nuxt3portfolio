@@ -8,12 +8,12 @@
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
-          <h4 class="text-white text-5xl">
+          <h4 class="text-white text-2xl lg:text-5xl">
             Decydując się na wybór taniej strony internetowej, pewnie boisz się
             tego, że trafisz na bubel? Bez obaw, wszystkie strony, które tworzę,
             są wykonane zgodnie ze sztuką.
           </h4>
-          <h4 class="text-white text-4xl mt-10 max-w-6xl">
+          <h4 class="text-white text-base lg:text-4xl mt-10 max-w-6xl">
             U mnie tanio to także znaczy dobrze. Świadczą o tym liczne opinie
             moich Klientów oraz wysokie oceny mojej firmy w Internecie.
           </h4>
@@ -23,11 +23,11 @@
       <div class="about__offer--items mt-20">
         <div class="about__offer--row--wrapper">
           <div
-            class="about__offer--row xl:border-b-0 2xl:border-b 2xl:w-6/12 3xl:w-7/12"
+            class="about__offer--row xl:border-b-0 2xl:border-b w-full 2xl:w-6/12 3xl:w-7/12"
           >
             <div>
               <div>
-                <h4>Niska cena! , już od 799 zł netto + VAT - zobacz cennik</h4>
+                <h4>Niska cena! , już od 899 zł netto + VAT</h4>
               </div>
               <div>
                 <img
@@ -38,7 +38,7 @@
             </div>
 
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Pełnoprawna , w pełni profesjonalna strona www w przystępnej
                 cenie ? Oczywiście że to możliwe! Oferuje profesjonalną stronę
                 www , w pełni przygotowaną pod SEO wraz ze specjalnym pakietem
@@ -47,7 +47,7 @@
             </div>
           </div>
 
-          <div class="about__offer--row 2xl:w-6/12 3xl:w-5/12">
+          <div class="about__offer--row w-full 2xl:w-6/12 3xl:w-5/12">
             <div>
               <div>
                 <h4>Panel administracyjny</h4>
@@ -60,7 +60,7 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Dzięki któremu możesz samodzielnie zarządzać stwoją witryną ,
                 dodawać nowe wpisy , strony , podglądać statystyki czy zarządzać
                 dogłębnie SEO swojej witryny.
@@ -81,7 +81,7 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">
+              <p class="text-xl lg:text-3xl">
                 Sama strona internetowa to nie wszystko. Aby zaistniała ona w
                 sieci potrzebny jest serwer , odpowiednia konfiguracja , a także
                 domena i certyfikat ssl . Wraz z serwerem trzeba skonfigurować

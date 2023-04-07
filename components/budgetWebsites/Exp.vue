@@ -2,15 +2,15 @@
   <div class="budget-websites__exp">
     <div class="budget-websites__exp--inner">
       <div class="section--title">
-        <h1>
-          Jestem w branży od 10 lat. <br />90% moich klientów zostaje ze mną na
-          dłużej niż 1 projekt
+        <h1 class="text-3xl lg:text-7xl">
+          Wykonałem ponad setke różnych projektów. <br />90% moich klientów
+          zostaje ze mną przy kolejnych zleceniach.
         </h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Dodatkowo jestem również polecamy innym klientom - to wszystko sprawia
+        Dodatkowo jestem również polecany innym klientom - to wszystko sprawia
         że praca jest dla mnie niesamowitym wyzwaniem ale również i spełneniem
       </h2>
     </div>
@@ -26,7 +26,7 @@
 <style lang="scss" scoped>
   .budget-websites__exp {
     @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
-    @apply w-full h-screen flex flex-col items-start justify-center;
+    @apply w-full pt-20 pb-20 lg:pt-0 lg:pb-0 lg:h-screen flex flex-col items-start justify-center;
     text-align: left;
 
     &--inner {

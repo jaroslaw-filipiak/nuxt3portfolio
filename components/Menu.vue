@@ -59,7 +59,7 @@
 
         <p class="text-xs mt-8 lg:hidden">Dowiedz się kim jestem</p>
         <li class="border-t-0 lg:hidden">
-          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
+          <NuxtLink class="offer-menu--item" to="/about"
             >O mnie<span>Dowiedz się troszkę więcej o mnie</span></NuxtLink
           >
         </li>
