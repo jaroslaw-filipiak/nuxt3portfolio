@@ -22,32 +22,42 @@
 
       <div class="my-exp--items mt-32">
         <div class="my-exp--row--wrapper">
-          <div class="my-exp--row lg:border-r-0">
-            <h4 class="text-5xl font-Atkinson">
+          <div class="my-exp--row w-full lg:w-4/12 lg:border-r-0">
+            <h4 class="text-3xl lg:text-5xl font-Atkinson">
               Doświadczenie zdobywałem zarówno w większych agencjach jak i
               obsługując klientów “mniej technicznych”
             </h4>
-            <p class="text-3xl"></p>
+            <p class="textxl lg:text-3xl">
+              Uważnie wsłuchuję się w potrzeby każdego klienta. Pracując jako
+              freelancer mam tę swobodę że mogę zasugerować więcej różnych
+              rozwiązań/wariantów wdrożenia projektu informatycznego aniżeli
+              agencja, która jednak jest mocno zunifikowana na jedym stacku
+              technologicznym.
+            </p>
           </div>
 
-          <div class="my-exp--row lg:border-r-0">
+          <div
+            class="my-exp--row w-full lg:w-4/12 lg:border-r-0 hidden lg:flex"
+          >
             <h4></h4>
           </div>
 
-          <div class="my-exp--row">
-            <h4>w branży od 2014 roku</h4>
+          <div class="my-exp--row w-full lg:w-4/12">
+            <h4 class="text-xl lg:text-4xl">w branży od 2014 roku</h4>
           </div>
         </div>
       </div>
 
       <div class="my-exp--items">
         <div class="my-exp--row--wrapper">
-          <div class="my-exp--row lg:border-r-0 lg:border-t-0">
+          <div
+            class="my-exp--row w-full lg:w-4/12 lg:border-r-0 lg:border-t-0 hidden lg:flex"
+          >
             <h4></h4>
           </div>
 
-          <div class="my-exp--row lg:border-t-0">
-            <h4>
+          <div class="my-exp--row w-full lg:w-4/12 lg:border-t-0">
+            <h4 class="text-xl lg:text-4xl">
               Oferuje indywidualne , partnerskie podejście , ogromne
               doświadczenie oraz <strong>jasne warunki współpracy</strong>
             </h4>
@@ -73,10 +83,10 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-4/12 border border-dark-3;
+      @apply flex flex-col  gap-10 items-start justify-between p-8  border border-dark-3;
 
       &--wrapper {
-        @apply flex;
+        @apply flex flex-col lg:flex-row;
       }
 
       h4 {

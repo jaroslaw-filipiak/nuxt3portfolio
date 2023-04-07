@@ -42,7 +42,7 @@
     }
 
     &--row {
-      @apply flex   gap-10 items-center justify-between p-8 w-full;
+      @apply flex flex-col lg:flex-row gap-3 lg:gap-10 items-center justify-between p-8 w-full;
 
       &--wrapper {
         @apply flex;
@@ -50,6 +50,10 @@
 
       h4 {
         @apply text-4xl;
+      }
+
+      img {
+        @apply border p-8 lg:border-none lg:p-0;
       }
 
       li {
