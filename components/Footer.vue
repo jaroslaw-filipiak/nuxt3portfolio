@@ -89,7 +89,7 @@
               >Wdrażenie PSD/Figma do WordPress</NuxtLink
             >
           </li>
-          <li>
+          <li class="hidden">
             <NuxtLink
               class="text-xl font-Atkinson"
               to="/oferta/programista-na-godziny"
@@ -139,7 +139,7 @@
             <NuxtLink
               class="text-sm footer--version"
               to="https://www.j-filipiak.pl"
-              >j-filipiak.pl - projektowanie stron www | ver beta( mvp ) 0.0.8
+              >j-filipiak.pl - projektowanie stron www | ver. mvp
             </NuxtLink>
 
             <NuxtLink class="text-sm hidden" to="/docs/regulamin"

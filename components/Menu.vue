@@ -10,9 +10,9 @@
             class="offer-menu--item"
             to="/oferta/profesjonalne-strony-www"
           >
-            Strony www WordPress
+            Strony internetowe WordPress... i nie tylko
             <span class="hidden lg:block"
-              >Kompleksowo zrealizuje dla Ciebie szybką , bezpieczną i
+              >Kompleksowo zrealizuje dla Ciebie szybką, bezpieczną i
               profesjonalną stronę www</span
             >
           </NuxtLink>
@@ -25,13 +25,13 @@
               <div
                 class="hidden lg:block bg-yellow rounded-full pl-4 pr-4 pb-1 pt-1 text-base ml-4"
               >
-                Oferta testowa , ograniczona czasowo
+                Oferta testowa, ograniczona czasowo
               </div>
             </div>
 
             <span class="hidden lg:block"
               >Strony www z budżetem skrojonym na miarę , dobry start do
-              emarketingu , który szybko się zwróci</span
+              emarketingu, który szybko się zwróci</span
             ></NuxtLink
           >
         </li>
@@ -48,7 +48,7 @@
           </NuxtLink>
         </li>
 
-        <li>
+        <li class="hidden">
           <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
             >Programista ad hoc na godziny<span class="hidden lg:block"
               >Masz FUCKUP ? zbliża się DEADLINE ? chętnie wyczyszczę pare
@@ -121,7 +121,7 @@
     }
 
     .offer-menu--item {
-      @apply flex flex-col items-start justify-center text-xl lg:text-3xl 2xl:text-5xl font-Atkinson pt-3 pb-3 lg:pt-0 lg:pb-9 lg:h-32 xl:h-20 2xl:h-28;
+      @apply flex flex-col items-start justify-center text-xl lg:text-3xl 2xl:text-5xl font-Atkinson pt-3 pb-3 lg:pt-6 lg:pb-6 xl:pt-9 xl:pb-9;
 
       span {
         @apply text-base 2xl:text-xl;

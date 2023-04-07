@@ -27,11 +27,11 @@
           </div>
 
           <div class="why-freelancer--row lg:border-r-0">
-            <h4>Jasna komunikacja</h4>
+            <h4 class="text-xl lg:text-3xl">Jasna komunikacja</h4>
           </div>
 
           <div class="why-freelancer--row">
-            <h4>Indywidualne podejście</h4>
+            <h4 class="text-xl lg:text-3xl">Indywidualne podejście</h4>
           </div>
         </div>
       </div>
@@ -39,15 +39,15 @@
       <div class="why-freelancer--items">
         <div class="why-freelancer--row--wrapper">
           <div class="why-freelancer--row lg:border-r-0 lg:border-t-0">
-            <h4>Elastyczność</h4>
+            <h4 class="text-xl lg:text-3xl">Elastyczność</h4>
           </div>
 
           <div class="why-freelancer--row lg:border-r-0 lg:border-t-0">
-            <h4>Jasne warunki rozliczenia</h4>
+            <h4 class="text-xl lg:text-3xl">Jasne warunki rozliczenia</h4>
           </div>
 
           <div class="why-freelancer--row lg:border-t-0">
-            <h4>Szybkość działania</h4>
+            <h4 class="text-xl lg:text-3xl">Szybkość działania</h4>
           </div>
         </div>
       </div>

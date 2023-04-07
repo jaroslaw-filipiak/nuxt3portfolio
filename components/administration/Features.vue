@@ -3,8 +3,8 @@
     <div class="websites-features--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto">
-          Dedykowane strony www to moja mocna strona. Zaprojektuje ,
-          zaprogramuje oraz wdroże {feature.props } stronę www
+          Doświadczenie, specjalistyczna wiedza , oraz masa płatnych narzędzi +
+          dużo czasu. Tego potrzebuje Twoja strona.
         </h3>
         <img
           class="pt-3 mx-auto"
@@ -16,35 +16,55 @@
       <div class="websites-features--items mt-32"></div>
 
       <div class="websites-features--items">
-        <div class="flex">
+        <div class="flex flex-col lg:flex-row">
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
           >
-            <h4 class="text-4xl">W pełni indywidualne podejście</h4>
-            <p class="text-xl">Autorska strona www od projektu po wdrożenie</p>
-          </div>
-
-          <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
-          >
-            <h4 class="text-4xl">Pełna responsywność</h4>
+            <h4 class="text-4xl">Doświadczenie + wiedza</h4>
             <p class="text-xl">
-              Strony internetowe testuje na realnych urządzeniach oraz w
-              narzędziach do testowania i automatyzacji. Strony wykonane prze ze
-              mnie dopasowują się do ekranu na którym są wyświetlana
+              To najważniejsza rzecz którą otrzymujesz. Dzięki temu wiesz, że
+              Twój projekt jest stale monitorowany , udoskonalany i dobrze
+              zaopiekowany. Masz pewność, że czuwa nad nim osoba, która zna się
+              na rzeczy.
+            </p>
+            <p class="text-base">
+              Ile czasu potrzebujesz aby samodzielnie rozwikłać problem braku
+              strony gdy wyskoczy error 500 zamiast Twojej strony ? Uporasz się
+              w parę godzin ? przecież musisz poszukać specjalisty, ustalić
+              warunki, przekazać mu wrażliwe dane i czekać. Bądźmy poważni,takie
+              podejście jest bez sensu.
             </p>
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
           >
-            <h4 class="text-4xl">Bezpieczeństwo Twoich danych</h4>
+            <h4 class="text-4xl">Oszczędność czasu i pieniędzy</h4>
             <p class="text-xl">
-              Z doświadczenia wiem, że można drastycznie zminimalizować czas
-              realizacji oraz koszty. Wystarczy współpracować face 2 face z
-              freelancerem zamiast z agencją , która zatrudnia freelancera. Brak
-              aparatu administracyjnego i szybki przepływ informacji to klucz do
-              szybkiego wdrożenia strony www
+              Zarządzanie stroną wymaga wiedzy, czasu oraz odpowiednich
+              narzędzi. Jeżeli skorzystasz z mojej oferty masz to wszystko w
+              pakiecie.
+            </p>
+            <p class="text-base">
+              Sam koszt aplikacji do obsługi automatyzacji i testów kosztuje
+              więcej niż miesięczna obsługa. A mówie tylko o jednym narzędziu...
+            </p>
+          </div>
+
+          <div
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
+          >
+            <h4 class="text-4xl">Poczucie bezpieczeństwa</h4>
+            <p class="text-xl">
+              Powierzenie obsługi specjaliście to pewność niezakłuconego
+              działania Twojego projektu, monitoring bezpieczeństwa,
+              aktualizację oraz o wiele więcej.
+            </p>
+            <p class="text-base">
+              Nie musisz zastanawiać się nad stanem Twojej strony. To jest jak
+              prąd - po prostu jest i działa a cała infrastruktura jest
+              zarządzana przez osoby do tego powołane. Tak samo jest w przypadku
+              projektów informatycznych.
             </p>
           </div>
         </div>

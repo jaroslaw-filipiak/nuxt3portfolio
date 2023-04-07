@@ -4,7 +4,7 @@
     <AdministrationFeatures />
     <AdministrationOffer />
     <!-- cennik -->
-    <AdministrationFaq />
+    <!-- <AdministrationFaq /> -->
     <CtaYellow />
   </div>
 </template>

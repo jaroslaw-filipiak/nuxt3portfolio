@@ -6,6 +6,13 @@
           Posiadam solidny zestaw umiejętności i technologii związanych z całą
           otoczką procesu projektowania
         </h3>
+        <h4 class="text-left text-xl mt-8">
+          Rozpoczynałem swoją przygodę jako grafik komputerowy, w trakcie ponad
+          10 letniej przygody zdobyłem kompetencje, które doprowadziły mnie do
+          pracy jako front-end developer. A to jeszcze nie koniec mojej
+          przygody. Uważam, że człowiek musi się rozwijać, bo gdy się nie
+          rozwija to tak naprawdę się cofa... ponieważ świat idzie do przodu.
+        </h4>
         <img
           class="pt-3 mx-auto"
           src="~/assets/uploads/smush-dark.svg"

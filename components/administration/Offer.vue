@@ -2,20 +2,25 @@
   <div class="websites__offer--wrapper">
     <div class="websites__offer--inner">
       <div class="section--title max-w-4xl">
-        <h3>Dlaczego warto skorzystać z oferty na autorskie strony www ?</h3>
+        <h3>
+          Dlaczego stała administracja Twoich projektów informatycznych jest
+          niezbędna ?
+        </h3>
         <img class="pt-3" src="~/assets/uploads/smush.svg" alt="" />
       </div>
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
           <h4 class="text-white text-5xl">
-            Decydując się na wybór taniej strony internetowej, pewnie boisz się
-            tego, że trafisz na bubel? Bez obaw, wszystkie strony, które tworzę,
-            są wykonane zgodnie ze sztuką.
+            Powierzenie strony www w ręce osób wykwalifikowanych to oszczędność
+            czasu, kosztów oraz zasobów. Stały kontakt ze specjalistami to
+            doskonała okazja aby powiększyć zakres kompetencji w swojej firmie
+            bez Tworzenia dodatkowego etatu.
           </h4>
           <h4 class="text-white text-4xl mt-10 max-w-6xl">
-            U mnie tanio to także znaczy dobrze. Świadczą o tym liczne opinie
-            moich Klientów oraz wysokie oceny mojej firmy w Internecie.
+            Do bezpieczeństwa oraz ochrony danych w czasach RODO należy
+            przyłożyć się porządnie. Uważam, że dziś każda firma powinna
+            korzystać z obsługi prawnej, księgowej oraz informatycznej.
           </h4>
         </div>
       </div>
@@ -23,11 +28,11 @@
       <div class="websites__offer--items mt-20">
         <div class="websites__offer--row--wrapper">
           <div
-            class="websites__offer--row xl:border-b-0 2xl:border-b 2xl:w-6/12 3xl:w-7/12"
+            class="websites__offer--row xl:border-b-0 2xl:border-b 2xl:w-5/12 3xl:w-5/12"
           >
             <div>
               <div>
-                <h4>Responsywność</h4>
+                <h4>Skalowalność</h4>
               </div>
               <div>
                 <img
@@ -39,25 +44,22 @@
 
             <div>
               <p class="text-3xl">
-                Pełnoprawna , w pełni profesjonalna strona www w przystępnej
-                cenie ? Oczywiście że to możliwe! Oferuje profesjonalną stronę
-                www , w pełni przygotowaną pod SEO wraz ze specjalnym pakietem
-                bezpieczeństwa.
+                Korzystanie z outsourcingu IT do zarządzania i administracją
+                swojej strony to również możliwość szybkiego zlecenia
+                dodatkowych prac programistycznych i rozwijania swojego
+                projektu.
               </p>
               <p class="text-2xl mt-8">
-                Po zakończeniu współpracy możesz skorzystać z administracji w
-                abonamencie , wykupić pakiet SEO , pakiet bezpieczeństwa oraz o
-                wiele więcej. Stronę można dowolnie rozbudowywać w każdym
-                momencie samodzielnie lub z moją pomocą. Zobacz również obsługa
-                ad-hoc na godziny
+                Łatwo możesz zarządzać przerobem roboczogodzinowym nad Twoim
+                projektem mając pewność startu prac praktycznie od ręki.
               </p>
             </div>
           </div>
 
-          <div class="websites__offer--row 2xl:w-6/12 3xl:w-5/12">
+          <div class="websites__offer--row 2xl:w-7/12 3xl:w-7/12">
             <div>
               <div>
-                <h4>Przystosowanie strony pod SEO</h4>
+                <h4>Dostęp do najnowszych technologii i narzędzi</h4>
               </div>
               <div>
                 <img
@@ -67,14 +69,25 @@
               </div>
             </div>
             <div>
-              <p class="text-3xl">..</p>
+              <p class="text-3xl">
+                Korzystam z wielu płatnych narzędzi do zarządzania,
+                monitorowania i sprawdzania projektów. Dodatkowo blisko
+                współpracuje z moimi partnerami, którzy to uzupełniają moje
+                kompetencje o kwestie związane z bezpieczeństwem, SEO czy też
+                kwestiami prawnymi a także całą otoczką serwerową znaną jako
+                DevOps.
+              </p>
+              <p class="text-2xl mt-8">
+                Współpracując z freelancerem współpracujesz również z moimi
+                partnerami.
+              </p>
             </div>
           </div>
 
           <div class="websites__offer--row w-full xl:border-t-0">
             <div>
               <div>
-                <h4>Bezpieczeństwo Twoich danych</h4>
+                <h4>Pełen wachlarz usług</h4>
               </div>
               <div>
                 <img
@@ -85,10 +98,15 @@
             </div>
             <div>
               <p class="text-3xl">
-                Sama strona internetowa to nie wszystko. Aby zaistniała ona w
-                sieci potrzebny jest serwer , odpowiednia konfiguracja , a także
-                domena i certyfikat ssl . Wraz z serwerem trzeba skonfigurować
-                pocztę email . Wszystkie te usługi otrzymasz w cenie
+                Kompleksowa opieka oferuje ogromną ilośc usług: aktualizacje,
+                bezpieczeństwo, konfiguracje skrzynek pocztowych, przekierownie
+                DNSów, instalacje SSL, administracja serwerami, przypominanie o
+                wygasających usługach a także konsultacje w zakresie poprawy
+                jakośći, kwestie dostępności, SEO oraz o wiele więcej.
+              </p>
+              <p class="text-2xl mt-8">
+                Pełen informatyczny konglomerat w jednym miejscu. Zyskaj
+                wartościowego partnera technologicznego.
               </p>
             </div>
           </div>
