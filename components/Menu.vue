@@ -121,7 +121,7 @@
     }
 
     .offer-menu--item {
-      @apply flex flex-col items-start justify-center text-xl lg:text-3xl 2xl:text-5xl font-Atkinson pt-3 pb-3 lg:pt-6 lg:pb-6 xl:pt-9 xl:pb-9;
+      @apply flex flex-col items-start justify-center text-xl lg:text-3xl xl:text-4xl  2xl:text-5xl font-Atkinson pt-3 pb-3 lg:pt-6 lg:pb-6 xl:pt-9 xl:pb-9;
 
       span {
         @apply text-base 2xl:text-xl;

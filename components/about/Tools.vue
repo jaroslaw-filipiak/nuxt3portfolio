@@ -42,7 +42,7 @@
     }
 
     &--row {
-      @apply flex flex-col lg:flex-row gap-3 lg:gap-10 items-center justify-between p-8 w-full;
+      @apply flex flex-col lg:flex-row  gap-3  lg:gap-0 items-center justify-start p-8 lg:pl-0 w-full;
 
       &--wrapper {
         @apply flex;
@@ -53,7 +53,7 @@
       }
 
       img {
-        @apply border p-8 lg:border-none lg:p-0;
+        @apply border 2xl:p-8 lg:border-none lg:p-0;
       }
 
       li {

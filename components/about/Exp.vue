@@ -22,7 +22,7 @@
 
       <div class="my-exp--items mt-32">
         <div class="my-exp--row--wrapper">
-          <div class="my-exp--row w-full lg:w-4/12 lg:border-r-0">
+          <div class="my-exp--row w-full lg:w-8/12 lg:border-r-0">
             <h4 class="text-3xl lg:text-5xl font-Atkinson">
               Doświadczenie zdobywałem zarówno w większych agencjach jak i
               obsługując klientów “mniej technicznych”
@@ -34,12 +34,6 @@
               agencja, która jednak jest mocno zunifikowana na jedym stacku
               technologicznym.
             </p>
-          </div>
-
-          <div
-            class="my-exp--row w-full lg:w-4/12 lg:border-r-0 hidden lg:flex"
-          >
-            <h4></h4>
           </div>
 
           <div class="my-exp--row w-full lg:w-4/12">

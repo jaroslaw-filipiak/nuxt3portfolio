@@ -31,7 +31,7 @@
 <style lang="scss" scoped>
   .hero__about {
     @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
-    @apply w-full lg:h-screen flex flex-col items-start justify-center pt-20 pb-8 lg:pt-0 lg:pb-0;
+    @apply w-full 2xl:h-screen min-h-screen flex flex-col items-start justify-center pt-20 xl:pt-24 2xl:pt-20  pb-8 xl:pb-20 2xl:pb-8 lg:pt-0 lg:pb-0;
     text-align: left;
 
     &--inner {

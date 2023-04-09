@@ -20,73 +20,13 @@
       </div>
       <div class="cta--middle">
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-device-mobile-message"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M11 3h10v8h-3l-4 2v-2h-3z"></path>
-            <path
-              d="M15 16v4a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1h2"
-            ></path>
-            <path d="M10 18v.01"></path>
-          </svg>
           <a class="link-with-undeline" href="tel:+48 663 568 828">
             +48 663 568 828</a
           >
         </div>
         <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-send"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-            <path
-              d="M21 3l-6.5 18a0.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a0.55 .55 0 0 1 0 -1l18 -6.5"
-            ></path>
-          </svg>
           <a class="link-with-undeline" href="mailto:info@j-filipiak.pl"
             >info@j-filipiak.pl</a
-          >
-        </div>
-        <div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-briefcase"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            stroke-width="2"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <rect x="3" y="7" width="18" height="13" rx="2"></rect>
-            <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2"></path>
-            <line x1="12" y1="12" x2="12" y2="12.01"></line>
-            <path d="M3 13a20 20 0 0 0 18 0"></path>
-          </svg>
-          <NuxtLink class="link-with-undeline hidden" to="/brief"
-            >formularz kontaktowy</NuxtLink
           >
         </div>
       </div>

@@ -16,12 +16,12 @@
       <div class="websites-features--items mt-32"></div>
 
       <div class="websites-features--items">
-        <div class="flex flex-col lg:flex-row">
+        <div class="flex flex-col 2xl:flex-row">
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-full 2xl:w-4/12 border border-dark-3 border-b-0 2xl:border-b"
           >
             <h4 class="text-4xl">Doświadczenie + wiedza</h4>
-            <p class="text-xl">
+            <p class="text-xl lg:text-2xl">
               To najważniejsza rzecz którą otrzymujesz. Dzięki temu wiesz, że
               Twój projekt jest stale monitorowany , udoskonalany i dobrze
               zaopiekowany. Masz pewność, że czuwa nad nim osoba, która zna się
@@ -37,10 +37,10 @@
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-full 2xl:w-4/12 border border-dark-3 border-b-0 2xl:border-b"
           >
             <h4 class="text-4xl">Oszczędność czasu i pieniędzy</h4>
-            <p class="text-xl">
+            <p class="text-xl lg:text-2xl">
               Zarządzanie stroną wymaga wiedzy, czasu oraz odpowiednich
               narzędzi. Jeżeli skorzystasz z mojej oferty masz to wszystko w
               pakiecie.
@@ -52,10 +52,10 @@
           </div>
 
           <div
-            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3"
+            class="flex flex-col gap-10 items-start justify-between p-8 w-full lg:w-full 2xl:w-4/12 border border-dark-3"
           >
             <h4 class="text-4xl">Poczucie bezpieczeństwa</h4>
-            <p class="text-xl">
+            <p class="text-xl lg:text-2xl">
               Powierzenie obsługi specjaliście to pewność niezakłuconego
               działania Twojego projektu, monitoring bezpieczeństwa,
               aktualizację oraz o wiele więcej.

@@ -34,11 +34,8 @@
               <div>
                 <h4>Skalowalność</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
 
@@ -61,11 +58,8 @@
               <div>
                 <h4>Dostęp do najnowszych technologii i narzędzi</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>
@@ -89,11 +83,8 @@
               <div>
                 <h4>Pełen wachlarz usług</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>

@@ -28,11 +28,8 @@
               <div>
                 <h4 class="text-3xl lg:text-4xl">Responsywność</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
 
@@ -59,11 +56,8 @@
                   Przystosowanie strony pod SEO
                 </h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>
@@ -85,11 +79,8 @@
               <div>
                 <h4 class="text-3xl lg:text-4xl">Bezpieczeństwo to podstawa</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>

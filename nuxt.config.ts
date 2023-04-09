@@ -18,5 +18,9 @@ export default defineNuxtConfig({
   build: {
     transpile: ['gsap'],
   },
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt', 'nuxt-gtag'],
+
+  gtag: {
+    id: 'G-X4MDTE1EBE',
+  },
 });

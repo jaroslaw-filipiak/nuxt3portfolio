@@ -18,7 +18,7 @@
   }
 
   .page-content {
-    @apply min-h-screen flex flex-col items-start text-white;
+    @apply lg:min-h-screen flex flex-col items-start text-white;
   }
 
   @media (min-width: 1024px) {

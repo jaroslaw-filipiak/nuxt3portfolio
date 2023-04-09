@@ -78,7 +78,7 @@
     background-color: transparent;
 
     &__sticky {
-      @apply bg-yellow pt-3 pl-8 pr-8 pb-3;
+      @apply bg-yellow md:pt-3 md:pl-8 md:pr-8 md:pb-3;
     }
 
     &--contact-wrapper {
@@ -113,6 +113,70 @@
             height: 2px;
           }
         }
+      }
+    }
+  }
+
+  .page-portfolio {
+    .top-bar {
+      @apply text-light;
+
+      &__sticky {
+        @apply text-dark-3;
+
+        .hamburger-inner,
+        .hamburger-inner::before,
+        .hamburger-inner::after {
+          background-color: #191919 !important;
+        }
+
+        .hamburger.is-active .hamburger-inner,
+        .hamburger.is-active .hamburger-inner::before,
+        .hamburger.is-active .hamburger-inner::after {
+          background-color: #191919 !important;
+        }
+
+        .top-bar--contact-wrapper {
+          &::before {
+            content: '';
+            @apply bg-dark-3;
+          }
+        }
+      }
+
+      &--contact-wrapper {
+        &::before {
+          content: '';
+          @apply bg-light;
+        }
+      }
+
+      &--right {
+        a:not(.dont-underline) {
+          &::after {
+            content: '';
+            @apply bg-light;
+          }
+
+          &:hover {
+            &::after {
+              content: '';
+              @apply bg-light;
+            }
+          }
+        }
+      }
+
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        @apply bg-light;
+      }
+
+      .hamburger.is-active .hamburger-inner,
+      .hamburger.is-active .hamburger-inner::before,
+      .hamburger.is-active .hamburger-inner::after {
+        background-color: #191919;
       }
     }
   }

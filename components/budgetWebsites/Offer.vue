@@ -29,11 +29,8 @@
               <div>
                 <h4>Niska cena! , już od 899 zł netto + VAT</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
 
@@ -52,11 +49,8 @@
               <div>
                 <h4>Panel administracyjny</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>
@@ -73,11 +67,8 @@
               <div>
                 <h4>Wdrożenie strony na serwer</h4>
               </div>
-              <div>
-                <img
-                  src="https://www.fusecollective.com/wp-content/uploads/2022/01/strategia.svg"
-                  alt=""
-                />
+              <div class="hidden">
+                <img src="" alt="" />
               </div>
             </div>
             <div>
