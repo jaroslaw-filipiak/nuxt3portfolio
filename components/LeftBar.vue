@@ -14,7 +14,6 @@
   export default {
     methods: {
       handleClick() {
-        console.log('click in nuxt link in left bar');
         // this.$store.commit('hideMenu');
       },
     },

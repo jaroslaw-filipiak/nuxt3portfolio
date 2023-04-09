@@ -11,7 +11,6 @@ export const useNavStore = defineStore('navigation', {
       this.isVisible = !this.isVisible;
     },
     closeNav() {
-      console.log('close nav.');
       this.isVisible = false;
     },
   },
