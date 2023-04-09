@@ -43,7 +43,7 @@
       {
         hid: 'og-image',
         property: 'og:image',
-        content: 'https://j-filipiak.pl/assets/img/seo/og-img--home.jpg',
+        content: 'https://j-filipiak.pl/og-img--home.jpg',
       },
     ],
     bodyAttrs: {
