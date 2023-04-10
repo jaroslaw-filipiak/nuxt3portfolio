@@ -35,7 +35,7 @@
     script: [
       {
         src: '/assets/js/hotjar.js',
-        async: false,
+        async: true,
       },
     ],
   });
