@@ -16,7 +16,7 @@
         <!-- siborsoft -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/siborsoft`"
+          :to="`/portfolio/siborsoft`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${siborsoft})`,
@@ -28,7 +28,7 @@
         <!-- promise -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/promise4cloud`"
+          :to="`/portfolio/promise4cloud`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${promise})`,
@@ -40,7 +40,7 @@
         <!-- lukasiuk -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/lukasiuk`"
+          :to="`/portfolio/lukasiuk`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${lukasiuk})`,
@@ -52,7 +52,7 @@
         <!-- eond -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/eond`"
+          :to="`/portfolio/eond`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${eond})`,
@@ -64,7 +64,7 @@
         <!-- 23knots -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/23knots`"
+          :to="`/portfolio/23knots`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${knots})`,
@@ -76,7 +76,7 @@
         <!-- what about -->
         <NuxtLink
           prefetch
-          :to="`/budget-websites__portfolio/whatabout`"
+          :to="`/portfolio/whatabout`"
           class="item hover:opacity-85"
           :style="{
             backgroundImage: `url(${whatAbout})`,
