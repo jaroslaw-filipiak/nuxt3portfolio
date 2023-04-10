@@ -34,7 +34,7 @@
   useHead({
     script: [
       {
-        src: '/assets/js/hotjar.js',
+        src: '/hotjar.js',
         async: true,
       },
     ],
