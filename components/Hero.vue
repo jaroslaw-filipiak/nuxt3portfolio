@@ -2,9 +2,7 @@
   <div class="hero">
     <div class="hero--inner">
       <div class="section--title">
-        <h1 class="gsap--home__txt-opacity">
-          Projektuje oraz wdrażam profesjonalne strony internetowe
-        </h1>
+        <h1>Projektuje oraz wdrażam profesjonalne strony internetowe</h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
