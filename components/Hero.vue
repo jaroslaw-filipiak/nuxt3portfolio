@@ -28,9 +28,10 @@
 
 <style lang="scss" scoped>
   .hero {
-    @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
+    @apply bg-cover xl:bg-fixed bg-no-repeat bg-light text-dark-3;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
+    background-image: url('~/assets/uploads/hero--main.jpg');
 
     &--inner {
       @apply w-full lg:w-11/12 mx-auto pl-8 pr-8;
