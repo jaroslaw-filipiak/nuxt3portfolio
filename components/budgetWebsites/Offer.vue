@@ -1,5 +1,5 @@
 <template>
-  <div class="about__offer--wrapper">
+  <div class="about__offer--wrapper bg-dark-3">
     <div class="about__offer--inner">
       <div class="section--title max-w-4xl">
         <h3>Dlaczego warto skorzystać z oferty na tanie strony www ?</h3>

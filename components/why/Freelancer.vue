@@ -2,7 +2,7 @@
   <div class="why-freelancer--wrapper">
     <div class="why-freelancer--inner">
       <div class="section--title text-center">
-        <h3 class="text-center max-w-5xl mx-auto">
+        <h3 class="text-center max-w-5xl mx-auto box gsap--home__txt-opacity">
           Współpraca z dobrym i doświadczonym freelancerem może być
           korzystniejsza niż tworzenie kolejnego etatu w firmie.
         </h3>
@@ -16,7 +16,9 @@
       <div class="why-freelancer--items mt-32">
         <div class="why-freelancer--row--wrapper">
           <div class="why-freelancer--row lg:border-r-0">
-            <h4 class="text-3xl lg:text-5xl font-Atkinson">
+            <h4
+              class="text-3xl lg:text-5xl font-Atkinson gsap--home__txt-opacity"
+            >
               Nie wszystkie projekty wymagają zatrudnienia agencji kreatywnej
               lub zespołu
             </h4>
@@ -55,9 +57,7 @@
   </div>
 </template>
 
-<script>
-  export default {};
-</script>
+<script></script>
 
 <style lang="scss" scoped>
   .why-freelancer {

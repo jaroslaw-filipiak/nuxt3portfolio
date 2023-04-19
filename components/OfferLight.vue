@@ -1,5 +1,5 @@
 <template>
-  <div class="offer__light--wrapper">
+  <div class="offer__light--wrapper bg-dark-3">
     <div class="offer__light--inner">
       <div class="section--title">
         <h3>W czym mogę pomóc ?</h3>

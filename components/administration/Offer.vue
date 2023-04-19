@@ -1,5 +1,5 @@
 <template>
-  <div class="websites__offer--wrapper">
+  <div class="websites__offer--wrapper bg-dark-3">
     <div class="websites__offer--inner">
       <div class="section--title max-w-4xl">
         <h3>
