@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content">
+  <div class="page-content" ref="main">
     <h1>Projektowanie aplikacji mobilnych</h1>
     <CtaYellow />
   </div>
