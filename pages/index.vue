@@ -30,18 +30,29 @@
         ctx.value = gsap.context((self) => {
           console.log('transition complete watcher scroll page');
           const headings = self.selector('.gsap--home__txt-opacity');
-          headings.forEach((heading) => {
-            gsap.from(heading, {
-              opacity: 0,
-              scrollTrigger: {
-                trigger: heading,
-                start: 'top bottom',
-                end: 'top 40%',
-                scrub: true,
-                markers: false,
-              },
-            });
-          });
+          // headings.forEach((heading) => {
+          //   gsap.from(heading, {
+          //     opacity: 0,
+          //     scrollTrigger: {
+          //       trigger: heading,
+          //       start: 'top bottom',
+          //       end: 'top 40%',
+          //       scrub: true,
+          //       markers: false,
+          //     },
+          //   });
+          // });
+
+          //
+
+          // gsap.to('.txt-for-replace', {
+          //   duration: 1,
+          //   delay: 1,
+          //   ease: 'power2',
+          //   text: {
+          //     value: 'strony www',
+          //   },
+          // });
         }, main.value); // <- Scope!
       }
     }

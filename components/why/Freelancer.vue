@@ -3,8 +3,7 @@
     <div class="why-freelancer--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto box gsap--home__txt-opacity">
-          Współpraca z dobrym i doświadczonym freelancerem może być
-          korzystniejsza niż tworzenie kolejnego etatu w firmie.
+          Dlaczego warto ze mną współpracować ?
         </h3>
         <img
           class="pt-3 mx-auto"

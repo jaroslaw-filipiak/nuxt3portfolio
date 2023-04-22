@@ -9,10 +9,11 @@
   import gsap from 'gsap';
   import { ScrollTrigger } from 'gsap/ScrollTrigger';
   import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+  import { TextPlugin } from 'gsap/TextPlugin';
 
   import { useTransitionComposable } from './composables/transition-composable';
 
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
 
   const { toggleTransitionComplete } = useTransitionComposable();
 
