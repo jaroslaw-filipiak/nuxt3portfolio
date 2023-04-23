@@ -20,6 +20,11 @@
   const store = useNavStore();
   const route = useRoute();
 
+  function changeLogoTextContent(text) {
+    const logo = document.querySelector('.gsap-change-fullname-to-sign');
+    logo.innerHTML = text;
+  }
+
   watch(route, () => {
     store.closeNav();
   });
@@ -28,6 +33,7 @@
     window.addEventListener('scroll', () => {
       let header = document.querySelector('.top-bar');
       header.classList.toggle('top-bar__sticky', window.scrollY > 0);
+      changeLogoTextContent(window.scrollY > 0 ? 'JF' : 'Jarosław Filipiak');
     });
   });
 
