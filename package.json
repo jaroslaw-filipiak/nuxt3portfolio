@@ -19,6 +19,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "@pinia/nuxt": "^0.4.7",
     "gsap": "^3.11.5",
+    "locomotive-scroll": "^4.1.4",
     "nuxt-simple-sitemap": "^2.4.8",
     "pinia": "^2.0.33"
   }

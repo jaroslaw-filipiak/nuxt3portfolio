@@ -19,7 +19,6 @@
 
   onMounted(() => {
     toggleTransitionComplete(true);
-    console.log('unmounted in app.vue');
   });
 </script>
 
