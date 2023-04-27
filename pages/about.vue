@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content" ref="main">
+  <div class="page-content smooth-scroll" ref="main">
     <AboutHero />
     <AboutExp />
     <AboutTools />
