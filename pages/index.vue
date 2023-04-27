@@ -1,5 +1,5 @@
 <template>
-  <div class="page-content smooth-scroll" ref="main">
+  <div class="page-content" ref="main">
     <Hero />
     <WhyFreelancer />
     <OfferDark />
@@ -27,32 +27,22 @@
     () => transitionState.transitionComplete,
     (newValue) => {
       if (newValue) {
-        ctx.value = gsap.context((self) => {
-          console.log('transition complete watcher scroll page');
-          const headings = self.selector('.gsap--home__txt-opacity');
-          // headings.forEach((heading) => {
-          //   gsap.from(heading, {
-          //     opacity: 0,
-          //     scrollTrigger: {
-          //       trigger: heading,
-          //       start: 'top bottom',
-          //       end: 'top 40%',
-          //       scrub: true,
-          //       markers: false,
-          //     },
-          //   });
-          // });
+        ctx.value = gsap.context(() => {
+          const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
+          const heroBGTrigger = document.querySelector(
+            '.gsap__hero-bg-size--trigger'
+          );
 
-          //
-
-          // gsap.to('.txt-for-replace', {
-          //   duration: 1,
-          //   delay: 1,
-          //   ease: 'power2',
-          //   text: {
-          //     value: 'strony www',
-          //   },
-          // });
+          gsap.to(heroBG, {
+            backgroundSize: '115%',
+            scrollTrigger: {
+              trigger: heroBGTrigger,
+              start: 'top bottom',
+              end: 'top 10%',
+              scrub: true,
+              markers: false,
+            },
+          });
         }, main.value); // <- Scope!
       }
     }

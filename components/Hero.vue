@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero gsap__hero-bg-size--anim">
     <div class="hero--inner">
       <div class="section--title">
         <h1>
@@ -105,10 +105,12 @@
 
 <style lang="scss" scoped>
   .hero {
-    @apply bg-cover xl:bg-fixed bg-no-repeat bg-light text-dark-3;
+    @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
     background-image: url('~/assets/uploads/hero--main.jpg');
+    background-position: center;
+    background-size: 100%;
 
     &--inner {
       @apply w-full lg:w-11/12 mx-auto pl-8 pr-8;

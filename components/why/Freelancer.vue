@@ -1,5 +1,5 @@
 <template>
-  <div class="why-freelancer--wrapper">
+  <div class="why-freelancer--wrapper gsap__hero-bg-size--trigger">
     <div class="why-freelancer--inner">
       <div class="section--title text-center">
         <h3 class="text-center max-w-5xl mx-auto box gsap--home__txt-opacity">
