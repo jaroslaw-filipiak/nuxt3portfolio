@@ -1,9 +1,11 @@
-@import './libs/locomotive-scroll/scroll.scss';
+// @import './libs/locomotive-scroll/scroll.scss';
 @import './hamburgers/hamburgers.scss';
+@import './libs/lenis/lenis.scss';
 
 html {
-  scroll-behavior: smooth !important;
+  // scroll-behavior: smooth !important;
 }
+
 html,
 body {
   // font-family: 'Atkinson Hyperlegible', sans-serif;
