@@ -28,7 +28,7 @@
     (newValue) => {
       if (newValue) {
         ctx.value = gsap.context((self) => {
-          console.log('transition complete watcher scroll page');
+          console.log('transition complete page about');
           const headings = self.selector('.gsap--home__txt-opacity');
           headings.forEach((heading) => {
             gsap.from(heading, {
