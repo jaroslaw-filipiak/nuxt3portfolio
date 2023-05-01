@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  // app: {
-  //   pageTransition: { name: 'page', mode: 'out-in' },
-  // },
-
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -17,9 +13,7 @@ export default defineNuxtConfig({
     '~/assets/css/vue-slider-component-theme.css',
     '~/assets/scss/main.scss',
   ],
-  build: {
-    transpile: ['gsap'],
-  },
+
   modules: ['@pinia/nuxt', 'nuxt-gtag'],
   gtag: {
     id: 'G-X4MDTE1EBE',

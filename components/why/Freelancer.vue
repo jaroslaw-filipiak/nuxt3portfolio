@@ -71,7 +71,7 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3;
+      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-full border border-dark-3;
 
       &--wrapper {
         @apply flex flex-col lg:flex-row;

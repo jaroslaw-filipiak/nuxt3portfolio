@@ -5,7 +5,6 @@
         exact
         class="gsap-change-fullname-to-sign logo uppercase text-xs font-Atkinson pr-3"
         to="/"
-        @click.native="handleClick"
         >Jarosław Filipiak</NuxtLink
       >
       <div
@@ -39,11 +38,10 @@
         </div> -->
 
     <div class="top-bar--right">
-      <NuxtLink
-        exact
-        class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link"
-        to="#cta"
-        >Bezpłatna konsultacja</NuxtLink
+      <a
+        class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link cursor-pointer lenis-cta-link"
+        @click.native="goToCTA"
+        >Bezpłatna konsultacja</a
       >
       <NuxtLink
         exact
@@ -57,15 +55,15 @@
   </div>
 </template>
 
-<script>
-  export default {
-    mounted() {},
-    methods: {
-      handleClick() {
-        // this.$store.commit('hideMenu');
-      },
-    },
-  };
+<script setup>
+  const nuxtApp = useNuxtApp();
+  const lenis = nuxtApp.lenis;
+
+  function goToCTA() {
+    console.log(lenis);
+    console.log('rer');
+    lenis.scrollTo('#cta', {});
+  }
 </script>
 
 <style lang="scss">
