@@ -66,16 +66,18 @@
             },
           });
 
-          gsap.to('#orange', {
-            scrollTrigger: {
-              id: 'test11',
-              trigger: '#orange',
-              start: 'top top',
-              end: 'bottom 150px',
-              pin: '#orange-content',
-              markers: true,
-            },
-          });
+          // gsap.from('.why-freelancer--items', {
+          //   opacity: '0',
+          //   scrollTrigger: {
+          //     id: 'pin',
+          //     trigger: '.gsap__why-me-txt--trigger',
+          //     start: 'top top',
+          //     end: 'bottom 150px',
+          //     pin: '.why-freelancer--is-pinned',
+          //     markers: true,
+          //     scrub: true,
+          //   },
+          // });
 
           // tl.scrollTrigger.refresh();
 
