@@ -4,24 +4,14 @@
   </NuxtLayout>
 </template>
 
-<script setup>
-  import { onMounted } from 'vue';
-
-  import { useTransitionComposable } from './composables/transition-composable';
-
-  const { toggleTransitionComplete } = useTransitionComposable();
-
-  onMounted(() => {
-    toggleTransitionComplete(true);
-  });
-</script>
+<script setup></script>
 
 <style>
   /* .page-enter-active,
   .page-leave-active {
-    transition: all 0.4s;
-    border: 22px solid red;
+    transition: all 0.7s;
   }
+
   .page-enter-from,
   .page-leave-to {
     opacity: 0;

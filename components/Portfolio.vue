@@ -8,7 +8,6 @@
       <div class="items">
         <!-- siborsoft -->
         <NuxtLink
-          prefetch
           :to="`/portfolio/siborsoft`"
           class="item hover:opacity-85"
           :style="{
@@ -20,7 +19,6 @@
 
         <!-- promise -->
         <NuxtLink
-          prefetch
           :to="`/portfolio/promise4cloud`"
           class="item hover:opacity-85"
           :style="{
