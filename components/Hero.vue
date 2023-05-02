@@ -83,7 +83,7 @@
         <!-- <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" /> -->
       </div>
 
-      <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6">
+      <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6 rere">
         Pomogę Tobie stworzyć wyjątkową i unikalną stronę www , która wzbudza
         prawdziwe zainteresowanie i zapada w pamięć.
       </h2>
@@ -105,12 +105,15 @@
 
 <style lang="scss" scoped>
   .hero {
-    @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3;
+    @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3 bg-cover;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
     background-image: url('~/assets/uploads/hero--main.jpg');
-    background-position: center;
-    background-size: 100%;
+
+    @media (min-width: 1280px) {
+      background-position: center;
+      background-size: 100%;
+    }
 
     &--inner {
       @apply w-full lg:w-11/12 mx-auto pl-8 pr-8;

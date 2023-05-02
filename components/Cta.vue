@@ -1,5 +1,5 @@
 <template>
-  <div id="cta" class="cta--wrapper">
+  <div id="cta" class="cta--wrapper bg-dark-3 mt-0">
     <div class="cta--inner">
       <div class="cta--header">
         <div class="pr-5">

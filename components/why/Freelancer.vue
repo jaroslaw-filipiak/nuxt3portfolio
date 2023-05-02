@@ -1,8 +1,10 @@
 <template>
-  <div class="why-freelancer--wrapper gsap__hero-bg-size--trigger">
-    <div class="why-freelancer--inner">
+  <div
+    class="why-freelancer--wrapper gsap__hero-bg-size--trigger gsap__why-me-txt--trigger"
+  >
+    <div class="why-freelancer--inner why-freelancer--is-pinned">
       <div class="section--title text-center">
-        <h3 class="text-center max-w-5xl mx-auto box gsap--home__txt-opacity">
+        <h3 class="text-center max-w-6xl mx-auto lg:text-8xl gsap--why-me--pin">
           Dlaczego warto ze mną współpracować ?
         </h3>
         <img
@@ -69,7 +71,7 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-4/12 border border-dark-3;
+      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-full border border-dark-3;
 
       &--wrapper {
         @apply flex flex-col lg:flex-row;

@@ -9,48 +9,38 @@
 </template>
 
 <script setup>
-  import { onUnmounted, ref, watch } from 'vue';
-  import gsap from 'gsap';
+  const nuxtApp = useNuxtApp();
+  const gsap = nuxtApp.gsap;
+  const ScrollTrigger = nuxtApp.ScrollTrigger;
+  const { isMobile } = useDevice();
 
-  import { useTransitionComposable } from '../composables/transition-composable';
-  import transitionConfig from '../helpers/transitionConfig';
+  let ctx;
 
-  definePageMeta({
-    pageTransition: transitionConfig,
+  onMounted(() => {
+    ctx = gsap.context(() => {
+      const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
+      const heroBGTrigger = document.querySelector(
+        '.gsap__hero-bg-size--trigger'
+      );
+
+      gsap.to(heroBG, {
+        backgroundSize: '115%',
+        scrollTrigger: {
+          id: 'heroImageZoom',
+          trigger: heroBGTrigger,
+          start: 'top bottom',
+          end: 'top 10%',
+          scrub: true,
+          markers: false,
+        },
+      });
+    });
   });
-
-  const { transitionState } = useTransitionComposable();
-  const main = ref(),
-    ctx = ref();
-
-  watch(
-    () => transitionState.transitionComplete,
-    (newValue) => {
-      if (newValue) {
-        ctx.value = gsap.context(() => {
-          const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
-          const heroBGTrigger = document.querySelector(
-            '.gsap__hero-bg-size--trigger'
-          );
-
-          gsap.to(heroBG, {
-            backgroundSize: '115%',
-            scrollTrigger: {
-              trigger: heroBGTrigger,
-              start: 'top bottom',
-              end: 'top 10%',
-              scrub: true,
-              markers: false,
-            },
-          });
-        }, main.value); // <- Scope!
-      }
-    }
-  );
 
   onUnmounted(() => {
-    ctx.value.revert(); // <- Easy Cleanup!
+    ctx.revert();
   });
+
   useHead({
     title: 'Projektowanie stron www - tylko profesjonalne strony firmowe',
     meta: [
