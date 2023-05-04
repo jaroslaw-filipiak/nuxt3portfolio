@@ -108,7 +108,10 @@
     @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3 bg-cover;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
-    background-image: url('~/assets/uploads/hero--main.jpg');
+
+    @media (min-width: 1280px) {
+      background-image: url('~/assets/uploads/hero--main.jpg');
+    }
 
     @media (min-width: 1280px) {
       background-position: center;

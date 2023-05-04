@@ -22,9 +22,13 @@
 
 <style lang="scss" scoped>
   .hero__websites {
-    @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
+    @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3 bg-cover;
     @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
+
+    @media (min-width: 1280px) {
+      background-image: url('~/assets/uploads/hero--websites.jpg');
+    }
 
     &--inner {
       @apply w-full lg:w-11/12 flex flex-col items-start justify-between mx-auto pl-8 pr-8;
