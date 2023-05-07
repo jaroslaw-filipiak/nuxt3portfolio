@@ -50,6 +50,13 @@
         >O mnie</NuxtLink
       >
 
+      <NuxtLink
+        exact
+        class="uppercase text-xs font-Atkinson hidden"
+        to="/kontakt"
+        >Kontakt</NuxtLink
+      >
+
       <Hamburger />
     </div>
   </div>

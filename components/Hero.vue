@@ -3,9 +3,9 @@
     <div class="hero--inner">
       <div class="section--title">
         <h1>
-          Projektuje oraz wdrażam profesjonalne
+          {{ title }}
           <span class="relative inline-block">
-            <span class="txt-for-replace">strony internetowe</span>
+            <span class="txt-for-replace">{{ subtitle }}</span>
 
             <!-- <svg
               width="383"
@@ -84,23 +84,18 @@
       </div>
 
       <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6 rere">
-        Pomogę Tobie stworzyć wyjątkową i unikalną stronę www , która wzbudza
-        prawdziwe zainteresowanie i zapada w pamięć.
+        {{ heading }}
       </h2>
     </div>
   </div>
 </template>
 
-<script>
-  export default {
-    mounted() {},
-    methods: {
-      changeLogoTextContent(text) {
-        const logo = document.querySelector('.gsap-change-fullname-to-sign');
-        logo.innerHTML = text;
-      },
-    },
-  };
+<script setup>
+  const props = defineProps({
+    title: String,
+    subtitle: String,
+    heading: String,
+  });
 </script>
 
 <style lang="scss" scoped>

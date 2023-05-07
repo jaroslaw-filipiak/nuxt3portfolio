@@ -1,347 +1,317 @@
 <template>
-  <div class="brief">
-    <div class="brief--header">
-      <div class="section--title">
-        <h1>Skonsultuj projekt</h1>
-        <img src="~/assets/uploads/smush.svg" alt="obrazek-ozdobny" />
+  <div class="brief bg-light text-dark-3 w-full">
+    <div class="brief--inner w-full lg:w-11/12 mx-auto">
+      <div class="brief--header">
+        <div class="section--title">
+          <h1>Skonsultuj projekt</h1>
+          <div
+            class="border pt-6 pb-6 border-dark-3 mt-3 fixed left-7 top-10 z-30 bg-red-300"
+          >
+            <!-- {{ formData }} -->
+            {{ formData }}
+          </div>
+
+          <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
+        </div>
+        <h2>
+          Czas na nowy projekt? Jeżeli potrzebujesz kreatywnego projektu
+          graficznego, porządnego teamu developerskiego lub stałego partnera do
+          wspólpracy projektowej - wypelnij poniższy brief.
+        </h2>
       </div>
-      <h2>
-        Czas na nowy projekt ? Jeżeli potrzebujesz kreatywnego projektu
-        graficznego , porządnego teamu developerskiego lub stałego partnera do
-        wspólpracy projektowej - wypelnij poniższy brief.
-      </h2>
-      <div class="brief--tip">
-        <img
-          src="~/assets/uploads/jf-avatar.png"
-          alt="jaroslaw-filipiak-zdjecie"
-        />
-        <p>Nie zajmie ci to więcej niż pare minut</p>
+      <div class="flex w-full border border-red-500">
+        <div class="w-8/12 border border-dark-3">
+          <form class="brief-form lg:pr-14" @submit.prevent="sendData">
+            <!-- 01 -->
+            <div class="form-row--wrapper">
+              <div class="form-row--header">
+                <div class="form-row--number">01</div>
+                <div class="form-row--title">Specyfikacja projektu</div>
+                <small>(zaznacz jeden lub więcej obszarów)</small>
+              </div>
+              <div class="form-row--fields">
+                <!-- fields in this form row -->
+
+                <div
+                  class="flex flex-col lg:flex-row items-start lg:items-center lg:mt-10"
+                >
+                  <div>
+                    <input
+                      id="graphic"
+                      type="checkbox"
+                      name="projektowanie graficzne"
+                      v-model="formData.selectedServices.projektowanieGraficzne"
+                    />
+                    <label for="graphic" class="border border-dark-3">
+                      <span>Projektownie graficzne</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="proggraming"
+                      type="checkbox"
+                      name="programowanie"
+                      v-model="formData.selectedServices.uslugaProgramistyczna"
+                    />
+                    <label for="proggraming" class="border border-dark-3">
+                      <span>Usługa programistyczna</span>
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      id="www"
+                      type="checkbox"
+                      name="www"
+                      v-model="formData.selectedServices.stronaWWW"
+                    />
+                    <label for="www" class="border border-dark-3">
+                      <span>Wykonanie strony www</span>
+                    </label>
+                  </div>
+
+                  <div>
+                    <input
+                      id="full"
+                      type="checkbox"
+                      name="full"
+                      v-model="formData.selectedServices.stalaWspolpraca"
+                    />
+                    <label for="full" class="border border-dark-3">
+                      <span>Stała obsługa</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="form-row--wrapper">
+              <div class="form-row--header">
+                <div class="form-row--number">02</div>
+                <div class="form-row--title">Dane kontaktowe</div>
+              </div>
+              <div class="form-row--fields">
+                <!-- fields in this form row -->
+
+                <div class="flex flex-col lg:flex-row items-center lg:gap-7">
+                  <div class="lg:mt-7 mb-3">
+                    <label class="label-email mr-4" for="email">
+                      <span>Podaj adres email</span>
+                    </label>
+                    <input
+                      id="email"
+                      class="w-full lg:w-auto border border-dark-3"
+                      placeholder="email"
+                      type="email"
+                      v-model="formData.contactData.email"
+                    />
+                  </div>
+
+                  <div class="lg:mt-7 mb-3">
+                    <label class="label-email mr-4" for="phone">
+                      <span>Numer telefonu</span>
+                    </label>
+                    <input
+                      id="phone"
+                      class="w-full lg:w-auto border border-dark-3"
+                      placeholder="telefon"
+                      type="text"
+                      name="phone"
+                      v-model="formData.contactData.phone"
+                    />
+                  </div>
+                </div>
+
+                <div :class="{ 'textarea-wrapper__is-send': sendOK }">
+                  <label class="label-email mr-4" for="tresc">
+                    <span>Treść wiadomośći</span>
+                  </label>
+                  <textarea
+                    id="tresc"
+                    class="w-full border border-dark-3"
+                    name="tresc"
+                    cols="30"
+                    rows="10"
+                    v-model="formData.message"
+                  ></textarea>
+                </div>
+              </div>
+
+              <!-- submit -->
+              <div
+                class="lg:pl-10 mt-5 w-full flex flex-col lg:flex-row items-center lg:items-start justify-between h-14"
+              >
+                <div>
+                  <p class="text-sm text-center lg:text-left">
+                    Chciałbyś podpisać NDA ? napisz bezpośrednio na
+                    <a
+                      class="link-with-undeline"
+                      href="mailto:info@j-filipiak.pl"
+                      >info@j-filipiak.pl</a
+                    >
+                  </p>
+                  <p
+                    class="text-xs mt-2 flex flex-col items-center lg:items-start lg:flex-row mb-2 lg:mb-0 text-center lg:text-left"
+                  >
+                    Wyrażam zgodę na przetwarzanie tego formularza w celu
+                    kontaktu oraz przedstawienia oferty
+                  </p>
+                </div>
+                <div class="flex items-center">
+                  <div>
+                    <button class="submit" type="submit">
+                      <div class="brief-spinner"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- submit -->
+            </div>
+          </form>
+        </div>
+        <div class="w-4/12 border border-dark-3">2 to będzie sticky ??</div>
       </div>
     </div>
-    <form class="brief-form" @submit.prevent="sendData">
-      <!-- 01 -->
-      <div class="form-row--wrapper">
-        <div class="form-row--header">
-          <div class="form-row--number">01</div>
-          <div class="form-row--title">Specyfikacja projektu</div>
-          <small>(zaznacz jeden lub więcej obszarów)</small>
-        </div>
-        <div class="form-row--fields">
-          <!-- fields in this form row -->
-
-          <div
-            class="flex flex-col lg:flex-row items-start lg:items-center gap-2 lg:mt-10"
-          >
-            <div>
-              <input
-                id="graphic"
-                v-model="formData.projektowanieGraficzne"
-                type="checkbox"
-                name="projektowanie graficzne"
-                value="tak - jest takie zapotrzebowanie"
-              />
-              <label for="graphic">
-                <span>Projektownie graficzne</span>
-              </label>
-            </div>
-            <div>
-              <input
-                id="proggraming"
-                v-model="formData.programowanie"
-                type="checkbox"
-                name="programowanie"
-                value="tak , potrzebna jest usługa programistyczna"
-              />
-              <label for="proggraming">
-                <span>Usługa programistyczna</span>
-              </label>
-            </div>
-            <div>
-              <input
-                id="www"
-                v-model="formData.wykonanieStronyWWW"
-                type="checkbox"
-                name="www"
-                value="tak , potrzebuje strone www"
-              />
-              <label for="www">
-                <span>Wykonanie strony www</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- 02 -->
-      <div class="form-row--wrapper">
-        <div class="form-row--header">
-          <div class="form-row--number">02</div>
-          <div class="form-row--title">Szacowany budżet</div>
-        </div>
-        <div class="form-row--fields">
-          <!-- fields in this form row -->
-
-          <div class="vue-slider--wrapper">
-            <vue-slider v-model="value" />
-
-            <vue-slider
-              v-model="formData.budget"
-              :data="budgetData"
-              :data-value="'name'"
-              :data-label="'name'"
-              :tooltip="'none'"
-              dot-size="32"
-              width="600"
-              height="3"
-            ></vue-slider>
-          </div>
-        </div>
-      </div>
-
-      <!-- 03 -->
-      <div class="form-row--wrapper">
-        <div class="form-row--header">
-          <div class="form-row--number">03</div>
-          <div class="form-row--title">Szacowany czas trwania projektu</div>
-        </div>
-        <div class="form-row--fields">
-          <!-- fields in this form row -->
-
-          <div class="vue-slider--wrapper">
-            <vue-slider
-              v-model="formData.period"
-              :data="periodData"
-              :data-value="'name'"
-              :data-label="'name'"
-              :tooltip="'none'"
-              dot-size="32"
-              width="600"
-              height="3"
-            ></vue-slider>
-          </div>
-        </div>
-      </div>
-
-      <!-- 04 -->
-      <div class="form-row--wrapper">
-        <div class="form-row--header">
-          <div class="form-row--number">04</div>
-          <div class="form-row--title">Pozostałe informacje</div>
-        </div>
-        <div class="form-row--fields">
-          <!-- fields in this form row -->
-
-          <div class="flex flex-col lg:flex-row items-center lg:gap-7">
-            <div class="lg:mt-7 mb-3">
-              <label class="label-email mr-4" for="email">
-                <span>Podaj adres email</span>
-              </label>
-              <input
-                id="email"
-                v-model="formData.email"
-                class="w-full lg:w-auto"
-                placeholder="email"
-                type="email"
-                name="email"
-              />
-            </div>
-
-            <div class="lg:mt-7 mb-3">
-              <label class="label-email mr-4" for="phone">
-                <span>Numer telefonu</span>
-              </label>
-              <input
-                id="phone"
-                v-model="formData.phone"
-                class="w-full lg:w-auto"
-                placeholder="telefon"
-                type="text"
-                name="phone"
-              />
-            </div>
-          </div>
-
-          <div :class="{ 'textarea-wrapper__is-send': sendOK }">
-            <label class="label-email mr-4" for="tresc">
-              <span>Treść wiadomośći</span>
-            </label>
-            <textarea
-              id="tresc"
-              v-model="formData.msg"
-              class="w-full"
-              name="tresc"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-        </div>
-
-        <!-- submit -->
-        <div
-          class="lg:pl-10 mt-5 w-full flex flex-col lg:flex-row items-center lg:items-start justify-between h-14"
-        >
-          <div>
-            <p class="text-sm text-center lg:text-left">
-              Chciałbyś podpisać NDA ? napisz bezpośrednio na
-              <a class="link-with-undeline" href="mailto:info@j-filipiak.pl"
-                >info@j-filipiak.pl</a
-              >
-            </p>
-            <p
-              class="text-xs mt-2 flex flex-col items-center lg:items-start lg:flex-row mb-2 lg:mb-0 text-center lg:text-left"
-            >
-              <toggle-button
-                class="mr-2 mb-2 lg:mb-0"
-                :value="formData.isAcceptedFormPerms"
-                color="#e9fb18"
-                :sync="true"
-                :labels="false"
-                @change="
-                  formData.isAcceptedFormPerms = !formData.isAcceptedFormPerms
-                "
-              />
-
-              Wyrażam zgodę na przetwarzanie tego formularza w celu kontaktu
-              oraz przedstawienia oferty
-            </p>
-          </div>
-          <div class="flex items-center">
-            <div>
-              <button class="submit" type="submit">
-                <div class="brief-spinner">
-                  <span v-if="isSending"><Spinner /></span>
-                  <span v-else>{{ submitBTNvalue }}</span>
-                </div>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- submit -->
-      </div>
-    </form>
   </div>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        sendOK: '',
-        isSending: false,
-        submitBTNvalue: 'Wyślij',
-        formData: {
-          isAcceptedFormPerms: true,
-          projektowanieGraficzne: false,
-          programowanie: false,
-          wykonanieStronyWWW: false,
-          budget: '3000 - 5000',
-          period: '2 - 3 miesiące',
-          email: '',
-          phone: '',
-          msg: '',
-        },
+<script setup>
+  import { useBriefStore } from '~~/stores/brief';
+  import { storeToRefs } from 'pinia';
 
-        budgetData: [
-          {
-            id: 1,
-            name: '3000 - 5000',
-          },
-          {
-            id: 2,
-            name: '5000 - 10000',
-          },
-          {
-            id: 3,
-            name: '10000 - 20000',
-          },
-          {
-            id: 4,
-            name: '+ 20000',
-          },
-        ],
-        periodData: [
-          {
-            id: 1,
-            name: '1 miesiąc',
-          },
-          {
-            id: 2,
-            name: '2 - 3 miesiące',
-          },
-          {
-            id: 3,
-            name: '6 - 12 miesięcy',
-          },
-          {
-            id: 4,
-            name: '+ 12 miesięcy',
-          },
-        ],
-      };
-    },
+  const store = useBriefStore();
+  const { formData } = storeToRefs(store);
 
-    head: {
-      title: 'Projektowanie stron www -  tylko profesjonalne strony firmowe',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne strony zoptymalizowane pod Google. Optymalizacja UX. Bezpłatna Wycena - Poproś o indywidualną wycenę!. Szybki kontakt',
-        },
-      ],
-    },
+  const nuxtApp = useNuxtApp();
+  const ToggleButton = nuxtApp.ToggleButton;
 
-    methods: {
-      clearForm() {
-        this.formData.isAcceptedFormPerms = false;
-        this.formData.projektowanieGraficzne = false;
-        this.formData.programowanie = false;
-        this.formData.wykonanieStronyWWW = false;
-        this.formData.budget = '3000 - 5000';
-        this.formData.period = '2 - 3 miesiące';
-        this.formData.email = '';
-        this.formData.phone = '';
-        this.formData.msg = '';
-      },
-      showStatus() {
-        this.submitBTNvalue = 'Wysłano!';
-        this.start();
-        setTimeout(() => {
-          this.submitBTNvalue = 'Wyślij';
-          this.stop();
-        }, 3000);
+  function sendData() {
+    console.log('send data');
+  }
 
-        setTimeout(() => {
-          this.sendOK = false;
-        }, 5000);
-      },
-      sendData() {
-        this.isSending = true;
-        this.$axios
-          .post('https://submit-form.com/cIhGWX1B', this.formData)
-          .then((response) => {
-            if (response.status === 200) {
-              this.isSending = false;
-              this.sendOK = true;
-              this.clearForm();
-              this.showStatus();
-            }
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-        // this.$axios.$post('https://submit-form.com/cIhGWX1B', this.formData);
-      },
-      start() {
-        this.$confetti.start();
-      },
-      stop() {
-        this.$confetti.stop();
-      },
-      showInfoInTextArea() {},
-    },
-  };
+  onMounted(() => {
+    console.log('mounted brief component');
+    console.log(ToggleButton);
+  });
+  // export default {
+  //   data() {
+  //     return {
+  //       sendOK: '',
+  //       isSending: false,
+  //       submitBTNvalue: 'Wyślij',
+  //       formData: {
+  //         isAcceptedFormPerms: true,
+  //         projektowanieGraficzne: false,
+  //         programowanie: false,
+  //         wykonanieStronyWWW: false,
+  //         budget: '3000 - 5000',
+  //         period: '2 - 3 miesiące',
+  //         email: '',
+  //         phone: '',
+  //         msg: '',
+  //       },
+
+  //       budgetData: [
+  //         {
+  //           id: 1,
+  //           name: '3000 - 5000',
+  //         },
+  //         {
+  //           id: 2,
+  //           name: '5000 - 10000',
+  //         },
+  //         {
+  //           id: 3,
+  //           name: '10000 - 20000',
+  //         },
+  //         {
+  //           id: 4,
+  //           name: '+ 20000',
+  //         },
+  //       ],
+  //       periodData: [
+  //         {
+  //           id: 1,
+  //           name: '1 miesiąc',
+  //         },
+  //         {
+  //           id: 2,
+  //           name: '2 - 3 miesiące',
+  //         },
+  //         {
+  //           id: 3,
+  //           name: '6 - 12 miesięcy',
+  //         },
+  //         {
+  //           id: 4,
+  //           name: '+ 12 miesięcy',
+  //         },
+  //       ],
+  //     };
+  //   },
+
+  //   head: {
+  //     title: 'Projektowanie stron www -  tylko profesjonalne strony firmowe',
+  //     meta: [
+  //       {
+  //         hid: 'description',
+  //         name: 'description',
+  //         content:
+  //           'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne strony zoptymalizowane pod Google. Optymalizacja UX. Bezpłatna Wycena - Poproś o indywidualną wycenę!. Szybki kontakt',
+  //       },
+  //     ],
+  //   },
+
+  //   methods: {
+  //     clearForm() {
+  //       this.formData.isAcceptedFormPerms = false;
+  //       this.formData.projektowanieGraficzne = false;
+  //       this.formData.programowanie = false;
+  //       this.formData.wykonanieStronyWWW = false;
+  //       this.formData.budget = '3000 - 5000';
+  //       this.formData.period = '2 - 3 miesiące';
+  //       this.formData.email = '';
+  //       this.formData.phone = '';
+  //       this.formData.msg = '';
+  //     },
+  //     showStatus() {
+  //       this.submitBTNvalue = 'Wysłano!';
+  //       this.start();
+  //       setTimeout(() => {
+  //         this.submitBTNvalue = 'Wyślij';
+  //         this.stop();
+  //       }, 3000);
+
+  //       setTimeout(() => {
+  //         this.sendOK = false;
+  //       }, 5000);
+  //     },
+  //     sendData() {
+  //       this.isSending = true;
+  //       this.$axios
+  //         .post('https://submit-form.com/cIhGWX1B', this.formData)
+  //         .then((response) => {
+  //           if (response.status === 200) {
+  //             this.isSending = false;
+  //             this.sendOK = true;
+  //             this.clearForm();
+  //             this.showStatus();
+  //           }
+  //         })
+  //         .catch(function (error) {
+  //           console.log(error);
+  //         });
+  //       // this.$axios.$post('https://submit-form.com/cIhGWX1B', this.formData);
+  //     },
+  //     start() {
+  //       this.$confetti.start();
+  //     },
+  //     stop() {
+  //       this.$confetti.stop();
+  //     },
+  //     showInfoInTextArea() {},
+  //   },
+  // };
 </script>
 
 <style lang="scss">
@@ -443,9 +413,9 @@
         }
       }
 
-      .vue-js-switch .v-switch-core .v-switch-button[data-v-25adc6c0] {
-        background-color: #000 !important;
-      }
+      // .vue-js-switch .v-switch-core .v-switch-button[data-v-25adc6c0] {
+      //   background-color: #000 !important;
+      // }
 
       label:not(.label-email) {
         position: relative;
@@ -454,9 +424,9 @@
         width: 230px;
         height: 110px;
 
-        &:hover {
-          @apply bg-dark-2;
-        }
+        // &:hover {
+        //   @apply bg-dark-2;
+        // }
 
         &::selection {
           background-color: transparent;
