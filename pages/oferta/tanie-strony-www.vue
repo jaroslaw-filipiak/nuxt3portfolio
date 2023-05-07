@@ -14,7 +14,7 @@
 
 <script setup>
   useHead({
-    title: 'Budżetowe strony www',
+    title: 'Strony www w rozsądnych cenach!',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -25,20 +25,20 @@
         hid: 'description',
         name: 'description',
         content:
-          'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne sgtrony zoptymalizowane pod Google. Optymalizacja UX. Poproś o indywidualną wycenę!. Szybki kontakt',
+          'Pełnoprawna, w pełni profesjonalna strona www w przystępnej cenie? Tak to możliwe!. Poproś o indywidualną wycenę!. Szybki kontakt, gwarancja zadowolenia',
       },
 
       { hid: 'og-type', property: 'og:type', content: 'website' },
       {
         hid: 'og-title',
         property: 'og:title',
-        content: 'Projektowanie stron www - tylko profesjonalne strony firmowe',
+        content: 'Strony www w rozsądnych cenach',
       },
       {
         hid: 'og-desc',
         property: 'og:description',
         content:
-          'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne strony zoptymalizowane pod Google. Optymalizacja UX. Bezpłatna Wycena - Poproś o indywidualną wycenę!. Szybki kontakt',
+          'Pełnoprawna, w pełni profesjonalna strona www w przystępnej cenie? Tak to możliwe!. Poproś o indywidualną wycenę!. Szybki kontakt, gwarancja zadowolenia',
       },
       {
         hid: 'og-image',
