@@ -1,0 +1,144 @@
+// @import './libs/locomotive-scroll/scroll.scss';
+@import './hamburgers/hamburgers.scss';
+@import './libs/lenis/lenis.scss';
+
+// @import './demo.scss';
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+html,
+body {
+  // font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  // background-image: url('assets/uploads/bg-black.jpg');
+  @apply bg-cover bg-fixed bg-no-repeat bg-light;
+  @apply font-OpenSans;
+}
+
+button:focus {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #272727;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 0, 0);
+  border-left: 1px solid rgba(255, 255, 255, 0.253);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(66, 66, 66);
+}
+
+// default - global transiton
+
+// .page-enter-active,
+// .page-leave-active {
+//   transition: opacity 0.5s;
+// }
+// .page-enter,
+// .page-leave-to {
+//   opacity: 0;
+// }
+
+.link-with-undeline {
+  @apply relative inline-block;
+
+  &::after {
+    content: '';
+    @apply w-0 bg-white block;
+    height: 2px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  &:hover {
+    &::after {
+      content: '';
+      @apply w-full bg-white block;
+      height: 2px;
+    }
+  }
+
+  &__yellow {
+    &::after {
+      content: '';
+      @apply bg-yellow;
+    }
+
+    &:hover {
+      &::after {
+        content: '';
+        @apply bg-yellow;
+      }
+    }
+  }
+
+  &__dark {
+    &::after {
+      content: '';
+      @apply bg-dark-3;
+    }
+
+    &:hover {
+      &::after {
+        content: '';
+        @apply bg-dark-3;
+      }
+    }
+  }
+
+  &__hover-yellow {
+    @apply hover:text-yellow;
+    &:hover {
+      &::after {
+        content: '';
+        @apply bg-yellow;
+      }
+    }
+  }
+
+  &__hover-dark {
+    @apply hover:text-dark-3;
+    &:hover {
+      &::after {
+        content: '';
+        @apply bg-dark-3;
+      }
+    }
+  }
+}
+
+small {
+  @apply font-Atkinson text-sm;
+  color: #817e7e;
+
+  a {
+    @apply relative inline-block;
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #817e7e;
+      @apply absolute left-0;
+      bottom: -1px;
+    }
+  }
+
+  a:hover {
+    @apply text-yellow;
+
+    &:after {
+      content: '';
+      @apply bg-yellow;
+    }
+  }
+}

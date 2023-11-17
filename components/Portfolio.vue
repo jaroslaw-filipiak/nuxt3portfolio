@@ -1,0 +1,177 @@
+<template>
+  <div class="portfolio--wrapper">
+    <div class="w-full">
+      <div class="section--title w-11/12 mx-auto mt-20">
+        <h3 class="text-dark-3">{{ heading }}</h3>
+        <img v-if="hasImg" src="~/assets/uploads/smush-dark.svg" alt="" />
+      </div>
+      <div class="items">
+        <!-- siborsoft -->
+        <NuxtLink
+          :to="`/portfolio/siborsoft`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${siborsoft})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">Siborsoft</p>
+        </NuxtLink>
+
+        <!-- promise -->
+        <NuxtLink
+          :to="`/portfolio/promise4cloud`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${promise})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">Promise4Cloud</p>
+        </NuxtLink>
+
+        <!-- lukasiuk -->
+        <NuxtLink
+          prefetch
+          :to="`/portfolio/lukasiuk`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${lukasiuk})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">Grupa Łukasiuk</p>
+        </NuxtLink>
+
+        <!-- eond -->
+        <NuxtLink
+          prefetch
+          :to="`/portfolio/eond`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${eond})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">eond</p>
+        </NuxtLink>
+
+        <!-- 23knots -->
+        <NuxtLink
+          prefetch
+          :to="`/portfolio/23knots`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${knots})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">23 knots</p>
+        </NuxtLink>
+
+        <!-- what about -->
+        <!-- <NuxtLink
+          prefetch
+          :to="`/portfolio/whatabout`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${whatAbout})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">whatabout</p>
+        </NuxtLink> -->
+      </div>
+      <div class="section--title w-11/12 mx-auto mt-20">
+        <h3 class="text-dark-3">Co aktulanie robie ? (2023r.)</h3>
+        <img v-if="hasImg" src="~/assets/uploads/smush-dark.svg" alt="" />
+        <ul class="mt-10 flex flex-col gap-6">
+          <li>
+            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
+              Obsługuję agencję wdrażając fronty (Vue.js)
+            </p>
+
+            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
+              - Vue.js v2/v3 / Bootstrap / Tailwind / Pinia / Vuex / Axios
+            </p>
+          </li>
+          <li>
+            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
+              Obsługuję stałych klientów
+            </p>
+
+            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
+              - Głównie zmiany na Wordpressie, przeróżne poprawki, usprawnienia
+              - dużo autorskich rzeczy
+            </p>
+          </li>
+          <li>
+            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
+              Tworzę fullstackowo
+            </p>
+
+            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
+              - Robie dla klienta b2b system do obsługi klientów (Fullstack +
+              design) / Backend pisany w Laravel / Front we Vue.js
+            </p>
+          </li>
+
+          <li>
+            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
+              Nadal się rozwijam
+            </p>
+
+            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
+              - Piszę we Vue.js ale chętnie przebranżowie się na React/Next /
+              Spogladam również na React Native
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+  import siborsoftThumb from '@/assets/uploads/2021/10/siborsoft_thumb.jpg';
+  import promiseThumb from '@/assets/uploads/2021/10/promise4cloud_thumb.jpg';
+  import lukasiukThumb from '@/assets/uploads/2020/07/lukasiuk-thumb.jpg';
+  import eondThumb from '@/assets/uploads/2020/07/eond-thumb.jpg';
+  import knotsThumb from '@/assets/uploads/2020/03/23knots-thumbnail.jpg';
+  import whatAboutThumb from '@/assets/uploads/2020/03/whatabout.jpg';
+
+  export default {
+    props: {
+      heading: String,
+      hasImg: Boolean,
+    },
+    data() {
+      return {
+        siborsoft: siborsoftThumb,
+        promise: promiseThumb,
+        lukasiuk: lukasiukThumb,
+        eond: eondThumb,
+        knots: knotsThumb,
+        whatAbout: whatAboutThumb,
+      };
+    },
+  };
+</script>
+
+<style lang="scss">
+  .portfolio--wrapper {
+    @apply bg-light;
+  }
+
+  .items {
+    @apply w-full min-w-full flex flex-wrap justify-center items-center sm:-mx-2 mb-8 mt-20 lg:justify-center;
+  }
+
+  .item {
+    @apply bg-dark-1  border-dark-2 w-4/5 h-96 sm:h-128  md:h-144  lg:w-96 lg:h-96  2xl:w-128 2xl:h-128 flex flex-col items-start justify-end bg-cover bg-no-repeat pb-3 pl-3 hover:opacity-90 relative z-10;
+
+    p {
+      @apply hidden;
+    }
+
+    &:hover {
+      p {
+        @apply block;
+      }
+    }
+  }
+</style>
