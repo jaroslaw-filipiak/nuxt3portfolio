@@ -48,15 +48,6 @@
           </NuxtLink>
         </li>
 
-        <li class="hidden">
-          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
-            >Programista ad hoc na godziny<span class="hidden lg:block"
-              >Masz FUCKUP ? zbliża się DEADLINE ? chętnie wyczyszczę pare
-              tasków z Jiry</span
-            ></NuxtLink
-          >
-        </li>
-
         <p class="text-xs mt-8 lg:hidden">Dowiedz się kim jestem</p>
         <li class="border-t-0 lg:hidden">
           <NuxtLink class="offer-menu--item" to="/about"
@@ -66,16 +57,6 @@
         <p class="text-xs mt-8 lg:hidden">
           Skontaktuj się ze mną szybko i sprawnie:
         </p>
-        <li class="border-t-0 lg:hidden">
-          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
-            >info@j-filipiak.pl</NuxtLink
-          >
-        </li>
-        <li class="lg:hidden">
-          <NuxtLink class="offer-menu--item" to="/oferta/programista-na-godziny"
-            >+48 663 568 828</NuxtLink
-          >
-        </li>
       </ul>
     </div>
   </div>

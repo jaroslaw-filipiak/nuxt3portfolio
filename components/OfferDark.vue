@@ -27,24 +27,7 @@
               </div>
             </div>
 
-            <div>
-              <ul class="hidden">
-                <li>
-                  <NuxtLink
-                    class="link-with-undeline pointer-events-none"
-                    to="/oferta/projektowanie-stron-internetowych"
-                    >Projektowanie stron internetowych</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink
-                    class="link-with-undeline pointer-events-none"
-                    to="/oferta/projektowanie-aplikacji-mobilnych"
-                    >Projektowanie aplikacji mobilnych</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
+            <div></div>
           </div>
 
           <div class="offer__dark--row lg:border-r-0">
@@ -65,13 +48,7 @@
                     >Profesjonalne strony www</NuxtLink
                   >
                 </li>
-                <li class="hidden">
-                  <NuxtLink
-                    class="link-with-undeline"
-                    to="/oferta/kodowanie-do-wordpress"
-                    >Kodowanie PSD / XD / FIGMA do WordPress</NuxtLink
-                  >
-                </li>
+
                 <li>
                   <NuxtLink
                     class="link-with-undeline"

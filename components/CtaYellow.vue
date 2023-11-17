@@ -31,13 +31,7 @@
             >info@j-filipiak.pl</a
           >
         </div>
-        <div>
-          <NuxtLink
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark hidden"
-            to="/brief"
-            >formularz kontaktowy</NuxtLink
-          >
-        </div>
+        <div></div>
       </div>
     </div>
   </div>
