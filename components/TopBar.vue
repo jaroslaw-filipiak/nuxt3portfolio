@@ -38,11 +38,13 @@
         </div> -->
 
     <div class="top-bar--right">
-      <a
-        class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link cursor-pointer lenis-cta-link"
-        @click.native="goToCTA"
-        >Bezpłatna konsultacja</a
+      <NuxtLink
+        exact
+        class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link"
+        to="#cta"
+        >Bezpłatna konsultacja</NuxtLink
       >
+
       <NuxtLink
         exact
         class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link"
@@ -68,7 +70,6 @@
 
   function goToCTA() {
     console.log(lenis);
-    console.log('rer');
     lenis.scrollTo('#cta', {});
   }
 </script>

@@ -8,7 +8,8 @@
     />
     <WhyFreelancer />
     <OfferDark />
-    <Portfolio heading="Wybrane realizacje" hasImg />
+    <Portfolio heading="Co ostatnio robiłem ?" hasImg />
+
     <CtaYellow />
   </div>
 </template>
@@ -17,33 +18,31 @@
   const nuxtApp = useNuxtApp();
   const gsap = nuxtApp.gsap;
   const ScrollTrigger = nuxtApp.ScrollTrigger;
-  const { isMobile } = useDevice();
 
   let ctx;
 
   onMounted(() => {
-    ctx = gsap.context(() => {
-      const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
-      const heroBGTrigger = document.querySelector(
-        '.gsap__hero-bg-size--trigger'
-      );
-
-      gsap.to(heroBG, {
-        backgroundSize: '115%',
-        scrollTrigger: {
-          id: 'heroImageZoom',
-          trigger: heroBGTrigger,
-          start: 'top bottom',
-          end: 'top 10%',
-          scrub: true,
-          markers: false,
-        },
-      });
-    });
+    // ctx = gsap.context(() => {
+    //   const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
+    //   const heroBGTrigger = document.querySelector(
+    //     '.gsap__hero-bg-size--trigger'
+    //   );
+    //   gsap.to(heroBG, {
+    //     backgroundSize: '115%',
+    //     scrollTrigger: {
+    //       id: 'heroImageZoom',
+    //       trigger: heroBGTrigger,
+    //       start: 'top bottom',
+    //       end: 'top 10%',
+    //       scrub: true,
+    //       markers: false,
+    //     },
+    //   });
+    // });
   });
 
   onUnmounted(() => {
-    ctx.revert();
+    // ctx.revert();
   });
 
   useHead({

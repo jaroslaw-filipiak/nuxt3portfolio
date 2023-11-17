@@ -1,5 +1,5 @@
 <template>
-  <div class="hero gsap__hero-bg-size--anim">
+  <div class="hero">
     <div class="hero--inner">
       <div class="section--title">
         <h1>
@@ -106,11 +106,6 @@
 
     @media (min-width: 1280px) {
       background-image: url('~/assets/uploads/hero--main.jpg');
-    }
-
-    @media (min-width: 1280px) {
-      background-position: center;
-      background-size: 100%;
     }
 
     &--inner {
