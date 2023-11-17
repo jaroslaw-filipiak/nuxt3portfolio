@@ -8,16 +8,16 @@ jobs:
       - name: 🚚 Checkout
         uses: actions/checkout@master
 
-      - name: Use Node.js 16
+      - name: Use Node.js 20
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '20'
 
       - name: Install dependencies
-        run: yarn
+        run: npm install
 
       - name: Generate
-        run: yarn run generate
+        run: npm run generate
 
       - name: 📂 Deploy to ftp
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
