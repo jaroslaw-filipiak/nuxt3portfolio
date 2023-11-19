@@ -9,7 +9,7 @@
     <WhyFreelancer />
     <OfferDark />
     <Portfolio heading="Co ostatnio robiłem ?" hasImg />
-
+    <CurrentlyDoing />
     <CtaYellow />
   </div>
 </template>

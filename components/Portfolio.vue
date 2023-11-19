@@ -76,52 +76,6 @@
           <p class="bg-dark-2 p-1 pl-5 pr-5">whatabout</p>
         </NuxtLink> -->
       </div>
-      <div class="section--title w-11/12 mx-auto mt-20">
-        <h3 class="text-dark-3">Co aktulanie robie ? (2023r.)</h3>
-        <img v-if="hasImg" src="~/assets/uploads/smush-dark.svg" alt="" />
-        <ul class="mt-10 flex flex-col gap-6">
-          <li>
-            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
-              Obsługuję agencję wdrażając fronty (Vue.js)
-            </p>
-
-            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
-              - Vue.js v2/v3 / Bootstrap / Tailwind / Pinia / Vuex / Axios
-            </p>
-          </li>
-          <li>
-            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
-              Obsługuję stałych klientów
-            </p>
-
-            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
-              - Głównie zmiany na Wordpressie, przeróżne poprawki, usprawnienia
-              - dużo autorskich rzeczy
-            </p>
-          </li>
-          <li>
-            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
-              Tworzę fullstackowo
-            </p>
-
-            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
-              - Robie dla klienta b2b system do obsługi klientów (Fullstack +
-              design) / Backend pisany w Laravel / Front we Vue.js
-            </p>
-          </li>
-
-          <li>
-            <p class="text-3xl lg:text-4xl font-Atkinson text-dark-1">
-              Nadal się rozwijam
-            </p>
-
-            <p class="text-xl lg:text-2xl text-dark-1 pt-3">
-              - Piszę we Vue.js ale chętnie przebranżowie się na React/Next /
-              Spogladam również na React Native
-            </p>
-          </li>
-        </ul>
-      </div>
     </div>
   </div>
 </template>
