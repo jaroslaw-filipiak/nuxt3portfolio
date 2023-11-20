@@ -33,7 +33,7 @@
           <div class="offer__dark--row lg:border-r-0">
             <div>
               <div>
-                <h4>WordPress</h4>
+                <h4>WordPress / Vue.js / Next.js</h4>
               </div>
               <div>
                 <img src="@/assets/uploads/icons/ic-2.svg" alt="" />
