@@ -6,6 +6,17 @@
         <img v-if="hasImg" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
       <div class="items">
+        <!-- femmefab -->
+        <NuxtLink
+          :to="`/portfolio/femmefab`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${femmefab})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">Femmefab</p>
+        </NuxtLink>
+
         <!-- siborsoft -->
         <NuxtLink
           :to="`/portfolio/siborsoft`"
@@ -87,6 +98,7 @@
   import eondThumb from '@/assets/uploads/2020/07/eond-thumb.jpg';
   import knotsThumb from '@/assets/uploads/2020/03/23knots-thumbnail.jpg';
   import whatAboutThumb from '@/assets/uploads/2020/03/whatabout.jpg';
+  import femmeFabThumb from '@/assets/uploads/femmefab-thumbnail.jpg';
 
   export default {
     props: {
@@ -101,6 +113,7 @@
         eond: eondThumb,
         knots: knotsThumb,
         whatAbout: whatAboutThumb,
+        femmefab: femmeFabThumb,
       };
     },
   };

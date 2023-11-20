@@ -79,7 +79,7 @@
                 administracyjny oraz moduł do istniejącej strony www a takze
                 pisze API.
               </p>
-              <p class="text-xl lg:text-2xl">
+              <p class="text-xl lg:text-2xl mt-10">
                 Dodatkowo lubie sprawdzać co zmienia się w świecie
                 front-endowym, dlatego też odrzuciłem używany na codzień
                 framework Vue.js i piszę front w Next.js
