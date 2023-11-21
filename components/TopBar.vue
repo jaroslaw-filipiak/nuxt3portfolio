@@ -46,6 +46,7 @@
       >
 
       <NuxtLink
+        @click="sendEvent()"
         exact
         class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link"
         to="/about"
@@ -67,6 +68,15 @@
 <script setup>
   const nuxtApp = useNuxtApp();
   const lenis = nuxtApp.lenis;
+  const { gtag } = useGtag();
+
+  function sendEvent() {
+    gtag('event', 'click', {
+      event_category: 'cta',
+      event_label: 'cta',
+      value: 'click-about-me-link',
+    });
+  }
 
   function goToCTA() {
     console.log(lenis);
