@@ -8,9 +8,7 @@
           <li>
             <a href="mailto:info@j-filipiak.pl">Email: info@j-filipiak.pl</a>
           </li>
-          <li class="hidden">
-            <NuxtLink to="/brief"> Formularz kontaktowy</NuxtLink>
-          </li>
+
           <li>
             <a
               target="_blank"
@@ -89,13 +87,6 @@
               >Wdrażenie PSD/Figma do WordPress</NuxtLink
             >
           </li>
-          <li class="hidden">
-            <NuxtLink
-              class="text-xl font-Atkinson"
-              to="/oferta/programista-na-godziny"
-              >Programista ad hoc na godziny</NuxtLink
-            >
-          </li>
         </ul>
       </div>
 
@@ -141,18 +132,6 @@
               to="https://www.j-filipiak.pl"
               >j-filipiak.pl - projektowanie stron www | ver. mvp
             </NuxtLink>
-
-            <NuxtLink class="text-sm hidden" to="/docs/regulamin"
-              >regulamin</NuxtLink
-            >
-
-            <NuxtLink class="text-sm hidden" to="/docs/polityka-prywatnosci"
-              >polityka prywatnośći</NuxtLink
-            >
-
-            <NuxtLink class="text-sm hidden" to="/docs/informacje-o-cookies"
-              >Informacje o cookies</NuxtLink
-            >
           </div>
         </div>
       </div>
