@@ -31,11 +31,12 @@
             >info@j-filipiak.pl</a
           >
         </div>
+
         <div>
           <NuxtLink
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark hidden"
-            to="/brief"
-            >formularz kontaktowy</NuxtLink
+            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            to="https://calendly.com/jaroslaw-filipiak/30minmeeting"
+            >Umów spotkanie online</NuxtLink
           >
         </div>
       </div>
