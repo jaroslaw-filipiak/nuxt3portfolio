@@ -5,6 +5,12 @@ export default defineNuxtConfig({
   //   pageTransition: { name: 'page', mode: 'out-in' },
   // },
 
+  app: {
+    head: {
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.ico' }],
+    },
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},

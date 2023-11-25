@@ -19,8 +19,8 @@
           wspólpracy projektowej - wypelnij poniższy brief.
         </h2>
       </div>
-      <div class="flex w-full border border-red-500">
-        <div class="w-8/12 border border-dark-3">
+      <div class="flex w-8/12 border border-red-500">
+        <div class="border border-dark-3">
           <form class="brief-form lg:pr-14" @submit.prevent="sendData">
             <!-- 01 -->
             <div class="form-row--wrapper">
@@ -169,7 +169,6 @@
             </div>
           </form>
         </div>
-        <div class="w-4/12 border border-dark-3">2 to będzie sticky ??</div>
       </div>
     </div>
   </div>
