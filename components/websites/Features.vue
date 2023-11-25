@@ -2,10 +2,15 @@
   <div class="websites-features--wrapper">
     <div class="websites-features--inner">
       <div class="section--title text-center">
-        <h3 class="text-center max-w-5xl mx-auto">
-          Dedykowane strony www to moja mocna strona. Zaprojektuje, zaprogramuje
-          oraz wdrożę profesjonalną stronę www.
-        </h3>
+        <h1 class="text-center max-w-5xl mx-auto">
+          Dostarczę Tobie profesjonalną , dedykowaną stronę www.
+        </h1>
+        <h2
+          class="text-xl lg:text-3xl font-normal mb-6 max-w-3xl mt-10 mx-auto"
+        >
+          Profesjonalna, niezwykle szybka, bezpieczna strona internetowa która
+          przyniesie Twojemu biznesowi potencjał to rozwoju
+        </h2>
         <img
           class="pt-3 mx-auto"
           src="~/assets/uploads/smush-dark.svg"

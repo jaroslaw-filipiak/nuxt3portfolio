@@ -1,21 +1,24 @@
 <template>
-  <div class="budget-websites__portfolio--wrapper">
-    <div class="section--title text-center">
-      <h3 class="text-center max-w-5xl mx-auto text-dark-3">
-        Tak wyglądają strony internetowe ,które zarabiają dla moich klientów
-      </h3>
-      <img class="pt-3 mx-auto" src="~/assets/uploads/smush-dark.svg" alt="" />
-    </div>
-
+  <div class="portfolio--wrapper">
     <div class="w-full">
       <div class="section--title w-11/12 mx-auto mt-20">
         <h3 class="text-dark-3">{{ heading }}</h3>
         <img v-if="hasImg" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
       <div class="items">
+        <!-- femmefab -->
+        <NuxtLink
+          :to="`/portfolio/femmefab`"
+          class="item hover:opacity-85"
+          :style="{
+            backgroundImage: `url(${femmefab})`,
+          }"
+        >
+          <p class="bg-dark-2 p-1 pl-5 pr-5">Femmefab</p>
+        </NuxtLink>
+
         <!-- siborsoft -->
         <NuxtLink
-          prefetch
           :to="`/portfolio/siborsoft`"
           class="item hover:opacity-85"
           :style="{
@@ -27,7 +30,6 @@
 
         <!-- promise -->
         <NuxtLink
-          prefetch
           :to="`/portfolio/promise4cloud`"
           class="item hover:opacity-85"
           :style="{
@@ -74,7 +76,7 @@
         </NuxtLink>
 
         <!-- what about -->
-        <NuxtLink
+        <!-- <NuxtLink
           prefetch
           :to="`/portfolio/whatabout`"
           class="item hover:opacity-85"
@@ -83,7 +85,7 @@
           }"
         >
           <p class="bg-dark-2 p-1 pl-5 pr-5">whatabout</p>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
   </div>
@@ -96,6 +98,7 @@
   import eondThumb from '@/assets/uploads/2020/07/eond-thumb.jpg';
   import knotsThumb from '@/assets/uploads/2020/03/23knots-thumbnail.jpg';
   import whatAboutThumb from '@/assets/uploads/2020/03/whatabout.jpg';
+  import femmeFabThumb from '@/assets/uploads/femmefab-thumbnail.jpg';
 
   export default {
     props: {
@@ -110,13 +113,14 @@
         eond: eondThumb,
         knots: knotsThumb,
         whatAbout: whatAboutThumb,
+        femmefab: femmeFabThumb,
       };
     },
   };
 </script>
 
 <style lang="scss">
-  .budget-websites__portfolio--wrapper {
+  .portfolio--wrapper {
     @apply bg-light;
   }
 
