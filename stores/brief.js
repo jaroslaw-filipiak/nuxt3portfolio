@@ -11,7 +11,8 @@ export const useBriefStore = defineStore('brief', {
           stalaWspolpraca: false,
         },
         contactData: {
-          email: 'email',
+          name: '',
+          email: '',
           phone: null,
         },
         message: 'Twoja wiadomość',
