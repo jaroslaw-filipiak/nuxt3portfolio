@@ -3,8 +3,12 @@
     <WebsitesHero />
     <WebsitesFeatures />
     <WebsitesOffer />
-    <WebsitesExp />
-    <WebsitesPortfolio />
+    <!-- <WebsitesExp /> -->
+    <WebsitesPortfolio
+      :hasImg="true"
+      heading="Jak może wyglądać Twoja nowa strona www ?"
+    />
+
     <!-- <WebsitesFaq /> -->
     <WebsitesSEOContent />
     <WebsitesReview />
