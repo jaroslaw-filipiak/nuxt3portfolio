@@ -5,7 +5,7 @@ export const useBriefStore = defineStore('brief', {
     return {
       formData: {
         budget: 5000,
-        name_surname: '11',
+        name_surname: '',
         email: null,
         phone: null,
         message: null,
