@@ -39,6 +39,14 @@
             >Umów spotkanie online</NuxtLink
           >
         </div>
+
+        <div>
+          <NuxtLink
+            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            to="/kontakt"
+            >Wypełnij brief online</NuxtLink
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -51,7 +59,7 @@
 <style lang="scss">
   .cta__yellow {
     &--wrapper {
-      @apply bg-cover bg-no-repeat min-w-full flex items-center bg-yellow;
+      @apply bg-cover bg-no-repeat min-w-full flex items-center bg-yellow-300;
       // background-color: #161513;
     }
 
@@ -97,7 +105,7 @@
   }
 
   .yellow-label {
-    @apply p-3 pl-5 pr-5 text-dark-3 bg-yellow font-bold font-Atkinson inline-block;
+    @apply p-3 pl-5 pr-5 text-dark-3 bg-yellow-300 font-bold font-Atkinson inline-block;
   }
   .dark-label {
     @apply p-3 pl-5 pr-5 text-white bg-dark-4 font-bold font-Atkinson inline-block;

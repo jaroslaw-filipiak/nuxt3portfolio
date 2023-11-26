@@ -66,7 +66,7 @@
           </li>
           <li class="relative">
             <div
-              class="hidden xl:flex link--label absolute text-xs text-dark-3 bg-yellow rounded-xl pt-1 pb-1 pl-2 pr-2"
+              class="hidden xl:flex link--label absolute text-xs text-dark-3 bg-yellow-300 rounded-xl pt-1 pb-1 pl-2 pr-2"
               style="top: -25px; right: -30px"
             >
               Oferta testowa , ogarniczona czasowo !

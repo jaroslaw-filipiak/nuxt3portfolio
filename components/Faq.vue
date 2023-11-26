@@ -26,7 +26,7 @@
           <div class="flex">
             <a
               href="#"
-              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block relative underline-after text-yellow"
+              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block relative underline-after text-yellow-300"
               >+48 663 568 828</a
             >
             <img
@@ -39,7 +39,7 @@
           <div class="flex">
             <a
               href="#"
-              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-yellow relative"
+              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-yellow-300 relative"
               >info@j-filipiak.pl</a
             >
             <img
@@ -52,7 +52,7 @@
           <div class="flex">
             <a
               href="#"
-              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-yellow relative"
+              class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text- relative"
               >porozmawiajmy via online</a
             >
           </div>

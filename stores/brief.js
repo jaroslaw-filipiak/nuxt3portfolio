@@ -4,19 +4,12 @@ export const useBriefStore = defineStore('brief', {
   state: () => {
     return {
       formData: {
-        selectedServices: {
-          projektowanieGraficzne: false,
-          uslugaProgramistyczna: false,
-          stronaWWW: false,
-          stalaWspolpraca: false,
-        },
-        contactData: {
-          name: '',
-          email: '',
-          phone: null,
-        },
-        message: 'Twoja wiadomość',
-        acceptance: true,
+        budget: 5000,
+        name_surname: '11',
+        email: null,
+        phone: null,
+        message: null,
+        acpt_required: 0,
       },
     };
   },

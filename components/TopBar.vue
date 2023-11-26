@@ -94,7 +94,7 @@
     background-color: transparent;
 
     &__sticky {
-      @apply bg-yellow md:pt-3 md:pl-8 md:pr-8 md:pb-3;
+      @apply bg-yellow-300 md:pt-3 md:pl-8 md:pr-8 md:pb-3;
     }
 
     &--contact-wrapper {

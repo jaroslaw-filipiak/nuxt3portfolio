@@ -23,7 +23,7 @@
             <div class="flex items-center">
               <div>Tanie / Budżetowe strony www</div>
               <div
-                class="hidden lg:block bg-yellow rounded-full pl-4 pr-4 pb-1 pt-1 text-base ml-4"
+                class="hidden lg:block bg-yellow-300 rounded-full pl-4 pr-4 pb-1 pt-1 text-base ml-4"
               >
                 Oferta testowa, ograniczona czasowo
               </div>

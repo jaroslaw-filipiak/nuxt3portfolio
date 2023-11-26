@@ -1,223 +1,273 @@
 <template>
   <div
-    class="page-content border-2 border-dashed flex flex-row w-full mx-auto pt-20 brief pb-0"
-    ref="main"
+    class="page-content pb-0 flex flex-col w-full mx-auto pt-20 brief pl-0 pr-0"
   >
-    <div
-      class="flex flex-col items-start justify-center w-8/12 border border-dark-3"
-    >
-      <div class="brief--header border border-dark-3 w-full">
-        <div class="section--title">
-          <h1 class="text-dark-3">Skonsultuj projekt</h1>
+    <div class="flex w-full lg:w-11/12 mx-auto pl-8 pr-8 pt-20">
+      <div class="flex flex-col items-start justify-center w-full">
+        <div class="brief--header w-full">
+          <div class="section--title">
+            <h1 class="text-dark-3">Skonsultuj projekt</h1>
 
-          <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
+            <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
+          </div>
+          <h2 class="text-dark-3">
+            Czas na nowy projekt? Jeżeli potrzebujesz kreatywnego projektu
+            graficznego, porządnego teamu developerskiego lub stałego partnera
+            do wspólpracy projektowej - wypelnij poniższy brief.
+          </h2>
         </div>
-        <h2 class="text-dark-3">
-          Czas na nowy projekt? Jeżeli potrzebujesz kreatywnego projektu
-          graficznego, porządnego teamu developerskiego lub stałego partnera do
-          wspólpracy projektowej - wypelnij poniższy brief.
-        </h2>
-      </div>
-      <form
-        class="brief-form w-full border border-dark-3 lg:pr-14"
-        @submit.prevent="sendData"
-      >
-        <!-- 01 -->
-        <div class="form-row--wrapper">
-          <div class="form-row--header">
-            <div class="form-row--number">01</div>
-            <div class="form-row--title">Specyfikacja projektu</div>
-            <small>(zaznacz jeden lub więcej obszarów)</small>
-          </div>
-          <div class="form-row--fields">
-            <!-- fields in this form row -->
-
-            <div
-              class="flex flex-col lg:flex-row items-start lg:items-center lg:mt-10"
-            >
-              <div class="group">
-                <input
-                  id="graphic"
-                  type="checkbox"
-                  name="projektowanie graficzne"
-                  v-model="formData.selectedServices.projektowanieGraficzne"
-                />
-                <label
-                  for="graphic"
-                  class="border border-dark-3 group-hover:bg-yellow transition-all"
-                >
-                  <span class="text-dark-3">Projektownie graficzne</span>
-                </label>
-              </div>
-
-              <div class="group">
-                <input
-                  id="proggraming"
-                  type="checkbox"
-                  name="programowanie"
-                  v-model="formData.selectedServices.uslugaProgramistyczna"
-                />
-                <label
-                  for="proggraming"
-                  class="border border-dark-3 group-hover:bg-yellow transition-all"
-                >
-                  <span class="text-dark-3">Usługa programistyczna</span>
-                </label>
-              </div>
-
-              <div class="group">
-                <input
-                  id="www"
-                  type="checkbox"
-                  name="www"
-                  v-model="formData.selectedServices.stronaWWW"
-                />
-                <label
-                  for="www"
-                  class="border border-dark-3 group-hover:bg-yellow transition-all"
-                >
-                  <span class="text-dark-3"> Wykonanie strony www</span>
-                </label>
-              </div>
-
-              <div class="group">
-                <input
-                  id="full"
-                  type="checkbox"
-                  name="full"
-                  v-model="formData.selectedServices.stalaWspolpraca"
-                />
-                <label
-                  for="full"
-                  class="border border-dark-3 group-hover:bg-yellow transition-all"
-                >
-                  <span class="text-dark-3">Stała obsługa</span>
-                </label>
-              </div>
+        <form class="brief-form w-full lg:pr-14" @submit.prevent="send">
+          <!-- 01 -->
+          <div class="form-row--wrapper">
+            <div class="form-row--header">
+              <div class="form-row--number">01</div>
+              <div class="form-row--title">Specyfikacja projektu</div>
+              <small>(zaznacz jeden lub więcej obszarów)</small>
             </div>
-          </div>
-        </div>
+            <div class="form-row--fields">
+              <!-- fields in this form row -->
 
-        <!-- 02 -->
-        <div class="form-row--wrapper">
-          <div class="form-row--header">
-            <div class="form-row--number">02</div>
-            <div class="form-row--title">Dane kontaktowe</div>
-          </div>
-          <div class="form-row--fields">
-            <!-- fields in this form row -->
-
-            <div class="flex flex-col lg:flex-row items-center lg:gap-7">
-              <div class="lg:mt-7 mb-3">
-                <label class="label-email mr-4" for="name">
-                  <span class="text-dark-3">Imię, nazwisko</span>
-                </label>
-                <input
-                  id="name"
-                  class="w-full border border-dark-3 text-dark-3"
-                  placeholder="Imię, nazwisko"
-                  type="text"
-                  name="name"
-                  v-model="formData.contactData.name"
-                />
-              </div>
-
-              <div class="lg:mt-7 mb-3">
-                <label class="label-email mr-4" for="email">
-                  <span class="text-dark-3">Podaj adres email</span>
-                </label>
-                <input
-                  id="email"
-                  class="w-full border border-dark-3 text-dark-3"
-                  placeholder="email"
-                  type="email"
-                  v-model="formData.contactData.email"
-                />
-              </div>
-
-              <div class="lg:mt-7 mb-3">
-                <label class="label-email mr-4" for="phone">
-                  <span class="text-dark-3">Numer telefonu</span>
-                </label>
-                <input
-                  id="phone"
-                  class="w-full border border-dark-3 text-dark-3"
-                  placeholder="telefon"
-                  type="text"
-                  name="phone"
-                  v-model="formData.contactData.phone"
-                />
-              </div>
-            </div>
-
-            <div :class="{ 'textarea-wrapper__is-send': sendOK }">
-              <label class="label-email mr-4" for="tresc">
-                <span class="text-dark-3">Treść wiadomośći</span>
-              </label>
-              <textarea
-                id="tresc"
-                class="w-full border border-dark-3 text-dark-3 font-normal"
-                name="tresc"
-                cols="30"
-                rows="10"
-                v-model="formData.message"
-              ></textarea>
-            </div>
-          </div>
-
-          <!-- submit -->
-          <div
-            class="lg:pl-10 mt-5 w-full flex flex-col lg:flex-row items-center lg:items-start justify-between h-14"
-          >
-            <div class="text-dark-3">
-              <p class="text-sm text-center lg:text-left">
-                Chciałbyś podpisać NDA ? napisz bezpośrednio na
-                <a
-                  class="link-with-undeline link-with-undeline__dark"
-                  href="mailto:info@j-filipiak.pl"
-                  >info@j-filipiak.pl</a
-                >
-              </p>
-              <p
-                class="text-xs mt-2 flex flex-col items-center lg:items-start lg:flex-row mb-2 lg:mb-0 text-center lg:text-left"
+              <div
+                class="flex flex-col lg:flex-row items-start lg:items-center lg:mt-10 justify-stretch"
               >
-                Wyrażam zgodę na przetwarzanie tego formularza w celu kontaktu
-                oraz przedstawienia oferty
-              </p>
-            </div>
-            <div class="flex items-center">
-              <div>
-                <button class="submit font-normal" type="submit">
-                  Wyślij
-                  <div class="brief-spinner"></div>
-                </button>
+                <div class="group">
+                  <input
+                    id="graphic"
+                    type="checkbox"
+                    name="projektowanie graficzne"
+                    v-model="selectedServices.projektowanieGraficzne"
+                  />
+                  <label
+                    for="graphic"
+                    class="border border-dark-3 group-hover:bg-yellow-300 transition-all"
+                  >
+                    <span class="text-dark-3">Projektownie graficzne</span>
+                  </label>
+                </div>
+
+                <div class="group">
+                  <input
+                    id="proggraming"
+                    type="checkbox"
+                    name="programowanie"
+                    v-model="selectedServices.uslugaProgramistyczna"
+                  />
+                  <label
+                    for="proggraming"
+                    class="border border-dark-3 group-hover:bg-yellow-300 transition-all"
+                  >
+                    <span class="text-dark-3">Usługa programistyczna</span>
+                  </label>
+                </div>
+
+                <div class="group">
+                  <input
+                    id="www"
+                    type="checkbox"
+                    name="www"
+                    v-model="selectedServices.stronaWWW"
+                  />
+                  <label
+                    for="www"
+                    class="border border-dark-3 group-hover:bg-yellow-300 transition-all"
+                  >
+                    <span class="text-dark-3"> Wykonanie strony www</span>
+                  </label>
+                </div>
+
+                <div class="group">
+                  <input
+                    id="full"
+                    type="checkbox"
+                    name="full"
+                    v-model="selectedServices.stalaWspolpraca"
+                  />
+                  <label
+                    for="full"
+                    class="border border-dark-3 group-hover:bg-yellow-300 transition-all"
+                  >
+                    <span class="text-dark-3">Stała obsługa</span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
-          <!-- submit -->
-        </div>
-      </form>
+
+          <div class="form-row--wrapper">
+            <div class="form-row--header">
+              <div class="form-row--number">02</div>
+              <div class="form-row--title">Szacowany budżet</div>
+            </div>
+            <div class="form-row--fields">
+              <!-- fields in this form row -->
+              <div class="flex items-center justify-around">
+                <div class="w-9/12">
+                  <URange
+                    v-model="formData.budget"
+                    :step="1000"
+                    :min="3000"
+                    :max="20000"
+                    size="2xl"
+                    name="range"
+                  />
+                </div>
+                <div
+                  class="w-3/12 flex items-center justify-start text-start pl-3"
+                >
+                  <p class="text-dark-3 text-3xl pl-10 font-Atkinson">
+                    {{ formData.budget }} zł
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="form-row--wrapper">
+            <div class="form-row--header">
+              <div class="form-row--number">03</div>
+              <div class="form-row--title">Pozostałe informacje</div>
+            </div>
+            <div class="form-row--fields">
+              <!-- fields in this form row -->
+
+              <div class="flex flex-col lg:flex-row items-center lg:gap-7">
+                <div class="lg:mt-7 mb-3">
+                  <label class="label-email mr-4" for="name">
+                    <span class="text-dark-3">Imię, nazwisko</span>
+                  </label>
+                  <input
+                    id="name"
+                    class="w-full border border-dark-3 text-dark-3"
+                    placeholder="Imię, nazwisko"
+                    type="text"
+                    name="name"
+                    v-model="formData.name_surname"
+                  />
+                </div>
+
+                <div class="lg:mt-7 mb-3">
+                  <label class="label-email mr-4" for="email">
+                    <span class="text-dark-3">Podaj adres email</span>
+                  </label>
+                  <input
+                    id="email"
+                    class="w-full border border-dark-3 text-dark-3"
+                    placeholder="email"
+                    type="email"
+                    v-model="formData.email"
+                  />
+                </div>
+
+                <div class="lg:mt-7 mb-3">
+                  <label class="label-email mr-4" for="phone">
+                    <span class="text-dark-3">Numer telefonu</span>
+                  </label>
+                  <input
+                    id="phone"
+                    class="w-full border border-dark-3 text-dark-3"
+                    placeholder="telefon"
+                    type="text"
+                    name="phone"
+                    v-model="formData.phone"
+                  />
+                </div>
+              </div>
+
+              <div :class="{ 'textarea-wrapper__is-send': sendOK }">
+                <label class="label-email mr-4" for="tresc">
+                  <span class="text-dark-3">Treść wiadomośći</span>
+                </label>
+                <textarea
+                  id="message"
+                  class="w-full border border-dark-3 text-dark-3 font-normal"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  v-model="formData.message"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- submit -->
+            <div
+              class="lg:pl-10 mt-5 w-full flex flex-col lg:flex-row items-center lg:items-start justify-between h-14"
+            >
+              <div class="text-dark-3">
+                <p class="text-sm text-center lg:text-left">
+                  Chciałbyś podpisać NDA ? napisz bezpośrednio na
+                  <a
+                    class="link-with-undeline link-with-undeline__dark"
+                    href="mailto:info@j-filipiak.pl"
+                    >info@j-filipiak.pl</a
+                  >
+                </p>
+                <p
+                  class="text-xs mt-2 flex flex-col items-center lg:items-start lg:flex-row mb-2 lg:mb-0 text-center lg:text-left"
+                >
+                  Wysyłająć brief wyrażasz zgodę na jego przetwarzanie w celu
+                  kontaktu oraz przedstawienia oferty
+                </p>
+              </div>
+              <div class="flex items-center">
+                <div>
+                  <button type="submit" class="submit font-normal relative">
+                    <div v-if="isSending" class="brief-spinner">
+                      <Loader />
+                    </div>
+                    <div v-else>Wyślij</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- submit -->
+
+            <div v-if="resp" class="lg:pl-10 mt-5">
+              <div
+                class="border border-dark-3 p-3"
+                :class="{
+                  'bg-green-700': resp?.data?.status === 'mail_sent',
+                  'bg-dark-3': resp?.data?.status !== 'mail_sent',
+                }"
+              >
+                <p class="text-white text-2xl">{{ resp?.data?.message }}</p>
+                <ul v-if="resp?.data?.invalid_fields.length" class="pt-3">
+                  <li v-for="err in resp?.data?.invalid_fields">
+                    {{ err.field }}: {{ err.message }}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- sidebar -->
+      <!-- <div class="w-4/12 pt-20"></div> -->
     </div>
 
-    <!-- sticky -->
-    <div
-      class="w-4/12 border border-red bg-red-500 sticky top-0 pt-20 border-dark-3"
-    >
-      <h1>Sidebar sticky</h1>
-    </div>
+    <CtaYellow />
   </div>
-  <CtaYellow />
 </template>
 
 <script setup>
   import { useBriefStore } from '~~/stores/brief';
   import { storeToRefs } from 'pinia';
+  import axios from 'axios';
 
   const store = useBriefStore();
   const { formData } = storeToRefs(store);
 
-  const nuxtApp = useNuxtApp();
-  const ToggleButton = nuxtApp.ToggleButton;
+  const selectedServices = ref({
+    projektowanieGraficzne: false,
+    uslugaProgramistyczna: false,
+    stronaWWW: false,
+    stalaWspolpraca: false,
+  });
+
+  const sendOK = ref(false);
+  const isSending = ref(false);
+  const resp = ref(null);
 
   useHead({
     title: 'Projektowanie stron www - tylko profesjonalne strony firmowe',
@@ -257,32 +307,59 @@
     },
   });
 
-  function sendData() {
-    console.log('send data');
-  }
+  const clearForm = () => {
+    formData.name_surname = '';
+    formData.email = '';
+    formData.phone = '';
+    formData.message = '';
+    formData.budget = 3000;
+    resp.value = null;
+  };
 
-  onMounted(() => {
-    console.log('mounted brief component');
-    console.log(ToggleButton);
-  });
+  const send = async () => {
+    isSending.value = true;
+
+    const specs = Object.keys(selectedServices.value).filter(
+      (key) => selectedServices.value[key] === true
+    );
+
+    const form = new FormData();
+
+    form.append('name_surname', store.formData.name_surname);
+    form.append('email', store.formData.email);
+    form.append('phone', store.formData.phone);
+    form.append('message', store.formData.message);
+    form.append('budget', store.formData.budget);
+    form.append('acpt-required', 1);
+    form.append('spec', specs);
+
+    axios
+      .post(
+        'https://j-filipiak.pl/api/wp-json/contact-form-7/v1/contact-forms/40/feedback',
+        form
+      )
+      .then(function (response) {
+        resp.value = response;
+        console.log(response);
+        isSending.value = false;
+        window.setTimeout(() => {
+          clearForm();
+        }, 15000);
+      })
+      .catch(function (error) {
+        resp.value = response;
+        console.log(error);
+        isSending.value = false;
+      });
+  };
 </script>
 
-<style lang="scss" scoped>
-  .textarea-wrapper__is-send {
-    transition: all 2s cubic-bezier(0.39, 0.575, 0.565, 1);
-    @apply relative;
-
-    &::after {
-      content: 'Wiadomość została wysłana!';
-      @apply w-full h-full absolute left-0 top-0 bg-yellow inline-flex items-center justify-center text-4xl text-dark-1 font-semibold;
-    }
-  }
+<style lang="scss">
   .brief-spinner {
-    @apply flex items-center justify-center;
-    .px-griditem {
-      @apply transform scale-50 m-0;
-      transform-origin: center;
-    }
+    @apply flex items-center justify-center absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
   .vue-slider--wrapper {
     @apply lg:max-w-3xl lg:mt-10 lg:pl-14;
@@ -386,7 +463,7 @@
       label:not(.label-email) {
         position: relative;
         cursor: pointer;
-        @apply border border-white inline-flex items-center p-5;
+        @apply border border-white inline-flex items-center p-5 text-xl;
         width: 230px;
         height: 110px;
 
@@ -441,7 +518,7 @@
         width: 42px;
         height: 42px;
         display: block;
-        @apply bg-yellow rounded-full  flex items-center justify-center;
+        @apply bg-yellow-300 rounded-full  flex items-center justify-center;
         position: absolute;
         right: -15px;
         top: -15px;
@@ -465,7 +542,7 @@
       }
 
       .submit {
-        @apply bg-yellow text-dark-1 mt-5 lg:mt-0 pt-3 pb-3 pl-12 pr-12 font-bold hover:opacity-80 w-36 h-12;
+        @apply bg-yellow-300 text-dark-1 mt-5 lg:mt-0 pt-3 pb-3 pl-12 pr-12 font-bold hover:opacity-80 w-36 h-12;
       }
     }
   }

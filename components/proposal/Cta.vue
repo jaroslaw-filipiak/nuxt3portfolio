@@ -87,6 +87,6 @@
   }
 
   .yellow-label {
-    @apply p-3 pl-5 pr-5 text-black bg-yellow font-bold font-Atkinson inline-block;
+    @apply p-3 pl-5 pr-5 text-black bg-yellow-300 font-bold font-Atkinson inline-block;
   }
 </style>

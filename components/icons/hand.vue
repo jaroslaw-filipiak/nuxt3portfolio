@@ -25,6 +25,6 @@
 
 <style lang="scss" scoped>
   .hand--animation {
-    @apply ml-3 bg-yellow rounded-full p-4;
+    @apply ml-3 bg-yellow-300 rounded-full p-4;
   }
 </style>

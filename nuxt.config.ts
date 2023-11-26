@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     '~/assets/css/vue-slider-component-theme.css',
     '~/assets/scss/main.scss',
   ],
-  modules: ['@pinia/nuxt', 'nuxt-gtag'],
+  modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxt/ui'],
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
