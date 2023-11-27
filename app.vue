@@ -7,7 +7,7 @@
 <script setup></script>
 
 <style>
-  /* .page-enter-active,
+  .page-enter-active,
   .page-leave-active {
     transition: all 0.7s;
   }
@@ -16,7 +16,7 @@
   .page-leave-to {
     opacity: 0;
     filter: blur(1rem);
-  } */
+  }
 
   .page-content {
     @apply lg:min-h-screen flex flex-col items-start text-white;
