@@ -28,6 +28,6 @@ export default defineNuxtConfig({
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
-    id: 'G-X4MDTE1EBE',
+    id: 'AW-11423080410',
   },
 });
