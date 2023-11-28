@@ -50,7 +50,7 @@
         >
           <NuxtLink
             class="offer-menu--item flex items-center justify-between w-full relative"
-            to="/oferta/profesjonalne-strony-www"
+            to="/oferta/tanie-strony-www"
           >
             <div class="flex flex-col">
               <div class="flex flex-col items-start justify-start">
@@ -112,7 +112,7 @@
         >
           <NuxtLink
             class="offer-menu--item flex items-center justify-between w-full"
-            to="/oferta/profesjonalne-strony-www"
+            to="/oferta/opieka-nad-stronami-internetowymi"
           >
             <div class="flex flex-col">
               <div class="left-0 relative lg:group-hover:left-4 transition-all">
