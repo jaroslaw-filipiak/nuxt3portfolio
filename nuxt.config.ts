@@ -7,6 +7,9 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
     },
   },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL,
+  },
 
   postcss: {
     plugins: {
