@@ -6,6 +6,7 @@ import Lenis from '@studio-freight/lenis';
 
 export default defineNuxtPlugin((nuxtApp) => {
   gsap.registerPlugin(ScrollTrigger);
+
   nuxtApp.gsap = gsap;
   nuxtApp.ScrollTrigger = ScrollTrigger;
 

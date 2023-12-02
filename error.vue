@@ -22,6 +22,7 @@
 
   const store = useNavStore();
   const route = useRoute();
+  const error = useError();
 
   watch(route, () => {
     store.closeNav();

@@ -15,7 +15,7 @@
       </div>
 
       <div class="why-freelancer--items mt-32">
-        <div class="why-freelancer--row--wrapper">
+        <div class="why-freelancer--row--wrapper flex-nowrap">
           <div class="why-freelancer--row lg:border-r-0">
             <h4
               class="text-3xl lg:text-5xl font-Atkinson gsap--home__txt-opacity"
@@ -58,7 +58,36 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+  const nuxtApp = useNuxtApp();
+  const gsap = nuxtApp.gsap;
+  const ScrollTrigger = nuxtApp.ScrollTrigger;
+
+  let ctx;
+
+  onMounted(() => {
+    ctx = gsap.context(() => {
+      const heroBGTrigger = document.querySelector(
+        '.gsap__hero-bg-size--trigger'
+      );
+      // gsap.from('.gsap--why-me--pin', {
+      //   scale: '3',
+      //   scrollTrigger: {
+      //     id: 'heroImageZoom',
+      //     trigger: heroBGTrigger,
+      //     start: 'top bottom',
+      //     end: 'top 10%',
+      //     scrub: true,
+      //     markers: true,
+      //   },
+      // });
+    });
+  });
+
+  onUnmounted(() => {
+    ctx.revert();
+  });
+</script>
 
 <style lang="scss" scoped>
   .why-freelancer {
@@ -71,7 +100,7 @@
     }
 
     &--row {
-      @apply flex flex-col  gap-10 items-start justify-between p-8 w-full lg:w-full border border-dark-3;
+      @apply flex flex-col gap-10 items-start justify-between p-8  border border-dark-3;
 
       &--wrapper {
         @apply flex flex-col lg:flex-row;
