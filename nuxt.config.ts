@@ -32,9 +32,7 @@ export default defineNuxtConfig({
   routeRules: {
     // Don't add any /secret/** URLs to the sitemap.xml
     '/wyceny/**': { index: false },
-    
-   
-  }
+  },
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
