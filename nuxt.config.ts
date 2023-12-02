@@ -1,10 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
-  site: {
-    url: 'https://j-filipiak.pl',
-  },
-
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
     head: {
@@ -25,7 +21,13 @@ export default defineNuxtConfig({
     '~/assets/css/vue-slider-component-theme.css',
     '~/assets/scss/main.scss',
   ],
-  modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxt/ui', 'nuxt-simple-sitemap'],
+  modules: [
+    '@pinia/nuxt',
+    'nuxt-gtag',
+    '@nuxt/ui',
+    '@nuxtseo/module',
+    'nuxt-simple-sitemap',
+  ],
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
