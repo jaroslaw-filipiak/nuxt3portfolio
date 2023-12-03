@@ -9,10 +9,10 @@
     }"
   >
     <header>
-      <div class="faq--title transition-all text-3xl lg:text-4xl">
+      <div class="faq--title transition-all text-2xl lg:text-4xl">
         {{ title }}
       </div>
-      <div class="faq--btn opacity-50 group-hover:opacity-100">
+      <div class="faq--btn opacity-50 group-hover:opacity-100 hidden lg:block">
         <!-- <img src="@/assets/uploads/arrow-down-circle 1.svg" alt="" /> -->
         <svg
           class="w-10"
@@ -27,7 +27,7 @@
       </div>
     </header>
 
-    <div class="faq--content">
+    <div class="faq--content text-xl lg:text-2xl">
       <p>
         {{ content }}
       </p>

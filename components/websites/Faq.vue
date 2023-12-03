@@ -22,21 +22,23 @@
         />
       </div>
       <div class="budget-websites-faq--footer">
-        <div class="flex items-center justify-start mt-6">
-          <div class="flex flex-col w-6/12">
-            <p class="pr-20 text-3xl">
+        <div class="flex flex-col lg:flex-row items-center justify-start mt-6">
+          <div class="flex flex-col w-full lg:w-6/12">
+            <p class="lg:pr-20 text-5xl lg:text-3xl">
               Nie znalezłeś/aś odpowiedzi na pytanie ?
             </p>
-            <p class="text-xl">
-              <strong>skontaktuj się ze mną</strong> a chętnie udziele więcej
-              informacji
+            <p class="text-xl mt-6 lg:mt-0">
+              <strong>skontaktuj się ze mną</strong> <br class="lg:hidden" />a
+              chętnie udziele więcej informacji
             </p>
           </div>
-          <div class="flex w-6/12">
+          <div
+            class="flex flex-col lg:flex-row mt-6 lg:mt-0 w-full lg:w-6/12 gap-2 lg:gap-0"
+          >
             <div class="flex">
               <a
                 href="tel:663568828"
-                class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block relative underline-after text-dark-3"
+                class="max-lg:text-2xl link-with-undeline link-with-undeline__yellow md:ml-0 inline-block relative underline-after text-dark-3"
                 >+48 663 568 828</a
               >
               <img
@@ -49,7 +51,7 @@
             <div class="flex">
               <a
                 href="mailto:info@j-filipiak.pl"
-                class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-dark-3 relative"
+                class="max-lg:text-2xl link-with-undeline link-with-undeline__yellow md:ml-0 inline-block underline-after text-dark-3 relative"
                 >info@j-filipiak.pl</a
               >
               <img
@@ -63,7 +65,7 @@
               <a
                 target="_blank"
                 href="https://calendly.com/jaroslaw-filipiak/30minmeeting"
-                class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-dark-3 relative"
+                class="max-lg:text-2xl link-with-undeline link-with-undeline__yellow md:ml-0 inline-block underline-after text-dark-3 relative"
                 >porozmawiajmy via online</a
               >
             </div>
