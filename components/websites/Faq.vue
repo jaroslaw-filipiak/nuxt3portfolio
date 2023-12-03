@@ -22,10 +22,12 @@
         />
       </div>
       <div class="budget-websites-faq--footer">
-        <div class="flex flex-col lg:flex-row items-center justify-start mt-6">
+        <div
+          class="flex flex-col lg:flex-row items-center justify-start mt-10 lg:mt-6"
+        >
           <div class="flex flex-col w-full lg:w-6/12">
             <p class="lg:pr-20 text-5xl lg:text-3xl">
-              Nie znalezłeś/aś odpowiedzi na pytanie ?
+              Nie znalazłeś/aś odpowiedzi na pytanie ?
             </p>
             <p class="text-xl mt-6 lg:mt-0">
               <strong>skontaktuj się ze mną</strong> <br class="lg:hidden" />a
@@ -44,7 +46,7 @@
               <img
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDI4IDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yNC42NjEgMy41MzE0N0MyNS40MzgxIDMuMzQ5MzcgMjYuMjY1IDIuNzE3MjkgMjYuOTE5OSAyLjI3MjVNMjYuOTE5OSAyLjI3MjVDMjYuOTMyNSAyLjI2MzkgMjYuNzY3OCAyLjA4NjAzIDI2Ljc1NDggMi4wNzI1MUMyNi4xNyAxLjQ2NTMgMjQuODk5MiAwLjgyNjg3NiAyNC4yMDk1IDAuNjc5MzkyTTI2LjkxOTkgMi4yNzI1QzIyLjQzOTcgMS44ODcwNiAxNy40NTIgMS45Mjg4MiAxMi41MjI0IDEuOTUwMDlDOC41NDQ4MSAxLjk2NzI1IDQuNjA1IDEuOTcxMDcgMS4wMDAxMiAxLjcyNjM1IiBzdHJva2U9IiNGRkQ0MEIiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K"
                 alt="arrow"
-                class="hidden md:block ml-6 pr-6"
+                class="hidden lg:block ml-6 pr-6"
                 style="width: 64px"
               />
             </div>
@@ -57,7 +59,7 @@
               <img
                 src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjgiIGhlaWdodD0iNSIgdmlld0JveD0iMCAwIDI4IDUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yNC42NjEgMy41MzE0N0MyNS40MzgxIDMuMzQ5MzcgMjYuMjY1IDIuNzE3MjkgMjYuOTE5OSAyLjI3MjVNMjYuOTE5OSAyLjI3MjVDMjYuOTMyNSAyLjI2MzkgMjYuNzY3OCAyLjA4NjAzIDI2Ljc1NDggMi4wNzI1MUMyNi4xNyAxLjQ2NTMgMjQuODk5MiAwLjgyNjg3NiAyNC4yMDk1IDAuNjc5MzkyTTI2LjkxOTkgMi4yNzI1QzIyLjQzOTcgMS44ODcwNiAxNy40NTIgMS45Mjg4MiAxMi41MjI0IDEuOTUwMDlDOC41NDQ4MSAxLjk2NzI1IDQuNjA1IDEuOTcxMDcgMS4wMDAxMiAxLjcyNjM1IiBzdHJva2U9IiNGRkQ0MEIiIHN0cm9rZS1taXRlcmxpbWl0PSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K"
                 alt="arrow"
-                class="hidden md:block ml-6 pr-6"
+                class="hidden lg:block ml-6 pr-6"
                 style="width: 64px"
               />
             </div>

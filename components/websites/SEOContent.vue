@@ -1,6 +1,6 @@
 <template>
-  <div class="budget-websites__seo-content">
-    <div class="budget-websites__seo-content--inner">
+  <div class="websites__seo-content">
+    <div class="websites__seo-content--inner">
       <div class="section--title">
         <h1>Kompleksowa oferta</h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
@@ -77,9 +77,9 @@
 </script>
 
 <style lang="scss" scoped>
-  .budget-websites__seo-content {
+  .websites__seo-content {
     @apply bg-cover bg-fixed bg-no-repeat bg-light text-dark-3;
-    @apply w-full flex flex-col items-start justify-center pb-40 pt-40;
+    @apply w-full flex flex-col items-start justify-center pb-40 lg:pt-40;
     text-align: left;
 
     &--inner {
