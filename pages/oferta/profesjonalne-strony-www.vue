@@ -9,7 +9,7 @@
       heading="Jak może wyglądać Twoja nowa strona www ?"
     />
 
-    <!-- <WebsitesFaq /> -->
+    <WebsitesFaq />
     <WebsitesSEOContent />
     <WebsitesReview />
     <CtaYellow />

@@ -16,6 +16,7 @@
           color="dark"
           :title="item.title"
           :content="item.content"
+          :id="item.id"
           v-for="item in faqs"
           v-bind:key="item.id"
         />
@@ -34,7 +35,7 @@
           <div class="flex w-6/12">
             <div class="flex">
               <a
-                href="#"
+                href="tel:663568828"
                 class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block relative underline-after text-dark-3"
                 >+48 663 568 828</a
               >
@@ -47,7 +48,7 @@
             </div>
             <div class="flex">
               <a
-                href="#"
+                href="mailto:info@j-filipiak.pl"
                 class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-dark-3 relative"
                 >info@j-filipiak.pl</a
               >
@@ -60,7 +61,8 @@
             </div>
             <div class="flex">
               <a
-                href="#"
+                target="_blank"
+                href="https://calendly.com/jaroslaw-filipiak/30minmeeting"
                 class="link-with-undeline link-with-undeline__yellow ml-6 md:ml-0 inline-block underline-after text-dark-3 relative"
                 >porozmawiajmy via online</a
               >
@@ -73,64 +75,63 @@
 </template>
 
 <script setup>
+  // TODO: id2 = zajrzyj do cennika i link do strony z cennikem .
   const faqs = [
     {
       id: 1,
-      title: 'Jak wygląda tworzenie taniej strony www?',
+      title: 'Jak wygląda proces tworzenia strony www?',
       content:
-        'Przygotowanie taniej strony internetowej jest prosta i szybkie. Wystarczy, że dokonasz zamówienia w sklepie i wypełnisz formularz - dla mnie to wystarczy, aby wykonać Twoją stronę www.',
+        'Tworzenie strony internetowej to niezwykle złożony proces składający się w wielu kroków, które również są dopasowane indywidualnie do klienta. Dlatego też zachęcam do niezobowiązującego kontaktu w celu ustalenia szczegółów.',
     },
     {
       id: 2,
-      title: 'Ile kosztuje tania strona wizytówka?',
+      title: 'Ile kosztuje wykonanie strony www?',
       content:
-        'Koszt prostej strony www to 999 zł. W tej cenie otrzymasz także domenę, serwer na 12 miesięcy oraz certyfikat SSL oraz pocztę email.',
+        'Wszystko zależy od wielu czynników min ilość podstron, wymagana funkcjonalność, ilość jezyków czy też rodzaj zamówionej strony (z szablonu bądź autorski design). W celu uzyskania wyceny zapraszamy do kontaktu.',
     },
     {
       id: 3,
-      title: 'Ile kosztuje strona www multipage?',
+      title: 'Co z RODO i ciasteczkami?',
       content:
-        'Koszt przygotowania strony multipage to  od : 1999 zł. Podobnie jak w przypadku wizytówki, w cenie dostaniesz także domenę wraz z serwerem, certyfikat SSL i adres e-mail.',
+        'Dbam o dostosowanie strony do aktualnych aktów prawnych. Każda strona zawiera box informacyjny o ciasteczkach oraz link do polityki prywatności',
     },
     {
       id: 4,
-      title: 'Czy mogę zmieniać układ strony www?',
-      content: '',
+      title: 'Jak długo trwa zrobienie strony?',
+      content:
+        'W zależności od rozmiaru projektu i jego funkcjonalności. 80% projektów wykonuje w ciągu 2-3 tygodni.',
     },
     {
       id: 5,
-      title: 'Ile kosztuje utrzymanie taniej strony www?',
-      content: '',
+      title: 'Czy mogę edytować swoją stronę www?',
+      content:
+        'Tak, wraz ze stroną otrzymasz dostęp do panelu administracyjnego, z poziomu którego będzie można w pełni edytować stronę, jej treśći i grafikę a także dodawać nowe podstrony oraz o wiele więcej.',
     },
+
     {
       id: 6,
-      title: 'Czy mogę edytować swoją tanią stronę www?',
-      content: '',
+      title: 'Czy strony są dopasowane do urządzeń mobilnych?',
+      content:
+        'Tak, wszystkie strony są w pełni responsywne i dopasowane do urządzeń mobilnych. Oznacza to, że poprawnie wyświetlają się nie tylko na laptopie i komputerze ale i na telefonie komórkowym oraz tabletach',
     },
     {
       id: 7,
-      title: 'Czy strony są dopasowane do urządzeń mobilnych?',
-      content: '',
+      title: 'Czy strony są zoptymalizowane pod kątem SEO?',
+      content:
+        'Tak, wszystkie strony są zoptymalizowane pod kątem SEO. Każda strona otrzymuje ode mnie wyprawkę w postaci rozwiązań ułatwiających przyszłe pozycjonowanie strony www czyli: prawidłowe oznaczenie tagów na stronie (min. kluczowy tag h1 na każdej podstronie), przygotowanie sitemap.xml oraz robots.txt, skonfigurowanie wtyczki do SEO. Jeżeli jest taka potrzeba to mogę również skonfigurować Google Analytics oraz Google Search Console i poprosić o szybszą indeksację strony www.',
     },
+
     {
       id: 8,
-      title: 'Kwestia seo ',
-      content: '',
+      title: 'Czy strony są w pełni bezpieczne?',
+      content:
+        'Nie ma w pełni bezpiecznego systemu na całym świecie. Nie mniej dbam o wiele kluczowych kwestii takich jak: mocne hasła, prawidłowe skonfigurowanie serwera czy też zastosowanie certyfikatu ssl. W naszej ofercie mamy również stałą opiekę i monitoring stron www dbając min. o aktualizacje wtyczek, motywów oraz samego WordPressa. Jeżeli mamy do czynienia z prostą stroną www to otrzymany pakiet zabezpieczeń w zupełności wystarczy aby uznać stronę za bezpieczną. Nie mniej im więcej doinstalowanych wtyczek tym większe ryzyko. W takim przypadku zalecam wykonywanie regularnego serwisu przez doświadczone osoby',
     },
     {
       id: 9,
-      title: 'Kwestia szybkości ',
-      content: '',
-    },
-    {
-      id: 10,
-      title: 'Kwestia zabepieczeń ',
-      content: '',
-    },
-    {
-      id: 11,
-      title: 'Kwestia gwarancji ',
-      content: '',
+      title: 'Czy strony mogą mieć wiele języków?',
+      content:
+        'Tak można dodać obsługę wielu języków samodzielnie lub też zlecić to mnie w ramach usługi',
     },
   ];
 </script>

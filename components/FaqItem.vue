@@ -1,15 +1,29 @@
 <template>
   <div
-    class="faq--item"
+    @click="toggle"
+    class="faq--item selection:bg-transparent group"
+    :id="id"
     :class="{
       collapsed: state.isExpanded,
       'faq--item__dark': color === 'dark',
     }"
   >
-    <header @click="toggle">
-      <div class="faq--title">{{ title }}</div>
-      <div class="faq--btn">
+    <header>
+      <div class="faq--title transition-all text-3xl lg:text-4xl">
+        {{ title }}
+      </div>
+      <div class="faq--btn opacity-50 group-hover:opacity-100">
         <!-- <img src="@/assets/uploads/arrow-down-circle 1.svg" alt="" /> -->
+        <svg
+          class="w-10"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="M30 15v13.59L1.71.29.29 1.71 28.59 30H16v2h15a1 1 0 0 0 1-1V15z"
+            data-name="8-Arrow Down"
+          />
+        </svg>
       </div>
     </header>
 
@@ -25,10 +39,18 @@
   import { reactive } from 'vue';
 
   const state = reactive({ isExpanded: false });
-  const props = defineProps(['color', 'title', 'content']);
+  const props = defineProps(['color', 'title', 'content', 'id']);
 
   function toggle() {
+    const item = document.getElementById(props.id);
+    const content = item.querySelector('.faq--content');
+
     state.isExpanded = !state.isExpanded;
+    if (state.isExpanded) {
+      content.style.maxHeight = content.scrollHeight + 'px';
+    } else {
+      content.style.maxHeight = '0px';
+    }
   }
 </script>
 
@@ -36,7 +58,7 @@
   .faq {
     &--content {
       max-height: 0px;
-      @apply overflow-hidden;
+      @apply overflow-hidden transition-all;
 
       p {
         @apply pb-10;
@@ -57,7 +79,8 @@
       }
 
       .faq--btn {
-        transform: rotate(0deg);
+        // transform: rotate(0deg);
+        @apply transition-all scale-75 -rotate-[45deg];
       }
 
       &__dark {
@@ -72,10 +95,12 @@
 
   .collapsed {
     .faq--content {
-      max-height: 800px;
+      //TODO:  dynamic max height
+      // max-height: 40px;
     }
     .faq--btn {
-      transform: rotate(180deg);
+      @apply transition-all scale-100 opacity-100 -rotate-0;
+      opacity: 100% !important;
     }
   }
 </style>
