@@ -106,7 +106,7 @@
     <div class="footer--bottom">
       <div class="flex items-center gap-2">
         <div>
-          <svg
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-copyright hidden lg:block"
             width="24"
@@ -123,20 +123,22 @@
             <path
               d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173"
             ></path>
-          </svg>
+          </svg> -->
+          <img class="w-6" src="@/assets/uploads/jarek-avatar.png" alt="" />
         </div>
         <div>
           <div class="text-center lg:text-left opacity-30 lg:opacity-100">
             <NuxtLink
               class="text-sm footer--version"
               to="https://www.j-filipiak.pl"
-              >j-filipiak.pl - projektowanie stron www | ver. mvp
+              >j-filipiak.pl - projektowanie stron www | Vue.js | Next.js |
+              Laravel | WordPress
             </NuxtLink>
           </div>
         </div>
       </div>
 
-      <div class="items-center gap-2 techstack hidden md:flex">
+      <div class="items-start gap-2 techstack hidden md:flex">
         <p>in</p>
         <div>
           <svg
@@ -164,6 +166,20 @@
           <a href="https://github.com/features/actions">GitHub Actions</a>
         </div>
       </div>
+    </div>
+    <div
+      class="pl-8 pr-8 w-full lg:w-11/12 pb-4 pt-4 flex flex-col items-start justify-start text-left footer--hell"
+    >
+      <small
+        >Używam informacji zapisanych za pomocą cookies m.in. w celach
+        statystycznych. Przeglądając stronę zgadzasz się na ich używanie. Więcej
+        informacji »</small
+      >
+      <!-- TODO: seo links/subpages -->
+      <small>
+        Pracuję zdalnie na terenie całej Polski. Miejscowości, w których bywam:
+        Poznań, Nowy Tomyśl, Grodzisk Wielkopolski, Opalenica
+      </small>
     </div>
   </div>
 </template>
@@ -195,6 +211,10 @@
       .techstack {
         @apply text-xs;
       }
+    }
+
+    &--hell {
+      @apply mt-5 pb-5 border-t border-t-white border-opacity-10;
     }
 
     &--col {
