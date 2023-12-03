@@ -18,23 +18,25 @@
         <div class="why-freelancer--row--wrapper flex-nowrap">
           <div class="why-freelancer--row lg:border-r-0">
             <h4
-              class="text-3xl lg:text-5xl font-Atkinson gsap--home__txt-opacity"
+              class="text--reveal text-3xl lg:text-5xl font-Atkinson gsap--home__txt-opacity"
             >
               Nie wszystkie projekty wymagają zatrudnienia agencji kreatywnej
               lub zespołu
             </h4>
-            <p class="text-xl lg:text-3xl">
+            <p class="text--reveal text-xl lg:text-3xl">
               Dowiedz się dlaczego warto współpracować z
               <strong>dobrym </strong> freelancerem
             </p>
           </div>
 
           <div class="why-freelancer--row lg:border-r-0">
-            <h4 class="text-xl lg:text-3xl">Jasna komunikacja</h4>
+            <h4 class="text--reveal text-xl lg:text-3xl">Jasna komunikacja</h4>
           </div>
 
           <div class="why-freelancer--row">
-            <h4 class="text-xl lg:text-3xl">Indywidualne podejście</h4>
+            <h4 class="text--reveal text-xl lg:text-3xl">
+              Indywidualne podejście
+            </h4>
           </div>
         </div>
       </div>
@@ -42,15 +44,17 @@
       <div class="why-freelancer--items">
         <div class="why-freelancer--row--wrapper">
           <div class="why-freelancer--row lg:border-r-0 lg:border-t-0">
-            <h4 class="text-xl lg:text-3xl">Elastyczność</h4>
+            <h4 class="text--reveal text-xl lg:text-3xl">Elastyczność</h4>
           </div>
 
           <div class="why-freelancer--row lg:border-r-0 lg:border-t-0">
-            <h4 class="text-xl lg:text-3xl">Jasne warunki rozliczenia</h4>
+            <h4 class="text--reveal text-xl lg:text-3xl">
+              Jasne warunki rozliczenia
+            </h4>
           </div>
 
           <div class="why-freelancer--row lg:border-t-0">
-            <h4 class="text-xl lg:text-3xl">Szybkość działania</h4>
+            <h4 class="text--reveal text-xl lg:text-3xl">Szybkość działania</h4>
           </div>
         </div>
       </div>

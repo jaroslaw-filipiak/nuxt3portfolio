@@ -8,7 +8,7 @@
         <div class="pl-5">
           <div class="yellow-label">darmowa wycena</div>
           <div>
-            <h4>
+            <h4 class="text--reveal">
               Skontaktuj się ze mną i uzyskaj
               <span>
                 wycenę w 24 godziny

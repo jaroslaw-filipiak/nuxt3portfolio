@@ -79,7 +79,7 @@
   function sendEvent() {
     gtag('event', 'click', {
       event_category: 'cta',
-      event_label: 'cta',
+      event_label: 'click-about-me-link',
       value: 'click-about-me-link',
     });
   }

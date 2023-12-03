@@ -7,7 +7,7 @@
           <div>
             <h4 class="text-center font-Atkinson">
               Skontaktuj się ze mną i uzyskaj
-              <span>
+              <span class="text--reveal">
                 wycenę w <strong>24 godziny</strong>
                 <img src="~/assets/uploads/smush-dark.svg" alt="" />
               </span>
@@ -18,7 +18,7 @@
       <div class="cta__yellow--middle">
         <div>
           <a
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            class="text--reveal link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
             href="tel:+48 663 568 828"
           >
             +48 663 568 828</a
@@ -26,7 +26,7 @@
         </div>
         <div>
           <a
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            class="text--reveal link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
             href="mailto:info@j-filipiak.pl"
             >info@j-filipiak.pl</a
           >
@@ -34,7 +34,7 @@
 
         <div>
           <NuxtLink
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            class="text--reveal link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
             to="https://calendly.com/jaroslaw-filipiak/30minmeeting"
             >Umów spotkanie online</NuxtLink
           >
@@ -42,7 +42,7 @@
 
         <div>
           <NuxtLink
-            class="link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
+            class="text--reveal link-with-undeline link-with-undeline__dark link-with-undeline__hover-dark"
             to="/kontakt"
             >Wypełnij brief online</NuxtLink
           >

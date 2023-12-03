@@ -10,7 +10,8 @@
 
 <script setup>
   useHead({
-    title: 'O mnie, projektuje oraz wdrażam profesjonalne strony internetowe',
+    title:
+      'Jarosław Filipiak, projektuje oraz wdrażam profesjonalne strony internetowe',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -34,7 +35,7 @@
         hid: 'og-desc',
         property: 'og:description',
         content:
-          'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne strony zoptymalizowane pod Google. Optymalizacja UX. Bezpłatna Wycena - Poproś o indywidualną wycenę!. Szybki kontakt',
+          'Poznaj moje doświadczenie. Projektuje oraz wdrażam profesjonalne strony internetowe a także aplikacje webowe (Fullstack development). Sprawdź moją ofertę. Szybki kontakt',
       },
       {
         hid: 'og-image',

@@ -2,20 +2,23 @@
   <div class="websites__offer--wrapper bg-dark-3">
     <div class="websites__offer--inner">
       <div class="section--title max-w-4xl">
-        <h3>Dlaczego warto skorzystać z oferty na autorskie strony www ?</h3>
+        <h3>Dlaczego warto skorzystać z oferty na autorskie strony www?</h3>
         <img class="pt-3" src="~/assets/uploads/smush.svg" alt="" />
       </div>
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-11/12">
-          <h4 class="text-white text-2xl lg:text-5xl">
+          <h4 class="text-2xl lg:text-5xl xl:text-[90px] gsap_pin--wrapper">
             Decydując się na wybór profesjonalnej strony internetowej masz
-            pewność, żę projekt będzie szybki, bezpieczny oraz w pełni stabilny.
+            pewność, że projekt będzie szybki, bezpieczny oraz w pełni
+            stabilny.<br /><br />
           </h4>
-          <h4 class="text-white text-xl lg:text-4xl mt-10 max-w-6xl">
-            Skoro wydajesz pieniądze na stronę www to upewnij się, że zostanie
-            ona wykonana przez profesjonalistę.
-          </h4>
+          <h5
+            class="text-2xl lg:text-5xl xl:text-[110px] text-white gsap_pin--wrapper-2"
+          >
+            <strong>3 najważniejsze aspekty porządnej strony www to:</strong>
+          </h5>
+          <h4 class="text-yellow-400 text-xl lg:text-4xl mt-10 max-w-6xl"></h4>
         </div>
       </div>
 
@@ -39,7 +42,7 @@
                 Użytkownicy bedą mogli oglądać Twoją stronę na różnych
                 urządzeniach niezależnie od rodzaju. Sama wygoda to nie jedyne
                 korzyści wynikające z posiadania responsywnej strony. Pamiętaj,
-                że takie strony mają lepsze wyniki w wyszukiwarkach oraz lepsze
+                że takie strony mają lepsze wyniki w wyszukiwarkach oraz wyższe
                 statystyki odwiedzin.
               </p>
               <p class="text-base lg:text-2xl mt-8">
@@ -77,7 +80,7 @@
           <div class="websites__offer--row w-full xl:border-t-0">
             <div>
               <div>
-                <h4 class="text-3xl lg:text-4xl">Bezpieczeństwo to podstawa</h4>
+                <h4 class="text-3xl lg:text-4xl">Bezpieczeństwo</h4>
               </div>
               <div class="hidden">
                 <img src="" alt="" />
@@ -108,8 +111,57 @@
   </div>
 </template>
 
-<script>
-  export default {};
+<script setup>
+  const nuxtApp = useNuxtApp();
+  const gsap = nuxtApp.gsap;
+  const ScrollTrigger = nuxtApp.ScrollTrigger;
+
+  let ctx;
+
+  onMounted(() => {
+    ctx = gsap.context(() => {
+      const pinWrapper = document.querySelector('.gsap_pin--wrapper');
+      const pinWrapper2 = document.querySelector('.gsap_pin--wrapper-2');
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            id: 'gsap_pin--wrapper',
+            trigger: pinWrapper,
+            scrub: true,
+            pin: true,
+            start: 'top 30%',
+            end: '+=190%',
+            markers: false,
+          },
+        })
+        .from(pinWrapper, {
+          ease: 'ease-in',
+          backgroundSize: '0%',
+        });
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            id: 'gsap_pin--wrapper2',
+            trigger: pinWrapper2,
+            scrub: true,
+            pin: true,
+            start: 'top 30%',
+            end: '+=100%',
+            markers: false,
+          },
+        })
+        .from(pinWrapper2, {
+          ease: 'ease-in',
+          backgroundSize: '0%',
+        });
+    }); // context
+  });
+
+  onUnmounted(() => {
+    ctx.revert();
+  });
 </script>
 
 <style lang="scss" scoped>

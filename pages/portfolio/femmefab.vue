@@ -44,7 +44,7 @@
         hid: 'description',
         name: 'description',
         content:
-          'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne sgtrony zoptymalizowane pod Google. Optymalizacja UX. Poproś o indywidualną wycenę!. Szybki kontakt',
+          'Zdecydowanie najbardziej wymagające zlecenie w ostatnim czasie, nie mniej jednak bardzo ciekawe. Strona została wykonana w oparciu o Wordpressa, z wykorzystaniem biblioteki GSAP, wszystko kodowane autorsko',
       },
 
       { hid: 'og-type', property: 'og:type', content: 'website' },
@@ -57,7 +57,7 @@
         hid: 'og-desc',
         property: 'og:description',
         content:
-          'Profesjonalne strony www. 10 lat doświadczenia. Nowoczesne strony zoptymalizowane pod Google. Optymalizacja UX. Bezpłatna Wycena - Poproś o indywidualną wycenę!. Szybki kontakt',
+          'Zdecydowanie najbardziej wymagające zlecenie w ostatnim czasie, nie mniej jednak bardzo ciekawe. Strona została wykonana w oparciu o Wordpressa, z wykorzystaniem biblioteki GSAP, wszystko kodowane autorsko',
       },
       {
         hid: 'og-image',

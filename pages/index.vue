@@ -16,34 +16,67 @@
 
 <script setup>
   const nuxtApp = useNuxtApp();
-  // const gsap = nuxtApp.gsap;
-  // const ScrollTrigger = nuxtApp.ScrollTrigger;
+  const gsap = nuxtApp.gsap;
+  const ScrollTrigger = nuxtApp.ScrollTrigger;
 
-  // let ctx;
+  let ctx;
 
-  // onMounted(() => {
-  //   ctx = gsap.context(() => {
-  //     const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
-  //     const heroBGTrigger = document.querySelector(
-  //       '.gsap__hero-bg-size--trigger'
-  //     );
-  //     gsap.to(heroBG, {
-  //       backgroundSize: '115%',
-  //       scrollTrigger: {
-  //         id: 'heroImageZoom',
-  //         trigger: heroBGTrigger,
-  //         start: 'top bottom',
-  //         end: 'top 10%',
-  //         scrub: true,
-  //         markers: true,
-  //       },
-  //     });
-  //   });
-  // });
+  onMounted(() => {
+    ctx = gsap.context(() => {
+      // const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
+      // const heroBGTrigger = document.querySelector(
+      //   '.gsap__hero-bg-size--trigger'
+      // );
+      // gsap.to(heroBG, {
+      //   backgroundSize: '115%',
+      //   scrollTrigger: {
+      //     id: 'heroImageZoom',
+      //     trigger: heroBGTrigger,
+      //     start: 'top bottom',
+      //     end: 'top 10%',
+      //     scrub: true,
+      //     markers: true,
+      //   },
+      // });
 
-  // onUnmounted(() => {
-  //   ctx.revert();
-  // });
+      const textElements = gsap.utils.toArray('.text--reveal');
+      const textElements_dark = gsap.utils.toArray('.text--reveal__dark');
+
+      // textElements.forEach((text) => {
+      //   gsap.to(text, {
+      //     // textShadow: '0 0 3px #191919',
+      //     backgroundSize: '100%',
+      //     ease: 'none',
+      //     scrollTrigger: {
+      //       trigger: text,
+      //       start: 'center 110%',
+      //       end: 'center 98%',
+      //       scrub: true,
+      //       markers: false,
+      //     },
+      //   });
+      // });
+
+      // textElements_dark.forEach((textDark) => {
+      //   gsap.to(textDark, {
+      //     // textShadow: '0 0 3px #191919',
+      //     backgroundSize: '100%',
+      //     ease: 'none',
+      //     scrollTrigger: {
+      //       trigger: textDark,
+      //       start: 'center 110%',
+      //       end: 'center 85%',
+      //       scrub: true,
+      //       markers: false,
+      //     },
+      //   });
+      // });
+    });
+  });
+
+  onUnmounted(() => {
+    ctx.revert();
+  });
 
   useHead({
     title: 'Projektowanie stron www - tylko profesjonalne strony firmowe',

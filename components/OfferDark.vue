@@ -2,13 +2,13 @@
   <div class="offer__dark--wrapper bg-dark-3">
     <div class="offer__dark--inner">
       <div class="section--title">
-        <h3>W czym mogę pomóc ?</h3>
+        <h3 class="text--reveal__dark">W czym mogę pomóc ?</h3>
         <img class="pt-3" src="~/assets/uploads/smush.svg" alt="" />
       </div>
 
       <div class="flex items-end mt-20 mb-20">
         <div class="w-full lg:w-6/12">
-          <h4 class="text-white text-2xl lg:text-5xl">
+          <h4 class="text--reveal__dark text-2xl lg:text-5xl">
             Od 2014 roku sukcesywnie pomagam firmom w ulepszeniu ich wizerunku.
             Chętnie pomogę również Tobie
           </h4>
@@ -20,7 +20,7 @@
           <div class="offer__dark--row lg:border-r-0">
             <div>
               <div>
-                <h4>Projektowanie graficzne</h4>
+                <h4 class="text--reveal__dark">Projektowanie graficzne</h4>
               </div>
               <div>
                 <img src="@/assets/uploads/icons/ic-1.svg" alt="" />
@@ -33,7 +33,7 @@
           <div class="offer__dark--row lg:border-r-0">
             <div>
               <div>
-                <h4>WordPress / Vue.js / Next.js</h4>
+                <h4 class="text--reveal__dark">WordPress / Vue.js / Next.js</h4>
               </div>
               <div>
                 <img src="@/assets/uploads/icons/ic-2.svg" alt="" />
@@ -43,7 +43,7 @@
               <ul>
                 <li>
                   <NuxtLink
-                    class="link-with-undeline"
+                    class="link-with-undeline text--reveal__dark"
                     to="/oferta/profesjonalne-strony-www"
                     >Profesjonalne strony www</NuxtLink
                   >
@@ -51,7 +51,7 @@
 
                 <li>
                   <NuxtLink
-                    class="link-with-undeline"
+                    class="link-with-undeline text--reveal__dark"
                     to="/oferta/tanie-strony-www"
                     >Budżetowe strony www</NuxtLink
                   >
@@ -63,7 +63,7 @@
           <div class="offer__dark--row">
             <div>
               <div>
-                <h4>Wsparcie</h4>
+                <h4 class="text--reveal__dark">Wsparcie</h4>
               </div>
               <div>
                 <img src="@/assets/uploads/icons/ic-3.svg" alt="" />
@@ -73,7 +73,7 @@
               <ul>
                 <li>
                   <NuxtLink
-                    class="link-with-undeline"
+                    class="link-with-undeline text--reveal__dark"
                     to="/oferta/opieka-nad-stronami-internetowymi"
                     >Opieka nad stronami internetowymi</NuxtLink
                   >
