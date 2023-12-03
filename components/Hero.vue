@@ -63,7 +63,7 @@
 <style lang="scss" scoped>
   .hero {
     @apply xl:bg-fixed bg-no-repeat bg-light text-dark-3 bg-cover;
-    @apply w-full h-screen flex flex-col items-start justify-center
+    @apply w-full h-screen flex flex-col items-start justify-center;
     text-align: left;
 
     @media (min-width: 1280px) {
