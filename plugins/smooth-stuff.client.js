@@ -22,8 +22,6 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('app:mounted', () => {});
 
   nuxtApp.hook('page:finish', () => {
-    window.scrollTo(0, 0);
-    console.log(window);
     // lenis.scrollTo(0);
   });
 });
