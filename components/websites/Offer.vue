@@ -1,7 +1,7 @@
 <template>
   <div class="websites__offer--wrapper bg-dark-3">
     <div class="websites__offer--inner">
-      <div class="section--title max-w-4xl">
+      <div class="section--title max-w-4xl hidden">
         <h3>Dlaczego warto skorzystać z oferty na autorskie strony www?</h3>
         <img class="pt-3" src="~/assets/uploads/smush.svg" alt="" />
       </div>
@@ -13,16 +13,19 @@
             pewność, że projekt będzie szybki, bezpieczny oraz w pełni
             stabilny.<br /><br />
           </h4>
-          <h5
+          <!-- <h5
             class="text-2xl lg:text-5xl xl:text-[110px] text-white gsap_pin--wrapper-2"
           >
             <strong>3 najważniejsze aspekty porządnej strony www to:</strong>
-          </h5>
+          </h5> -->
           <h4 class="text-yellow-400 text-xl lg:text-4xl mt-10 max-w-6xl"></h4>
         </div>
       </div>
 
       <div class="websites__offer--items mt-20">
+        <h5 class="text-4xl text-white mb-6">
+          3 najważniejsze aspekty porządnej strony www to:
+        </h5>
         <div class="websites__offer--row--wrapper">
           <div
             class="websites__offer--row xl:border-b-0 2xl:border-b w-full 2xl:w-6/12 3xl:w-7/12"
@@ -121,7 +124,7 @@
   onMounted(() => {
     ctx = gsap.context(() => {
       const pinWrapper = document.querySelector('.gsap_pin--wrapper');
-      const pinWrapper2 = document.querySelector('.gsap_pin--wrapper-2');
+      // const pinWrapper2 = document.querySelector('.gsap_pin--wrapper-2');
 
       gsap
         .timeline({
@@ -140,22 +143,22 @@
           backgroundSize: '0%',
         });
 
-      gsap
-        .timeline({
-          scrollTrigger: {
-            id: 'gsap_pin--wrapper2',
-            trigger: pinWrapper2,
-            scrub: true,
-            pin: true,
-            start: 'top 30%',
-            end: '+=100%',
-            markers: false,
-          },
-        })
-        .from(pinWrapper2, {
-          ease: 'ease-in',
-          backgroundSize: '0%',
-        });
+      // gsap
+      //   .timeline({
+      //     scrollTrigger: {
+      //       id: 'gsap_pin--wrapper2',
+      //       trigger: pinWrapper2,
+      //       scrub: true,
+      //       pin: true,
+      //       start: 'top 30%',
+      //       end: '+=100%',
+      //       markers: false,
+      //     },
+      //   })
+      //   .from(pinWrapper2, {
+      //     ease: 'ease-in',
+      //     backgroundSize: '0%',
+      //   });
     }); // context
   });
 

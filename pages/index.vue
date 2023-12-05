@@ -2,8 +2,8 @@
   <div class="page-content" ref="main">
     <Hero
       title="Projektuje oraz wdrażam profesjonalne"
-      subtitle="aplikacje webowe"
-      heading="Pomogę Tobie stworzyć wyjątkową i unikalną stronę www , która wzbudza
+      subtitle="strony internetowe"
+      heading="Pomogę Tobie stworzyć wyjątkową i unikalną stronę www, która wzbudza
         prawdziwe zainteresowanie i zapada w pamięć."
     />
     <WhyFreelancer />

@@ -1,7 +1,9 @@
 <template>
   <div class="hero">
     <div class="hero--inner">
-      <div class="text--reveal section--title text-5xl lg:text-7xl">
+      <div
+        class="text--reveal section--title text-5xl lg:text-4xl 2xl:text-7xl"
+      >
         <!-- <h1 class="text">TEXT EFFECT<span>WOAH</span></h1>
         <h1 class="text">GSAP<span>AND CLIPPING</span></h1>
         <h1 class="text">CRAZYYY<span>CRAZYYY</span></h1> -->
@@ -31,7 +33,9 @@
         <!-- <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" /> -->
       </div>
 
-      <h2 class="text--reveal text-xl lg:text-3xl mt-2 font-normal mb-6">
+      <h2
+        class="text--reveal text-xl lg:text-3xl mt-2 font-normal mb-6 max-w-3xl"
+      >
         {{ heading }}
       </h2>
     </div>
@@ -67,7 +71,7 @@
     text-align: left;
 
     @media (min-width: 1280px) {
-      // background-image: url('~/assets/uploads/hero--main.jpg');
+      background-image: url('~/assets/uploads/hero--main.jpg');
     }
 
     &--inner {
