@@ -3,7 +3,7 @@
     <h1>Testing horizontal scrolling w/ three sections</h1>
     <h2>First Container</h2>
   </div>
-  <div class="container">
+  <div class="hcontainer">
     <div class="description panel blue">
       <div>
         SCROLL DOWN
@@ -18,7 +18,36 @@
   <div class="lastContainer">Last Container</div>
 </template>
 
-<script setup></script>
+<script setup>
+  const nuxtApp = useNuxtApp();
+  const gsap = nuxtApp.gsap;
+  const ScrollTrigger = nuxtApp.ScrollTrigger;
+  let ctx;
+
+  onMounted(() => {
+    ctx = gsap.context(() => {
+      let sections = gsap.utils.toArray('.panel');
+
+      gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: 'none',
+        scrollTrigger: {
+          trigger: '.hcontainer',
+          pin: true,
+          scrub: 1,
+          snap: 1 / (sections.length - 1),
+          end: () => '+=' + document.querySelector('.hcontainer').offsetWidth,
+        },
+      });
+
+      // context
+    });
+  });
+
+  onUnmounted(() => {
+    ctx.revert();
+  });
+</script>
 
 <style lang="scss" scoped>
   html {
@@ -38,11 +67,12 @@
     margin: 0;
   }
 
-  .container {
+  .hcontainer {
     width: 400%;
     height: 100vh;
     display: flex;
     flex-wrap: nowrap;
+    border: 1px dashed black;
   }
 
   .firstContainer {

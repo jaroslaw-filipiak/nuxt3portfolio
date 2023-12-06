@@ -1,5 +1,5 @@
 <template>
-  <div class="process--wrapper border border-dashed border-red-600">
+  <div class="process--wrapper">
     <div class="process--inner">
       <div class="process--step w-6/12">
         <div class="process--step--title">

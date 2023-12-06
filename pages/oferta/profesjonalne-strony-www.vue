@@ -3,19 +3,21 @@
     <WebsitesHero />
     <WebsitesFeatures />
     <WebsitesOffer />
-    <!-- <WebsitesExp /> -->
+    <WebsitesExp />
     <WebsitesPortfolio
       :hasImg="true"
       heading="Jak może wyglądać Twoja nowa strona www ?"
     />
 
     <WebsitesFaq />
-    <WebsitesProcess />
+    <!-- <WebsitesProcess /> -->
 
-    <!-- <Horizontal /> -->
     <!-- horizontall proess steps -->
-    <!-- <WebsitesProcess1 /> -->
-    <!-- <WebsitesProcess2 /> -->
+    <!-- <div class="process-steps--wrapper pt-40">
+      <WebsitesProcess1 />
+      <WebsitesProcess2 />
+      <WebsitesProcess2 />
+    </div> -->
 
     <WebsitesSEOContent />
     <WebsitesReview />
@@ -24,11 +26,6 @@
 </template>
 
 <script setup>
-  const nuxtApp = useNuxtApp();
-  const gsap = nuxtApp.gsap;
-  const ScrollTrigger = nuxtApp.ScrollTrigger;
-
-  let ctx;
   useHead({
     title: 'Profesjonalne strony www',
     meta: [
@@ -65,30 +62,6 @@
     bodyAttrs: {
       class: 'page-profesjonalne-strony-www',
     },
-  });
-
-  onMounted(() => {
-    ctx = gsap.context(() => {
-      let sections = gsap.utils.toArray('.panel');
-
-      gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: 'none',
-        scrollTrigger: {
-          trigger: '.container',
-          pin: true,
-          scrub: 1,
-          snap: 1 / (sections.length - 1),
-          end: () => '+=' + document.querySelector('.container').offsetWidth,
-        },
-      });
-
-      // context
-    });
-  });
-
-  onUnmounted(() => {
-    ctx.revert();
   });
 </script>
 
