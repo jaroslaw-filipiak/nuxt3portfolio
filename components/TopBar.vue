@@ -42,7 +42,7 @@
         exact
         class="uppercase text-xs font-Atkinson hidden lg:block gsap-cta-link"
         to="#cta"
-        >Bezpłatna konsultacja</NuxtLink
+        >Kontakt</NuxtLink
       >
 
       <NuxtLink
@@ -90,7 +90,7 @@
   }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .logo {
     @apply transform hover:opacity-95;
   }

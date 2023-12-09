@@ -5,8 +5,11 @@
         <div class="section--title">
           <h1 class="text-3xl lg:text-7xl">
             Nazywam się Jarosław Filipiak, jestem doświadczonym grafikiem oraz
-            front-end developerem
+            front-end developerem.
           </h1>
+          <h2 class="text-xl lg:text-3xl pt-3">
+            Chętnie podejmę z Tobą wspólpracę!
+          </h2>
           <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
         </div>
 

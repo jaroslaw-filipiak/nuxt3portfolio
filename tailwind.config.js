@@ -10,6 +10,9 @@ module.exports = {
   ],
   important: true,
   theme: {
+    container: {
+      center: true,
+    },
     extend: {
       spacing: {
         128: '32rem',
@@ -17,14 +20,18 @@ module.exports = {
         145: '37.5rem',
       },
       colors: {
+        green: '#1EE556',
         white: '#eaeaea',
         'full-white': '#fff',
         light: '#EEEEEE',
+        'light-1': '#F0F0F1',
         nemo: '#38F0C2',
+        accent: '#FF460C',
         'dark-1': '#202020',
         'dark-2': '#242424',
         'dark-3': '#191919',
         'dark-4': '#1D1D1B',
+        'dark-5': '#272727',
         yellow: {
           50: '#FECD36',
           100: '#FECD36',
@@ -45,6 +52,7 @@ module.exports = {
       fontFamily: {
         Atkinson: ['"Atkinson Hyperlegible"', 'sans-serif'],
         OpenSans: ['"Open Sans"', 'sans-serif'],
+        Sora: ['"Sora"', 'sans-serif'],
       },
     },
   },
