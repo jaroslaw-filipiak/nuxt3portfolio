@@ -118,7 +118,6 @@
           >Więcej informacji »</NuxtLink
         >
       </small>
-      >
     </div>
   </div>
 </template>
