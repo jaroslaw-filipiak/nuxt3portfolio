@@ -113,8 +113,11 @@
     >
       <small
         >Używam informacji zapisanych za pomocą cookies m.in. w celach
-        statystycznych. Przeglądając stronę zgadzasz się na ich używanie. Więcej
-        informacji »</small
+        statystycznych. Przeglądając stronę zgadzasz się na ich używanie.
+        <NuxtLink class="dont-underline" to="/polityka-prywatnosci"
+          >Więcej informacji »</NuxtLink
+        >
+      </small>
       >
     </div>
   </div>
