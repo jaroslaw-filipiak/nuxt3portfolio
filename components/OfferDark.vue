@@ -16,6 +16,7 @@
       </div>
 
       <div class="offer__dark--items mt-20">
+        <h5 class="text-xl pb-3">Moje uslugi:</h5>
         <div class="offer__dark--row--wrapper">
           <div class="offer__dark--row lg:border-r-0">
             <div>

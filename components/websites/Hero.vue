@@ -2,7 +2,7 @@
   <div class="hero__websites">
     <div class="hero__websites--inner">
       <div class="section--title xl:hidden">
-        <h1>Dostarczę Tobie profesjonalną , dedykowaną stronę www.</h1>
+        <h1>Dostarczę Tobie profesjonalną, dedykowaną stronę www.</h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 

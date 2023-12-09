@@ -38,6 +38,14 @@
       >
         {{ heading }}
       </h2>
+      <div>
+        <ul class="flex flex-col lg:flex-row gap-4">
+          <li>Doświadczenie</li>
+          <li>Gwarancja oraz wsparcie</li>
+          <li>Pozytywne opinie klientów</li>
+          <li>W branży blisko 10 lat!</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

@@ -7,6 +7,7 @@ export default defineNuxtConfig({
       link: [{ rel: 'icon', type: 'image/png', href: '/favicon-32x32.png' }],
     },
   },
+
   site: {
     url: 'https://j-filipiak.pl',
   },
@@ -18,12 +19,8 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [
-    '~/assets/css/main.css',
-    '~/assets/css/vue-slider-component.css',
-    '~/assets/css/vue-slider-component-theme.css',
-    '~/assets/scss/main.scss',
-  ],
+  css: ['~/assets/css/main.css', '~/assets/scss/main.scss'],
+
   modules: [
     '@pinia/nuxt',
     'nuxt-gtag',
@@ -31,7 +28,18 @@ export default defineNuxtConfig({
     '@nuxtseo/module',
     'nuxt-simple-sitemap',
     'nuxt-link-checker',
+    '@nuxtjs/google-fonts',
   ],
+
+  googleFonts: {
+    families: {
+      Sora: true,
+      Lato: true,
+      'Open+Sans': true,
+    },
+    // Options
+  },
+
   routeRules: {
     // Don't add any /secret/** URLs to the sitemap.xml
     '/wyceny/**': { index: false },

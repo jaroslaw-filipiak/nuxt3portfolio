@@ -30,65 +30,7 @@
         </ul>
       </div>
 
-      <div class="footer--col footer--col-3 w-full lg:w-9/12">
-        <h4>Oferta</h4>
-        <ul class="flex flex-wrap items-start justify-start gap-2 lg:gap-6">
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#">
-              Projektowanie graficzne
-            </NuxtLink>
-          </li>
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#">
-              Aplikacje mobilne</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              class="text-xl font-Atkinson"
-              to="/oferta/profesjonalne-strony-www"
-            >
-              Strony www WordPress</NuxtLink
-            >
-          </li>
-          <li>
-            <NuxtLink
-              class="text-xl font-Atkinson"
-              to="/oferta/opieka-nad-stronami-internetowymi"
-            >
-              Administracja stronami www
-            </NuxtLink>
-          </li>
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#">
-              Stała obsługa abonamentowa
-            </NuxtLink>
-          </li>
-          <li class="relative">
-            <div
-              class="hidden xl:flex link--label absolute text-xs text-dark-3 bg-yellow-300 rounded-xl pt-1 pb-1 pl-2 pr-2"
-              style="top: -25px; right: -30px"
-            >
-              Oferta testowa , ogarniczona czasowo !
-            </div>
-            <NuxtLink
-              class="text-xl font-Atkinson"
-              to="/oferta/tanie-strony-www"
-              >Tanie / Budżetowe strony www</NuxtLink
-            >
-          </li>
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#"
-              >Front-end : Vue.js / Nuxt.js
-            </NuxtLink>
-          </li>
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#"
-              >Wdrażenie PSD/Figma do WordPress</NuxtLink
-            >
-          </li>
-        </ul>
-      </div>
+      <div class="footer--col footer--col-3 w-full lg:w-9/12"></div>
 
       <div class="footer--col footer--col-4 hidden">
         <h4>Publikuje również na</h4>
@@ -131,8 +73,7 @@
             <NuxtLink
               class="text-sm footer--version"
               to="https://www.j-filipiak.pl"
-              >j-filipiak.pl - projektowanie stron www | Vue.js | Next.js |
-              Laravel | WordPress
+              >j-filipiak.pl - projektowanie skutecznych stron internetowych
             </NuxtLink>
           </div>
         </div>
@@ -172,16 +113,9 @@
     >
       <small
         >Używam informacji zapisanych za pomocą cookies m.in. w celach
-        statystycznych. Przeglądając stronę zgadzasz się na ich używanie.
-        <NuxtLink class="dont-underline" to="/polityka-prywatnosci"
-          >Więcej informacji »</NuxtLink
-        >
-      </small>
-      <!-- TODO: seo links/subpages -->
-      <small>
-        Pracuję zdalnie na terenie całej Polski. Miejscowości, w których bywam:
-        Poznań, Nowy Tomyśl, Grodzisk Wielkopolski, Opalenica
-      </small>
+        statystycznych. Przeglądając stronę zgadzasz się na ich używanie. Więcej
+        informacji »</small
+      >
     </div>
   </div>
 </template>
