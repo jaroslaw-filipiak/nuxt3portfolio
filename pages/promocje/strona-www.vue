@@ -1,41 +1,31 @@
 <template>
   <div class="page-content mx-auto bg-[#fff]" ref="main">
-    <div class="bg-light-1 font-Sora pt-20 pb-20 w-full">
+    <div
+      class="bg-light-1 font-Sora pt-32 pb-24 w-full min-h-screen strona-www-hero"
+    >
       <div class="container">
         <h1
-          class="text-dark-5 text-7xl text-center font-semibold leading-[130px]"
+          class="text-dark-5 text-4xl text-center font-semibold leading-[80px]"
         >
           Strona internetowa<br />
           <span class="text-8xl font-extrabold">
             <span class="text-accent">Do końca grudnia</span><br />
-            w cenie 1699 zł brutto</span
+            w cenie 1299 zł brutto</span
           >
         </h1>
         <ul
-          class="font-Sora font-semibold text-xl text-dark-5 flex gap-20 items-center justify-center pt-20"
+          class="font-Sora font-semibold text-lg text-dark-5 flex gap-10 items-center justify-center pt-10"
         >
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck />
             <div>Domena .pl na rok gratis</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck />
             <div>Hosting na rok gratis</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck />
             <div>Certyfikat ssl w cenie</div>
           </li>
         </ul>
@@ -64,61 +54,37 @@
           Żadnych dodatkowych i <br />
           ukrytych kosztów
         </h3>
-        <h4 class="text-[#80818C] text-xl font-semibold max-w-2xl mt-6 mb-6">
+        <h4 class="text-dark-5 text-xl font-semibold max-w-2xl mt-6 mb-6">
           Profesjonalna strona internetowa oparta o najpopularniajszy na świecie
           sytem WordPress. 43% sieci działa na WordPressie.
         </h4>
         <ul
-          class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
+          class="font-Sora font-semibold text-dark-5 flex flex-col gap-4 items-start justify-start"
         >
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>Strona dostosowana do telefonów i tabletów</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>Optymalizacja czasu wczytywania</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>Profesjonalne wykonanie</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>
               Roczny hosting na naszych serwerach oraz domena .pl na rok gratis
             </div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>Prosty w obsłudze system zarządzania treścią na stronie</div>
           </li>
           <li class="flex items-center justify-center gap-3">
-            <div
-              class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-            >
-              <IconCheck />
-            </div>
+            <IconCheck class="text-[#48b02c]" />
             <div>
               Masa dodatków do wyboru min: formularze kontaktowe , galerie,
               mapka google, newsletter itp
@@ -140,9 +106,9 @@
       </div>
     </div>
 
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pl-20 mx-auto">
+    <div class="mb-20 mt-20 w-full pl-20 mx-auto">
       <div class="flex items-stretch justify-center">
-        <div class="w-6/12">
+        <div class="w-5/12">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
@@ -157,9 +123,9 @@
               <div class="flex gap-6">
                 <div>
                   <div
-                    class="w-9 h-9 rounded-lg bg-accent flex items-center justify-center"
+                    class="w-9 h-9 rounded-full bg-light-1 flex items-center justify-center"
                   >
-                    <IconInfinity class="text-white" />
+                    <IconInfinity class="text-[#64656c]" />
                   </div>
                 </div>
                 <div>
@@ -178,9 +144,9 @@
               <div class="flex gap-6">
                 <div>
                   <div
-                    class="w-9 h-9 rounded-lg bg-accent flex items-center justify-center"
+                    class="w-9 h-9 rounded-full bg-light-1 flex items-center justify-center"
                   >
-                    <IconPencil class="text-white" />
+                    <IconPencil class="text-[#64656c]" />
                   </div>
                 </div>
                 <div>
@@ -197,9 +163,9 @@
           </ul>
         </div>
         <div
-          class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-7/12 bg-light-1 rounded-3xl flex items-center justify-center relative"
         >
-          <img class=" " src="@/assets/uploads/admin_panel.png" alt="" />
+          <img src="@/assets/uploads/admin_panel.png" alt="" />
         </div>
       </div>
     </div>
@@ -210,7 +176,11 @@
         <div
           class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
-          <!-- <img class=" " src="@/assets/uploads/admin_panel.png" alt="" /> -->
+          <img
+            class="w-full h-auto"
+            src="@/assets/uploads/oferta/rwd.jpg"
+            alt=""
+          />
         </div>
         <div class="w-6/12 pl-20">
           <div
@@ -228,12 +198,34 @@
                 <div>
                   <h5 class="text-[#80818C] text-base font-semibold max-w-xl">
                     Zdecydowana większośc ruchu na stronach internetowych
-                    pochodzi z urządzeń mobilnych. Zadbamy o to aby strona
-                    pooprawnie wyświetlała się na telefonie komórkowym ,
-                    tablecie czy laptopie oraz dodatkowo zoptymalizujemy
-                    szybkość wczytywania
+                    pochodzi z urządzeń mobilnych. Zadbam o to aby strona
+                    poprawnie wyświetlała się na telefonie komórkowym , tablecie
+                    czy laptopie oraz dodatkowo zoptymalizujemy szybkość
+                    wczytywania
                   </h5>
                 </div>
+              </div>
+            </li>
+          </ul>
+
+          <ul
+            class="font-Sora mt-10 font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
+          >
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>
+                Strona będzie poprawnie wyświetlana<br />
+                na telefonie komórkowym , tablecie czy laptopie
+              </div>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>Tworzę zgodnie z zasadą "mobile first design"</div>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>
+                Dbam o poprawne wyświetlanie na nowoczesnych przeglądarkach
               </div>
             </li>
           </ul>
@@ -248,7 +240,7 @@
             <div class="flex gap-6">
               <div>
                 <div
-                  class="w-9 h-9 rounded-lg bg-accent flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-accent flex items-center justify-center"
                 >
                   <IconMailFilled class="text-white" />
                 </div>
@@ -268,7 +260,7 @@
             <div class="flex gap-6">
               <div>
                 <div
-                  class="w-9 h-9 rounded-lg bg-accent flex items-center justify-center"
+                  class="w-16 h-16 rounded-full bg-accent flex items-center justify-center"
                 >
                   <IconFileCertificate class="text-white" />
                 </div>
@@ -289,7 +281,7 @@
     <!-- pozycjonowanie -->
     <div class="w-full mb-20 mt-20 max-w-[1920px] pl-20 mx-auto">
       <div class="flex items-stretch justify-center">
-        <div class="w-6/12">
+        <div class="w-5/12">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
@@ -303,7 +295,7 @@
               <div class="flex gap-6">
                 <div>
                   <h5 class="text-[#80818C] text-base font-semibold max-w-xl">
-                    Tworzymy strony z myślą o pozycjonowaniu dlatego stosujemy
+                    Tworzę strony z myślą o pozycjonowaniu dlatego stosujemy
                     szereg dobrych praktyk dzięki którym strona będzie
                     przystosowana pod SEO
                   </h5>
@@ -318,62 +310,42 @@
             class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
           >
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>
                 Prawidłowe oznaczenie tagów na stronie. min 1 tag h1 na każdej
                 stronie
               </div>
             </li>
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>Konfiguracja pluginu pod SEO</div>
             </li>
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>Ustawienie fraz kluczowych</div>
             </li>
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>Odpowienie meta tagi</div>
             </li>
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>Optymalizacja szybkości wczytywania strony</div>
             </li>
             <li class="flex items-center justify-center gap-3">
-              <div
-                class="w-9 h-9 rounded-lg bg-green text-white flex items-center justify-center"
-              >
-                <IconCheck />
-              </div>
+              <IconCheck class="text-[#48b02c]" />
               <div>Ustawienie mapy witryny</div>
             </li>
           </ul>
         </div>
         <div
-          class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-7/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
-          <img class=" " src="@/assets/uploads/admin_panel.png" alt="" />
+          <img
+            class="w-full h-auto"
+            src="@/assets/uploads/oferta/seo.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -384,7 +356,11 @@
         <div
           class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
-          <!-- <img class=" " src="@/assets/uploads/admin_panel.png" alt="" /> -->
+          <img
+            class="w-full h-auto"
+            src="@/assets/uploads/oferta/ssl.jpg"
+            alt=""
+          />
         </div>
         <div class="w-6/12 pl-20">
           <div
@@ -402,7 +378,7 @@
               <div class="flex items-center gap-6">
                 <div>
                   <div
-                    class="w-9 h-9 rounded-lg bg-accent flex items-center justify-center"
+                    class="w-12 h-12 rounded-full bg-accent flex items-center justify-center"
                   >
                     <IconAlertTriangleFilled class="text-white" />
                   </div>
@@ -420,9 +396,8 @@
               <div class="flex gap-6">
                 <div>
                   <h5 class="text-[#80818C] text-base font-semibold max-w-xl">
-                    Darmowy certyfikat SSL to bardzo ważny aspekt naszej oferty
-                    zwłaszcza, że taki certyfikat potrafi kosztować nawed
-                    kilkaset złotych
+                    Certyfikat SSL to bardzo ważny aspekt oferty zwłaszcza, że
+                    taki certyfikat potrafi kosztować kilkaset złotych
                   </h5>
                 </div>
               </div>
@@ -446,20 +421,40 @@
           </h3>
           <h5 class="text-[#80818C] text-base font-semibold max-w-xl mt-10">
             Każda sekunda opóźnienia we wczytywaniu strony powoduje spadek
-            konwersji o nawet 20 procent w handlu detalicznym. Dlatego zadbamy o
+            konwersji o nawet 20 procent w handlu detalicznym. Dlatego zadbam o
             to aby strona ładowała się tak szybko jak to tylko możliwe.
           </h5>
+          <h4 class="text-dark-5 text-2xl font-semibold mb-6 mt-6">
+            Co dokładnie otrzymam ?
+          </h4>
+          <ul
+            class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
+          >
+            <li class="flex items-center justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>Minifikacja zasobów css/js</div>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>Optymalizacja zasobów graficznych</div>
+            </li>
+            <li class="flex items-center justify-center gap-3">
+              <IconCheck class="text-[#48b02c]" />
+              <div>Ustawienie systemu pamięci cache</div>
+            </li>
+          </ul>
         </div>
         <div
           class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
-          <img class=" " src="@/assets/uploads/admin_panel.png" alt="" />
+          <img class=" " src="@/assets/uploads/oferta/fast.jpg" alt="" />
         </div>
       </div>
     </div>
 
     <!-- portfolio -->
-    <div class="bg-light-1 font-Sora pt-20 pb-20 w-full">
+    <!-- 23knots + siborsoft + https://j-filipiak.pl/clients/behira/  http://biallly.webd.pl/stagging/immedrive/-->
+    <div class="bg-light-1 font-Sora pt-20 pb-20 w-full hidden">
       <div class="container">
         <div
           class="text-base font-Sora font-semibold text-[#80818C] bg-[#fff] rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
@@ -534,7 +529,8 @@
             </div>
             <div>
               <h5 class="text-[#80818C] text-base font-semibold max-w-xl mt-1">
-                Z którego dowiemy się czego dokładnie potrzebujesz
+                Z którego dowiem się czego dokładnie potrzebujesz. Otrzymasz go
+                po zakupie
               </h5>
             </div>
           </li>
@@ -555,8 +551,9 @@
             </div>
             <div>
               <h5 class="text-[#80818C] text-base font-semibold max-w-xl mt-1">
-                Rozpoczynamy proces tworzenia twojej strony. Wstępny projekt
-                otrzymasz po kilku dniach
+                Rozpoczynam proces tworzenia twojej strony. Wstępny projekt
+                otrzymasz po kilku dniach. Zależy MI na tym aby stronę
+                dostarczyć szybko i sprawnie
               </h5>
             </div>
           </li>
@@ -577,11 +574,71 @@
             <div>
               <h5 class="text-[#80818C] text-base font-semibold max-w-xl mt-1">
                 W momencie gdy uznasz, że prace zostały zakończone czas na
-                uruchomienie projektu
+                uruchomienie projektu. Gratulujemy! Twoja strona jest gotowa a
+                ty możesz się nią chwalić
               </h5>
             </div>
           </li>
         </ul>
+      </div>
+    </div>
+
+    <!-- payment -->
+    <div class="w-full pt-20 pb-20 max-w-[1920px] pl-20 pr-20 font-Sora">
+      <div
+        class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
+      >
+        Chce porzadną stronę www
+      </div>
+      <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+        Wybierz dogodną <br />
+        formę płatności
+      </h3>
+      <ul
+        class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start mt-10"
+      >
+        <li class="flex items-center justify-center gap-3">
+          <IconCheck class="text-[#48b02c]" />
+          <div>Pełen koszt to 1299zł brutto wraz</div>
+        </li>
+        <li class="flex items-center justify-center gap-3">
+          <IconCheck class="text-[#48b02c]" />
+          <div>
+            Hosting, domena, certyfikat SSL oraz skrzynki pocztowe na okres 12
+            miesięcy w cenie usługi
+          </div>
+        </li>
+        <li class="flex items-center justify-center gap-3">
+          <IconCheck class="text-[#48b02c]" />
+          <div>Faktura VAT 23%</div>
+        </li>
+      </ul>
+
+      <div class="container flex items-start justify-center mt-14 gap-4">
+        <div
+          class="w-6/12 border bg-light-1 pt-10 pb-10 pl-10 pr-10 rounded-xl relative flex flex-col items-center"
+        >
+          <img
+            class="max-w-[360px]"
+            src="@/assets/uploads/oferta/formy-platnosci.png"
+            alt=""
+          />
+
+          <NuxtLink
+            @click="handleClick()"
+            exact
+            class="bg-accent text-white transiton-all rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:bg-dark-5 flex items-center gap-3"
+            to="#cta"
+          >
+            <IconArrowNarrowRight />
+            Przechodzę do zamówienia</NuxtLink
+          >
+
+          <!-- <div class="w-full border-t mt-6 text-center pt-4">
+            <p class="text-dark-5 text-base text-center">Oferta ograniczona</p>
+          </div> -->
+        </div>
+        <div class="w-6/12 border bg-light-1 p-10 rounded-xl relative"></div>
       </div>
     </div>
 
@@ -717,27 +774,27 @@
   const faqs = [
     {
       id: 1,
-      title: 'Jak wygląda proces tworzenia strony www?',
+      title: 'Jakie czekają mnie koszty po roku?',
       content:
-        'Tworzenie strony internetowej to niezwykle złożony proces składający się w wielu kroków, które również są dopasowane indywidualnie do klienta. Dlatego też zachęcam do niezobowiązującego kontaktu w celu ustalenia szczegółów.',
+        'W pierwszym roku zapewniam własne zasoby serwerowe oraz wykupuje na własny koszt domenę. Koszty przedłużenia domeny i hostingu to zazwyczaj 250zł brutto',
     },
     {
       id: 2,
-      title: 'Ile kosztuje wykonanie strony www?',
+      title: 'A jeżeli mam swoją domenę / hosting ?',
       content:
-        'Wszystko zależy od wielu czynników min ilość podstron, wymagana funkcjonalność, ilość jezyków czy też rodzaj zamówionej strony (z szablonu bądź autorski design). W celu uzyskania wyceny zapraszamy do kontaktu.',
+        'Z przyjemnością przeniosę domenę oraz hosting na Państwa serwery. W ramach usługi zainstaluje oraz skonfiguruje stronę na Państwa serwerze',
     },
     {
       id: 3,
-      title: 'Co z RODO i ciasteczkami?',
+      title: 'Ile poprawek mogę zgłosić w trakcie prac nad stroną?',
       content:
-        'Dbam o dostosowanie strony do aktualnych aktów prawnych. Każda strona zawiera box informacyjny o ciasteczkach oraz link do polityki prywatności',
+        'Nie stosuje limitów poprawek. W ramach usługi wykonuje wszystkie poprawki do momentu akceptacji projektu przez klienta.',
     },
     {
       id: 4,
-      title: 'Jak długo trwa zrobienie strony?',
+      title: 'Czy mój projekt będzie indywidualny?',
       content:
-        'W zależności od rozmiaru projektu i jego funkcjonalności. 80% projektów wykonuje w ciągu 2-3 tygodni.',
+        'Tak oczywiście. Każdy projekt jest tworzony od podstaw na podstawie briefu od klienta. Layout strony oraz poszczególne sekcje są tworzone w oparciu o przesłane materiały dzięki czemu strona jest w pełni spersonalizowana',
     },
     {
       id: 5,
@@ -758,18 +815,17 @@
       content:
         'Tak, wszystkie strony są zoptymalizowane pod kątem SEO. Każda strona otrzymuje ode mnie wyprawkę w postaci rozwiązań ułatwiających przyszłe pozycjonowanie strony www czyli: prawidłowe oznaczenie tagów na stronie (min. kluczowy tag h1 na każdej podstronie), przygotowanie sitemap.xml oraz robots.txt, skonfigurowanie wtyczki do SEO. Jeżeli jest taka potrzeba to mogę również skonfigurować Google Analytics oraz Google Search Console i poprosić o szybszą indeksację strony www.',
     },
-
-    {
-      id: 8,
-      title: 'Czy strony są w pełni bezpieczne?',
-      content:
-        'Nie ma w pełni bezpiecznego systemu na całym świecie. Nie mniej dbam o wiele kluczowych kwestii takich jak: mocne hasła, prawidłowe skonfigurowanie serwera czy też zastosowanie certyfikatu ssl. W naszej ofercie mamy również stałą opiekę i monitoring stron www dbając min. o aktualizacje wtyczek, motywów oraz samego WordPressa. Jeżeli mamy do czynienia z prostą stroną www to otrzymany pakiet zabezpieczeń w zupełności wystarczy aby uznać stronę za bezpieczną. Nie mniej im więcej doinstalowanych wtyczek tym większe ryzyko. W takim przypadku zalecam wykonywanie regularnego serwisu przez doświadczone osoby',
-    },
     {
       id: 9,
       title: 'Czy strony mogą mieć wiele języków?',
       content:
-        'Tak można dodać obsługę wielu języków samodzielnie lub też zlecić to mnie w ramach usługi',
+        'Tak można dodać obsługę wielu języków samodzielnie za pomocą wtyczki lub zlecić mi to zadanie. W przypadku zlecenia mi tego zadania, proszę o kontakt w celu dodatkowej wyceny.',
+    },
+    {
+      id: 10,
+      title: 'Co muszę dostarczyć przed rozpoczęciem współpracy?',
+      content:
+        'Po zakupie dostarcze specjalny formularz który pozwoli poznać Państwa wymagania, preferowaną kolorystykę oraz kilka innych aspektów. Poproszę również o dostarczenie tekstów , informacji kontaktowych oraz grafik, które powinny zostać użyte na stronie. Dostarczanie grafk nie jest obowiązkowe, w przypadku ich braku wykorzystam grafiki ze stocków.',
     },
   ];
 </script>
@@ -777,5 +833,10 @@
 <style lang="scss" scoped>
   .faq--item {
     @apply text-dark-5 font-Sora font-semibold;
+  }
+
+  .strona-www-hero {
+    background-image: url('@/assets/uploads/oferta/hero.jpg');
+    @apply bg-cover bg-bottom bg-no-repeat;
   }
 </style>

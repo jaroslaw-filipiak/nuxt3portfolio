@@ -52,6 +52,7 @@ module.exports = {
       fontFamily: {
         Atkinson: ['"Atkinson Hyperlegible"', 'sans-serif'],
         OpenSans: ['"Open Sans"', 'sans-serif'],
+        Lato: ['"Lato"', 'sans-serif'],
         Sora: ['"Sora"', 'sans-serif'],
       },
     },

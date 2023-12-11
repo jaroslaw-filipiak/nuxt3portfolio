@@ -30,7 +30,7 @@
         </ul>
       </div>
 
-      <div class="footer--col footer--col-3 w-full lg:w-9/12">
+      <div class="footer--col footer--col-3 w-full lg:w-9/12 hidden">
         <h4>Oferta</h4>
         <ul class="flex flex-wrap items-start justify-start gap-2 lg:gap-6">
           <li class="hidden">
