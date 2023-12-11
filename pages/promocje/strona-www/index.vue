@@ -55,7 +55,7 @@
           ukrytych kosztów
         </h3>
         <h4 class="text-dark-5 text-xl font-semibold max-w-2xl mt-6 mb-6">
-          Profesjonalna strona internetowa oparta o najpopularniajszy na świecie
+          Profesjonalna strona internetowa oparta o najpopularniejszy na świecie
           sytem WordPress. 43% sieci działa na WordPressie.
         </h4>
         <ul
@@ -614,10 +614,18 @@
         </li>
       </ul>
 
-      <div class="container flex items-start justify-center mt-14 gap-4">
+      <div class="container flex items-stretch justify-center mt-14 gap-12">
         <div
-          class="w-6/12 border bg-light-1 pt-10 pb-10 pl-10 pr-10 rounded-xl relative flex flex-col items-center"
+          class="w-6/12 border bg-light-1 pt-10 pb-10 pl-10 pr-10 rounded-xl relative flex flex-col items-center gap-4"
         >
+          <p class="text-dark-5 text-xl text-center font-semibold">
+            Rozpocznijmy współpracę odrazu!
+          </p>
+          <p class="text-dark-5 text-base text-center w-10/12">
+            Bardzo przejrzysty proces zakupowy. Wystarczy kliknąć w przycisk
+            "Przechodzę do zamówienia". Możliwośc opłacenia blikiem, Google Pay
+            oraz via Przelewy24.com
+          </p>
           <img
             class="max-w-[360px]"
             src="@/assets/uploads/oferta/formy-platnosci.png"
@@ -625,10 +633,9 @@
           />
 
           <NuxtLink
-            @click="handleClick()"
             exact
             class="bg-accent text-white transiton-all rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:bg-dark-5 flex items-center gap-3"
-            to="#cta"
+            to="https://easl.ink/5Logf"
           >
             <IconArrowNarrowRight />
             Przechodzę do zamówienia</NuxtLink
@@ -638,7 +645,29 @@
             <p class="text-dark-5 text-base text-center">Oferta ograniczona</p>
           </div> -->
         </div>
-        <div class="w-6/12 border bg-light-1 p-10 rounded-xl relative"></div>
+        <div class="flex items-center">
+          <p class="text-dark-5 font-Sora font-semibold text-xl">lub</p>
+        </div>
+        <div
+          class="w-5/12 border bg-light-1 p-10 rounded-xl relative flex flex-col items-center justify-center gap-4"
+        >
+          <p class="text-dark-5 text-xl text-center font-semibold">
+            Faktura zaliczkowa 50%
+          </p>
+          <p class="text-dark-5 text-base text-center w-10/12">
+            Dajemy możliwość rozłożenia płatności na 2 raty. Dzięki czemu możemy
+            przystąpić do pracy odrazu po wpłacie pierwszej raty a drugą
+            wpłacisz dopiero po zakończeniu prac.
+          </p>
+          <NuxtLink
+            to="/promocje/strona-www/faktura-zaliczkowa"
+            exact
+            class="bg-accent text-white transiton-all rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:bg-dark-5 flex items-center gap-3"
+          >
+            <IconArrowNarrowRight />
+            Opłacam 50% teraz</NuxtLink
+          >
+        </div>
       </div>
     </div>
 
