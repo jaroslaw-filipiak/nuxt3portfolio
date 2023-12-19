@@ -10,18 +10,18 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.gsap = gsap;
   nuxtApp.ScrollTrigger = ScrollTrigger;
 
-  // const lenis = new Lenis({});
-  // nuxtApp.lenis = lenis;
+  const lenis = new Lenis({});
+  nuxtApp.lenis = lenis;
 
-  // function raf(time) {
-  //   lenis.raf(time);
-  //   requestAnimationFrame(raf);
-  // }
-  // requestAnimationFrame(raf);
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 
   nuxtApp.hook('app:mounted', () => {});
 
   nuxtApp.hook('page:finish', () => {
-    // lenis.scrollTo(0);
+    lenis.scrollTo(0);
   });
 });

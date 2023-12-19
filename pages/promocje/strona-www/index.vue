@@ -1,56 +1,58 @@
 <template>
   <div class="page-content mx-auto bg-[#fff]" ref="main">
     <div
-      class="bg-light-1 font-Sora pt-32 pb-24 w-full min-h-screen strona-www-hero"
+      class="bg-light-1 font-Sora pt-40 xl:pt-32 pb-24 w-full lg:min-h-screen strona-www-hero"
     >
       <div class="container">
         <h1
-          class="text-dark-5 text-4xl text-center font-semibold leading-[80px]"
+          class="text-dark-5 text-xl xl:text-4xl text-center font-semibold xl:leading-[80px]"
         >
           Strona internetowa<br />
-          <span class="text-8xl font-extrabold">
+          <span class="text-4xl xl:text-8xl font-extrabold">
             <span class="text-accent">Do końca grudnia</span><br />
-            w cenie 1299 zł brutto</span
+            w cenie <br class="block lg:hidden" />1499 zł brutto</span
           >
         </h1>
         <ul
-          class="font-Sora font-semibold text-lg text-dark-5 flex gap-10 items-center justify-center pt-10"
+          class="w-8/12 mx-auto xl:w-full font-Sora font-semibold text-base lg:text-lg text-dark-5 flex flex-col items-start lg:flex-row gap-4 xl:gap-10 xl:items-center justify-center pt-10"
         >
-          <li class="flex items-center justify-center gap-3">
+          <li class="flex items-center justify-start xl:justify-center gap-3">
             <IconCheck />
             <div>Domena .pl na rok gratis</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
+          <li class="flex items-center justify-start xl:justify-center gap-3">
             <IconCheck />
             <div>Hosting na rok gratis</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
+          <li class="flex items-center justify-start xl:justify-center gap-3">
             <IconCheck />
             <div>Certyfikat ssl w cenie</div>
           </li>
         </ul>
-        <div class="w-full flex items-center justify-center pt-20">
-          <NuxtLink
+        <div class="w-full flex items-center justify-center pt-12 xl:pt-20">
+          <button
             @click="handleClick()"
-            exact
-            class="bg-accent text-white transiton-all rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:bg-dark-5 flex items-center gap-3"
-            to="#cta"
+            class="bg-accent text-white transition-all scale-100 rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:bg-dark-5 flex items-center gap-3 cursor-pointer hover:scale-105"
           >
             <IconArrowNarrowRight />
-            Zamów teraz!</NuxtLink
-          >
+            Zamów teraz!
+          </button>
         </div>
       </div>
     </div>
 
-    <div class="bg-[#fff] font-Sora pt-40 pb-40 w-full">
+    <div
+      class="bg-[#fff] font-Sora pt-10 xl:pt-40 pb-10 xl:pb-40 w-full pl-7 pr-7"
+    >
       <div class="container">
         <div
           class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
         >
           Jasne warunki współpracy
         </div>
-        <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+        <h3
+          class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+        >
           Żadnych dodatkowych i <br />
           ukrytych kosztów
         </h3>
@@ -61,30 +63,42 @@
         <ul
           class="font-Sora font-semibold text-dark-5 flex flex-col gap-4 items-start justify-start"
         >
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>Strona dostosowana do telefonów i tabletów</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>Optymalizacja czasu wczytywania</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>Profesjonalne wykonanie</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>
               Roczny hosting na naszych serwerach oraz domena .pl na rok gratis
             </div>
           </li>
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>Prosty w obsłudze system zarządzania treścią na stronie</div>
           </li>
-          <li class="flex items-center justify-center gap-3">
-            <IconCheck class="text-[#48b02c]" />
+          <li
+            class="flex items-start xl:items-center justify-start xl:justify-center gap-3"
+          >
+            <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
             <div>
               Masa dodatków do wyboru min: formularze kontaktowe , galerie,
               mapka google, newsletter itp
@@ -94,9 +108,13 @@
       </div>
     </div>
 
-    <div class="w-full flex items-center justify-center mb-20">
-      <div class="w-9/12 bg-light-1 rounded-xl pt-10 pb-10 pl-20 pr-20">
-        <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+    <div class="w-full flex items-center justify-center xl:mb-20">
+      <div
+        class="w-9/12 bg-light-1 rounded-xl pt-10 pb-10 pl-10 pr-10 xl:pl-20 xl:pr-20"
+      >
+        <h3
+          class="text-3xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+        >
           Roczny hosting na naszych <br />
           serwerach
         </h3>
@@ -106,15 +124,17 @@
       </div>
     </div>
 
-    <div class="mb-20 mt-20 w-full pl-20 mx-auto">
-      <div class="flex items-stretch justify-center">
-        <div class="w-5/12">
+    <div class="xl:mb-20 mb-10 mt-20 w-full xl:pl-20 pl-7 pr-7 mx-auto">
+      <div class="flex flex-col lg:flex-row items-stretch justify-center">
+        <div class="w-full xl:w-5/12">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
             Panel administracyjny
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+          >
             Niesamowity panel <br />
             administratora
           </h3>
@@ -163,18 +183,24 @@
           </ul>
         </div>
         <div
-          class="w-7/12 bg-light-1 rounded-3xl flex items-center justify-center relative"
+          class="w-full xl:w-7/12 bg-light-1 rounded-3xl flex items-center justify-center relative"
         >
-          <img src="@/assets/uploads/admin_panel.png" alt="" />
+          <img
+            class="hidden lg:flex"
+            src="@/assets/uploads/admin_panel.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
 
     <!-- rwd -->
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pr-20 mx-auto">
-      <div class="flex items-stretch justify-center">
+    <div
+      class="w-full mb-20 xl:mt-20 max-w-[1920px] xl:pr-20 pl-7 pr-7 mx-auto"
+    >
+      <div class="flex flex-col lg:flex-row items-stretch justify-center">
         <div
-          class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-full xl:w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
           <img
             class="w-full h-auto"
@@ -182,13 +208,15 @@
             alt=""
           />
         </div>
-        <div class="w-6/12 pl-20">
+        <div class="w-full xl:w-6/12 xl:pl-20">
           <div
-            class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
+            class="hidden text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 lg:inline-flex pt-3 pb-3 mb-6"
           >
             widoczność na każdym urządzeniu
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold mt-10 lg:mt-0"
+          >
             Strona przystosowana <br />
             do telefonów i tabletów
           </h3>
@@ -212,18 +240,18 @@
             class="font-Sora mt-10 font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
           >
             <li class="flex items-start justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>
                 Strona będzie poprawnie wyświetlana<br />
                 na telefonie komórkowym , tablecie czy laptopie
               </div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Tworzę zgodnie z zasadą "mobile first design"</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>
                 Dbam o poprawne wyświetlanie na nowoczesnych przeglądarkach
               </div>
@@ -233,9 +261,11 @@
       </div>
     </div>
 
-    <div class="w-full mb-20">
+    <div class="w-full xl:mb-20 pl-7 pr-7">
       <div class="container">
-        <ul class="font-Sora mt-10 flex items-start justify-center">
+        <ul
+          class="font-Sora xl:mt-10 flex flex-col lg:flex-row items-start justify-center gap-10 lg:gap-0"
+        >
           <li class="flex flex-col">
             <div class="flex gap-6">
               <div>
@@ -279,18 +309,22 @@
     </div>
 
     <!-- pozycjonowanie -->
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pl-20 mx-auto">
-      <div class="flex items-stretch justify-center">
-        <div class="w-5/12">
+    <div
+      class="w-full xl:mb-20 mt-20 max-w-[1920px] xl:pl-20 pl-7 pr-7 mx-auto"
+    >
+      <div class="flex flex-col lg:flex-row items-stretch justify-center">
+        <div class="w-full xl:w-5/12">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
             Google cie pokocha
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+          >
             Pozycjonowanie
           </h3>
-          <ul class="font-Sora mt-10">
+          <ul class="font-Sora xl:mt-10 mt-6">
             <li class="flex flex-col">
               <div class="flex gap-6">
                 <div>
@@ -309,40 +343,40 @@
           <ul
             class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
           >
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>
                 Prawidłowe oznaczenie tagów na stronie. min 1 tag h1 na każdej
                 stronie
               </div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Konfiguracja pluginu pod SEO</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Ustawienie fraz kluczowych</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Odpowienie meta tagi</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Optymalizacja szybkości wczytywania strony</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Ustawienie mapy witryny</div>
             </li>
           </ul>
         </div>
         <div
-          class="w-7/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-full xl:w-7/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
           <img
-            class="w-full h-auto"
+            class="w-full h-auto hidden lg:flex"
             src="@/assets/uploads/oferta/seo.jpg"
             alt=""
           />
@@ -351,24 +385,28 @@
     </div>
 
     <!-- ssl -->
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pr-20 mx-auto">
-      <div class="flex items-stretch justify-center">
+    <div
+      class="w-full xl:mb-20 mt-20 max-w-[1920px] xl:pr-20 mx-auto pl-7 pr-7"
+    >
+      <div class="flex flex-col lg:flex-row items-stretch justify-center">
         <div
-          class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-full xl:w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
           <img
-            class="w-full h-auto"
+            class="w-full h-auto hidden lg:flex"
             src="@/assets/uploads/oferta/ssl.jpg"
             alt=""
           />
         </div>
-        <div class="w-6/12 pl-20">
+        <div class="w-full xl:w-6/12 xl:pl-20">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
             szyfrowane połączenie
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+          >
             Certyfikat SSL <br />
             czyli tzw: Kłódka<br />
             przy adresie strony
@@ -408,18 +446,22 @@
     </div>
 
     <!-- optymalizacja szybkości -->
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pl-20 mx-auto">
-      <div class="flex items-stretch justify-center">
-        <div class="w-6/12">
+    <div class="w-full mb-20 mt-20 max-w-[1920px] xl:pl-20 mx-auto pl-7 pr-7">
+      <div class="flex flex-col lg:flex-row items-stretch justify-center">
+        <div class="w-full xl:w-6/12">
           <div
             class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
             Szybkość decyduje o wrażeniach użytkowników
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+          >
             Optymalizacja <br />szybkości wczytywania
           </h3>
-          <h5 class="text-[#80818C] text-base font-semibold max-w-xl mt-10">
+          <h5
+            class="text-[#80818C] text-base font-semibold max-w-xl mt-6 xl:mt-10"
+          >
             Każda sekunda opóźnienia we wczytywaniu strony powoduje spadek
             konwersji o nawet 20 procent w handlu detalicznym. Dlatego zadbam o
             to aby strona ładowała się tak szybko jak to tylko możliwe.
@@ -430,24 +472,28 @@
           <ul
             class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start"
           >
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Minifikacja zasobów css/js</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Optymalizacja zasobów graficznych</div>
             </li>
-            <li class="flex items-center justify-center gap-3">
-              <IconCheck class="text-[#48b02c]" />
+            <li class="flex items-start justify-center gap-3">
+              <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
               <div>Ustawienie systemu pamięci cache</div>
             </li>
           </ul>
         </div>
         <div
-          class="w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
+          class="w-full xl:w-6/12 bg-light-1 rounded-3xl flex items-center justify-center"
         >
-          <img class=" " src="@/assets/uploads/oferta/fast.jpg" alt="" />
+          <img
+            class="hidden lg:flex"
+            src="@/assets/uploads/oferta/fast.jpg"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -461,7 +507,9 @@
         >
           Jak może wyglądać Twoja nowa strona?
         </div>
-        <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+        <h3
+          class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+        >
           Przykładowe <br />
           realizacje
         </h3>
@@ -476,29 +524,33 @@
     </div>
 
     <!-- przebieg ralizacji -->
-    <div class="w-full mb-20 mt-20 max-w-[1920px] pl-20 pr-20 mx-auto">
+    <div
+      class="w-full pb-20 pt-20 max-w-[1920px] xl:pl-20 xl:pr-20 mx-auto bg-[#f0f0f2] pl-7 pr-7"
+    >
       <div class="flex items-stretch justify-start">
-        <div class="w-6/12">
+        <div class="w-full xl:w-6/12">
           <div
-            class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
+            class="text-base font-Sora font-semibold text-[#80818C] bg-[#fff] rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
           >
             Transparentny przebieg realizacji
           </div>
-          <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+          <h3
+            class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+          >
             Zaledwie kilka kroków <br />dzieli cię od posiadania strony www
           </h3>
         </div>
       </div>
       <div class="flex mt-10">
-        <ul class="flex items-start justify-start gap-10">
-          <li class="w-3/12 flex flex-col items-start justify-start">
+        <ul class="flex flex-col lg:flex-row items-start justify-start gap-10">
+          <li class="w-full lg:w-3/12 flex flex-col items-start justify-start">
             <div class="flex items-center justify-start w-full gap-6 pr-6">
               <div
-                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-light-1 flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
+                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-[#fff] flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
               >
                 1
               </div>
-              <div class="border w-10/12"></div>
+              <div class="hidden lg:flex border w-10/12"></div>
             </div>
             <div class="mt-3">
               <h5 class="text-dark-5 text-lg font-semibold max-w-xl">
@@ -513,14 +565,14 @@
             </div>
           </li>
 
-          <li class="w-3/12 flex flex-col items-start justify-start">
+          <li class="w-full lg:w-3/12 flex flex-col items-start justify-start">
             <div class="flex items-center justify-start w-full gap-6 pr-6">
               <div
-                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-light-1 flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
+                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-[#fff] flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
               >
                 2
               </div>
-              <div class="border w-10/12"></div>
+              <div class="hidden lg:flex border w-10/12"></div>
             </div>
             <div class="mt-3">
               <h5 class="text-dark-5 text-lg font-semibold max-w-xl">
@@ -535,14 +587,14 @@
             </div>
           </li>
 
-          <li class="w-3/12 flex flex-col items-start justify-start">
+          <li class="w-full lg:w-3/12 flex flex-col items-start justify-start">
             <div class="flex items-center justify-start w-full gap-6 pr-6">
               <div
-                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-light-1 flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
+                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-[#fff] flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
               >
                 3
               </div>
-              <div class="border w-10/12"></div>
+              <div class="hidden lg:flex border w-10/12"></div>
             </div>
             <div class="mt-3">
               <h5 class="text-dark-5 text-lg font-semibold max-w-xl">
@@ -558,10 +610,10 @@
             </div>
           </li>
 
-          <li class="w-3/12 flex flex-col items-start justify-start">
+          <li class="w-full lg:w-3/12 flex flex-col items-start justify-start">
             <div class="flex items-center justify-start w-full gap-6 pr-6">
               <div
-                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-light-1 flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
+                class="w-[112px] h-[112px] min-w-[112px] min-h-[112px] rounded-full bg-[#fff] flex items-center justify-center text-dark-5 text-4xl font-semibold font-Sora"
               >
                 4
               </div>
@@ -583,51 +635,176 @@
       </div>
     </div>
 
+    <!-- before payment -->
+    <div
+      class="bg-yellow-400 font-Sora pt-20 pb-6 xl:pb-20 w-full xl:pl-20 xl:pr-20 pl-7 pr-7"
+    >
+      <div class="container">
+        <div
+          class="text-base font-Sora font-semibold text-light-1 bg-dark-5 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
+        >
+          Oferta ogarniczona czasowo oraz liczbowo
+        </div>
+        <h3
+          class="text-xl xl:text-3xl xl:leading-[70px] text-dark-5 font-semibold"
+        >
+          Nie!, to nie jest kolejny chwyt marketingowy.
+        </h3>
+        <h3
+          class="text-3xl sm:text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold mb-10 mt-10 lg:mt-0"
+        >
+          Oferta ograniczona czasowo
+        </h3>
+        <p class="text-dark-5 text-2xl lg:text-4xl">
+          Nazywam się Jarosław Filipiak i jestem programistą WordPress.<br
+            class="lg:hidden"
+          />&nbsp;<br class="lg:hidden" />
+          Od wielu lat obsługuję agencję kreatywne wdrażając duże projekty.
+          <br class="lg:hidden" />&nbsp;<br class="lg:hidden" />
+          W tym miesiącu testowo oferuje wykonanie strony z pominięciem
+          pośrednika jakim jest agencja kreatywna.
+        </p>
+        <ul class="text-dark-5 text-2xl pt-6 flex flex-col items-start gap-6">
+          <li class="flex items-start justify-center gap-3">
+            <IconCheck class="text-dark-5 min-w-[24px] max-w-[24px]" />
+            <div>Sam osobiście wykonam dla Ciebie stronę</div>
+          </li>
+          <li class="flex items-start justify-center gap-3">
+            <IconCheck class="text-dark-5 min-w-[24px] max-w-[24px]" />
+            <div>
+              Projekt będziemy realizowali we wścisłej wspólpracy i kameralnej
+              atmosferze
+            </div>
+          </li>
+          <li class="flex items-start justify-center gap-3">
+            <IconCheck class="text-dark-5 min-w-[24px] max-w-[24px]" />
+            <div>
+              Pod tą ofertą podpisuje się moim własnym imieniem i nazwiskiem
+            </div>
+          </li>
+          <li class="flex items-start justify-center gap-3">
+            <IconCheck class="text-dark-5 min-w-[24px] max-w-[24px]" />
+            <div>
+              Rozpocznij współpracę z freelancerem i ogarnicz koszty lub wybierz
+              agencję która... zatrudnia freelancerów
+            </div>
+          </li>
+        </ul>
+
+        <p class="text-dark-5 pt-32 text-[12px]">
+          * Ze względu na ogarniczoną ilość mocy przerobowych zastrzegam sobie
+          prawo do kolejkownia klientów wg. wybranej formy płatności
+        </p>
+      </div>
+    </div>
+
+    <div class="w-full border overflow-hidden p-0 m-0">
+      <Swiper
+        :modules="[SwiperAutoplay]"
+        :slides-per-view="4"
+        :loop="true"
+        :autoplay="{
+          delay: 8000,
+          disableOnInteraction: true,
+        }"
+        :creative-effect="{
+          prev: {
+            shadow: false,
+            translate: ['-20%', 0, -1],
+          },
+          next: {
+            translate: ['100%', 0, 0],
+          },
+        }"
+      >
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p1.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p2.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p3.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p4.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p5.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p6.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p7.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p8.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p9.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p10.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="@/assets/uploads/oferta/p11.jpg" alt="" />
+        </SwiperSlide>
+      </Swiper>
+    </div>
+
     <!-- payment -->
-    <div class="w-full pt-20 pb-20 max-w-[1920px] pl-20 pr-20 font-Sora">
+    <div
+      id="zamawiam"
+      class="w-full pt-20 pb-20 max-w-[1920px] xl:pl-20 xl:pr-20 font-Sora pl-7 pr-7"
+    >
       <div
         class="text-base font-Sora font-semibold text-[#80818C] bg-light-1 rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
       >
         Chce porzadną stronę www
       </div>
-      <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+      <h3
+        class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+      >
         Wybierz dogodną <br />
         formę płatności
       </h3>
       <ul
         class="font-Sora font-semibold text-[#80818C] flex flex-col gap-4 items-start justify-start mt-10"
       >
-        <li class="flex items-center justify-center gap-3">
-          <IconCheck class="text-[#48b02c]" />
-          <div>Pełen koszt to 1299zł brutto wraz</div>
+        <li class="flex items-start justify-center gap-3">
+          <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
+          <div>Pełen koszt to 1499zł brutto</div>
         </li>
-        <li class="flex items-center justify-center gap-3">
-          <IconCheck class="text-[#48b02c]" />
+        <li class="flex items-start justify-center gap-3">
+          <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
           <div>
             Hosting, domena, certyfikat SSL oraz skrzynki pocztowe na okres 12
             miesięcy w cenie usługi
           </div>
         </li>
-        <li class="flex items-center justify-center gap-3">
-          <IconCheck class="text-[#48b02c]" />
+        <li class="flex items-start justify-center gap-3">
+          <IconCheck class="text-[#48b02c] min-w-[24px] max-w-[24px]" />
           <div>Faktura VAT 23%</div>
         </li>
       </ul>
 
-      <div class="container flex items-stretch justify-center mt-14 gap-12">
+      <div
+        class="container flex flex-col lg:flex-row items-stretch justify-center mt-14 lg:gap-12 gap-4"
+      >
         <div
-          class="w-6/12 border bg-light-1 pt-10 pb-10 pl-10 pr-10 rounded-xl relative flex flex-col items-center gap-4"
+          class="w-full xl:w-6/12 border bg-light-1 p-6 lg:p-10 rounded-xl relative flex flex-col items-center justify-center gap-4"
         >
           <p class="text-dark-5 text-xl text-center font-semibold">
             Rozpocznijmy współpracę odrazu!
           </p>
-          <p class="text-dark-5 text-base text-center w-10/12">
+          <p class="text-dark-5 text-base text-center xl:w-10/12">
             Bardzo przejrzysty proces zakupowy. Wystarczy kliknąć w przycisk
             "Przechodzę do zamówienia". Możliwośc opłacenia blikiem, Google Pay
             oraz via Przelewy24.com
           </p>
           <img
-            class="max-w-[360px]"
+            class="lg:max-w-[360px] w-full hidden lg:flex"
             src="@/assets/uploads/oferta/formy-platnosci.png"
             alt=""
           />
@@ -645,16 +822,20 @@
             <p class="text-dark-5 text-base text-center">Oferta ograniczona</p>
           </div> -->
         </div>
-        <div class="flex items-center">
-          <p class="text-dark-5 font-Sora font-semibold text-xl">lub</p>
+
+        <div class="flex max-lg:w-full justify-center items-center">
+          <p class="text-dark-5 font-Sora font-semibold text-xl text-center">
+            lub
+          </p>
         </div>
+
         <div
-          class="w-5/12 border bg-light-1 p-10 rounded-xl relative flex flex-col items-center justify-center gap-4"
+          class="w-full xl:w-5/12 border bg-light-1 p-6 lg:p-10 rounded-xl relative flex flex-col items-center justify-center gap-4"
         >
           <p class="text-dark-5 text-xl text-center font-semibold">
             Faktura zaliczkowa 50%
           </p>
-          <p class="text-dark-5 text-base text-center w-10/12">
+          <p class="text-dark-5 text-base text-center lg:w-10/12">
             Dajemy możliwość rozłożenia płatności na 2 raty. Dzięki czemu możemy
             przystąpić do pracy odrazu po wpłacie pierwszej raty a drugą
             wpłacisz dopiero po zakończeniu prac.
@@ -667,19 +848,24 @@
             <IconArrowNarrowRight />
             Opłacam 50% teraz</NuxtLink
           >
+          <p class="text-dark-5 text-base text-center lg:w-10/12">
+            Resztę opłacę po zakończeniu prac
+          </p>
         </div>
       </div>
     </div>
 
     <!-- faq -->
-    <div class="bg-light-1 font-Sora pt-20 pb-20 w-full">
+    <div class="bg-light-1 font-Sora pt-20 pb-20 w-full pl-7 pr-7">
       <div class="container">
         <div
           class="text-base font-Sora font-semibold text-[#80818C] bg-[#fff] rounded-full pl-8 pr-8 inline-flex pt-3 pb-3 mb-6"
         >
           sekcja FAQ
         </div>
-        <h3 class="text-7xl leading-[100px] text-dark-5 font-semibold">
+        <h3
+          class="text-4xl xl:text-7xl xl:leading-[100px] text-dark-5 font-semibold"
+        >
           Najczęściej zadawane <br />
           pytania
         </h3>
@@ -696,21 +882,24 @@
             v-bind:key="item.id"
           />
         </div>
-        <div class="budget-websites-faq--footer text-dark-5 font-Sora">
+        <div
+          class="budget-websites-faq--footer text-dark-5 font-Sora hidden lg:flex"
+        >
           <div
             class="flex flex-col lg:flex-row items-center justify-start mt-10 lg:mt-6"
           >
             <div class="flex flex-col w-full lg:w-6/12">
-              <p class="lg:pr-20 text-5xl lg:text-3xl">
+              <p class="lg:pr-20 text-3xl xl:text-5xl lg:text-3xl">
                 Nie znalazłeś/aś odpowiedzi na pytanie ?
               </p>
-              <p class="text-xl mt-6 lg:mt-0">
+              <p class="text-xl mt-6">
                 <strong>skontaktuj się ze mną</strong> <br class="lg:hidden" />a
                 chętnie udziele więcej informacji
               </p>
             </div>
+
             <div
-              class="flex flex-col lg:flex-row mt-6 lg:mt-0 w-full lg:w-6/12 gap-2 lg:gap-0"
+              class="flex flex-col items-center justify-center lg:flex-row mt-6 lg:mt-0 w-full lg:w-6/12 gap-2 lg:gap-0"
             >
               <div class="flex">
                 <a
@@ -749,6 +938,8 @@
 </template>
 
 <script setup>
+  const nuxtApp = useNuxtApp();
+  const lenis = nuxtApp.lenis;
   import {
     IconCheck,
     IconArrowNarrowRight,
@@ -799,6 +990,18 @@
       class: 'page-profesjonalne-strony-www',
     },
   });
+  const { gtag } = useGtag();
+
+  const handleClick = () => {
+    console.log('handleClick');
+    gtag('event', 'click', {
+      event_category: 'cta',
+      event_label: 'click-zamow-teraz',
+      value: 'click-zamow-teraz',
+    });
+
+    lenis.scrollTo('#zamawiam', {});
+  };
 
   const faqs = [
     {
@@ -855,6 +1058,11 @@
       title: 'Co muszę dostarczyć przed rozpoczęciem współpracy?',
       content:
         'Po zakupie dostarcze specjalny formularz który pozwoli poznać Państwa wymagania, preferowaną kolorystykę oraz kilka innych aspektów. Poproszę również o dostarczenie tekstów , informacji kontaktowych oraz grafik, które powinny zostać użyte na stronie. Dostarczanie grafk nie jest obowiązkowe, w przypadku ich braku wykorzystam grafiki ze stocków.',
+    },
+    {
+      id: 11,
+      title: 'Czy można dowiedzieć się więcej o tobie?',
+      content: `Jasne! Zapraszam do odwiedzenia tej strony : <a target='_blank' href="https://www.j-filipiak.pl/about"/>www.j-filipiak.pl/about</a>`,
     },
   ];
 </script>

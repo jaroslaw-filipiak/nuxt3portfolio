@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     'nuxt-simple-sitemap',
     'nuxt-link-checker',
     '@nuxtjs/google-fonts',
+    'nuxt-swiper',
   ],
 
   googleFonts: {

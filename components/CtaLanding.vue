@@ -2,13 +2,15 @@
   <div id="cta" class="cta--wrapper bg-dark-5 mt-0 font-Sora">
     <div class="cta--inner">
       <div class="cta--header">
-        <div class="pr-5">
+        <div class="xl:pr-5 max-lg:mx-auto mb-6">
           <img src="~/assets/uploads/jarek-avatar.png" alt="" />
         </div>
-        <div class="pl-5">
-          <div class="accent-label">Czy mógłbym w czymś pomóc?</div>
+        <div
+          class="pl-5 flex flex-col items-center justify-center lg:justify-start lg:items-start"
+        >
+          <div class="accent-label">Potrzebujesz pomocy?</div>
           <div>
-            <h4 class="text--reveal">
+            <h4 class="text--reveal text-center lg:text-left">
               Chciałbyś uzyskać więcej informacji na temat moich usług?.
               <span>
                 Porozmawiajmy!
@@ -60,15 +62,15 @@
   .cta {
     &--wrapper {
       // background-image: url('@/assets/uploads/cta-bg.jpg');
-      @apply bg-cover bg-no-repeat min-h-screen flex items-center bg-fixed mt-20;
+      @apply bg-cover bg-no-repeat min-h-screen flex items-center bg-fixed mt-20 w-full;
     }
 
     &--inner {
-      @apply w-full lg:w-11/12 mx-auto pl-8 pr-8 mt-20 pb-20;
+      @apply w-full lg:w-11/12 mx-auto pl-8 pr-8 mt-10 xl:mt-20 pb-10 xl:pb-20;
     }
 
     &--header {
-      @apply flex justify-center pb-8 mb-5;
+      @apply flex flex-col items-center  lg:flex-row justify-center xl:pb-8 xl:mb-5;
       h4 {
         @apply text-4xl lg:text-6xl mb-10 mt-5 max-w-4xl text-white;
 

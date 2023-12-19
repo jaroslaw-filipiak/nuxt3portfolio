@@ -28,9 +28,7 @@
     </header>
 
     <div class="faq--content text-xl lg:text-2xl">
-      <p>
-        {{ content }}
-      </p>
+      <p v-html="content"></p>
     </div>
   </div>
 </template>

@@ -38,15 +38,15 @@
       </div>
     </div>
     <div class="top-bar--right">
-      <NuxtLink
-        @click="handleClick()"
-        exact
+      <button
+        @click.prevent="handleClick()"
         class="bg-accent text-white transition-all rounded-full pt-3 pb-3 pl-7 pr-10 font-Sora font-semibold text-base hover:scale-105 flex items-center gap-3"
-        to="#cta"
       >
-        <IconArrowNarrowRight />
-        Zamów teraz!</NuxtLink
-      >
+        <span v-if="isPrePaymentSite"><IconArrowNarrowLeft /></span>
+        <span v-if="!isPrePaymentSite"><IconArrowNarrowRight /></span>
+
+        {{ isPrePaymentSite ? 'Wróć do strony z ofertą' : 'Zamów teraz!' }}
+      </button>
     </div>
   </div>
 </template>
@@ -55,15 +55,47 @@
   const nuxtApp = useNuxtApp();
   const lenis = nuxtApp.lenis;
   const { gtag } = useGtag();
-  import { IconArrowNarrowRight, IconHelpSmall } from '@tabler/icons-vue';
+  import {
+    IconArrowNarrowRight,
+    IconHelpSmall,
+    IconArrowNarrowLeft,
+  } from '@tabler/icons-vue';
+  import { useRoute, useRouter } from 'vue-router';
+  import { onMounted, ref, watch } from 'vue';
 
-  function handleClick() {
+  const route = useRoute();
+  const router = useRouter();
+  const isPrePaymentSite = ref(false);
+
+  onMounted(() => {
+    if (route.name === 'promocje-strona-www-faktura-zaliczkowa') {
+      isPrePaymentSite.value = true;
+    }
+  });
+
+  watch(route, () => {
+    if (route.name === 'promocje-strona-www-faktura-zaliczkowa') {
+      isPrePaymentSite.value = true;
+    } else {
+      isPrePaymentSite.value = false;
+    }
+  });
+
+  const handleClick = () => {
     gtag('event', 'click', {
       event_category: 'cta',
       event_label: 'click-zamow-teraz',
       value: 'click-zamow-teraz',
     });
-  }
+
+    if (isPrePaymentSite.value) {
+      router.push({ name: 'promocje-strona-www' });
+    } else {
+      lenis.scrollTo('#zamawiam');
+    }
+
+    lenis.scrollTo('#zamawiam');
+  };
 </script>
 
 <style lang="scss" scoped>
@@ -72,7 +104,7 @@
   }
 
   .top-bar {
-    @apply text-dark-3 w-screen  fixed pt-3 pb-3 left-0 top-0 p-8 flex items-center justify-between z-20 transition-all;
+    @apply text-dark-3 w-screen  fixed pt-3 pb-3 left-0 top-0 p-8 flex flex-col lg:flex-row items-center gap-4 lg:gap-0 justify-between z-20 transition-all;
     background-color: transparent;
 
     &--contact-wrapper {

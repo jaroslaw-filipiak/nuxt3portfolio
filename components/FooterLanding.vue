@@ -133,7 +133,7 @@
 
   .footer {
     &--wrapper {
-      @apply bg-fixed flex flex-col items-center  w-full mx-auto  bg-dark-4  lg:fixed lg:bottom-0 box-border lg:h-145 z-0 text-white;
+      @apply bg-fixed flex flex-col items-center w-full mx-auto  bg-dark-4  lg:fixed lg:bottom-0 box-border lg:h-145 z-0 text-white;
     }
 
     &--inner {
