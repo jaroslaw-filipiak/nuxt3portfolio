@@ -12,7 +12,7 @@
           Administracja stroną www w cenie 1/10 etatu, reakcja na usterki w 24h
         </h5>
 
-        <img class="pt-3" src="/_nuxt/assets/uploads/smush-dark.svg" alt="" />
+        <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <!-- pricing -->
