@@ -66,7 +66,7 @@
         >Kontakt</NuxtLink
       >
 
-      <!-- <Hamburger /> -->
+      <Hamburger />
     </div>
   </div>
 </template>

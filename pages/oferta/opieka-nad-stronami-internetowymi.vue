@@ -1,10 +1,11 @@
 <template>
-  <div class="page-content" ref="main">
+  <div class="page-content" ref="administration">
     <AdministrationHero />
     <AdministrationFeatures />
     <AdministrationOffer />
-    <!-- cennik -->
+    <AdministrationPricing />
     <!-- <AdministrationFaq /> -->
+
     <CtaYellow />
   </div>
 </template>

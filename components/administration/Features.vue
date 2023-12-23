@@ -2,15 +2,18 @@
   <div class="websites-features--wrapper">
     <div class="websites-features--inner">
       <div class="section--title text-center">
-        <h3 class="text-center max-w-5xl mx-auto">
-          Doświadczenie, specjalistyczna wiedza , oraz masa płatnych narzędzi +
-          dużo czasu. Tego potrzebuje Twoja strona.
-        </h3>
+        <h1 class="text-center max-w-5xl mx-auto">
+          Powierz swoją stronę internetową w opieke specjaliście
+        </h1>
         <img
           class="pt-3 mx-auto"
           src="~/assets/uploads/smush-dark.svg"
           alt=""
         />
+        <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6 mt-6">
+          I zajmij się rozwijaniem swojego biznesu. Ja zadbam o kwestie
+          technologiczną
+        </h2>
       </div>
 
       <div class="websites-features--items mt-32"></div>

@@ -34,7 +34,10 @@
           <div class="offer__dark--row lg:border-r-0">
             <div>
               <div>
-                <h4 class="text--reveal__dark">WordPress / Vue.js / Next.js</h4>
+                <h4 class="text--reveal__dark">
+                  <strong>WordPress</strong>
+                  <span class="pl-4 text-xl">/ Vue.js / Next.js / Laravel</span>
+                </h4>
               </div>
               <div>
                 <img src="@/assets/uploads/icons/ic-2.svg" alt="" />
@@ -42,19 +45,57 @@
             </div>
             <div>
               <ul>
-                <li>
+                <li class="flex items-center">
+                  <!-- <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-[32px]"
+                  >
+                    <path
+                      style="fill: #fff"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg> -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+                    />
+                  </svg>
                   <NuxtLink
                     class="link-with-undeline text--reveal__dark"
                     to="/oferta/profesjonalne-strony-www"
-                    >Profesjonalne strony www</NuxtLink
+                    >Profesjonalne strony www
+                    <span class="underline text-sm text-[#7f7f7f]"
+                      >więcej</span
+                    ></NuxtLink
                   >
                 </li>
 
-                <li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+                    />
+                  </svg>
+
                   <NuxtLink
                     class="link-with-undeline text--reveal__dark"
                     to="/oferta/tanie-strony-www"
-                    >Budżetowe strony www</NuxtLink
+                    >Budżetowe strony www
+                    <span class="underline text-sm text-[#7f7f7f]"
+                      >więcej</span
+                    ></NuxtLink
                   >
                 </li>
               </ul>
@@ -72,11 +113,24 @@
             </div>
             <div>
               <ul>
-                <li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+                    />
+                  </svg>
                   <NuxtLink
                     class="link-with-undeline text--reveal__dark"
                     to="/oferta/opieka-nad-stronami-internetowymi"
-                    >Opieka nad stronami internetowymi</NuxtLink
+                    >Opieka nad stronami internetowymi
+                    <span class="underline text-sm text-[#7f7f7f]"
+                      >więcej</span
+                    ></NuxtLink
                   >
                 </li>
               </ul>
