@@ -139,6 +139,40 @@
           </NuxtLink>
         </li>
 
+        <li
+          @mouseover="handleHoverIN('maintenance')"
+          @mouseleave="handleHoverOUT"
+          class="border-t-0 group"
+        >
+          <NuxtLink
+            class="offer-menu--item flex items-center justify-between w-full"
+            to="/oferta/usuwanie-wirusow"
+          >
+            <div class="flex flex-col">
+              <div class="left-0 relative lg:group-hover:left-4 transition-all">
+                Usuwanie wirusów z WordPress
+              </div>
+
+              <span
+                class="hidden lg:block left-0 relative group-hover:left-4 lg:opacity-0 lg:group-hover:opacity-100 transition-all"
+                >Na stronę wkradła się infekcja? Chętnie oczyszczę stronę i
+                zabezpiecze ją za pomocą żelaznego firewalla!</span
+              >
+            </div>
+
+            <div
+              class="w-10 hidden lg:flex opacity-0 group-hover:opacity-100 transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                <path
+                  d="M30 15v13.59L1.71.29.29 1.71 28.59 30H16v2h15a1 1 0 0 0 1-1V15z"
+                  data-name="8-Arrow Down"
+                />
+              </svg>
+            </div>
+          </NuxtLink>
+        </li>
+
         <p class="text-xs mt-8 lg:hidden">Dowiedz się kim jestem</p>
         <li class="border-t-0 lg:hidden">
           <NuxtLink class="offer-menu--item" to="/about">O mnie</NuxtLink>

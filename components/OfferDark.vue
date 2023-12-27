@@ -133,6 +133,26 @@
                     ></NuxtLink
                   >
                 </li>
+                <li class="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="#fff"
+                  >
+                    <path
+                      d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+                    />
+                  </svg>
+                  <NuxtLink
+                    class="link-with-undeline text--reveal__dark"
+                    to="/oferta/usuwanie-wirusow"
+                    >Usuwanie wirusów/infekcji ze stron www
+                    <span class="underline text-sm text-[#7f7f7f]"
+                      >więcej</span
+                    ></NuxtLink
+                  >
+                </li>
               </ul>
             </div>
           </div>

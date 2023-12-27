@@ -77,9 +77,9 @@
               >Tanie / Budżetowe strony www</NuxtLink
             >
           </li>
-          <li class="hidden">
-            <NuxtLink class="text-xl font-Atkinson" to="#"
-              >Front-end : Vue.js / Nuxt.js
+          <li>
+            <NuxtLink class="text-xl font-Atkinson" to="oferta/usuwanie-wirusow"
+              >Usuwanie wirusów z WordPress
             </NuxtLink>
           </li>
           <li class="hidden">
