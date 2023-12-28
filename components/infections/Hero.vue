@@ -28,7 +28,7 @@
     text-align: left;
 
     @media (min-width: 1280px) {
-      background-image: url('~/assets/uploads/administracja-www.jpg');
+      background-image: url('~/assets/uploads/usuwam-wirusy-ze-stron-www-light.webp');
     }
 
     &--inner {

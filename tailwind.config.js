@@ -54,6 +54,7 @@ module.exports = {
         OpenSans: ['"Open Sans"', 'sans-serif'],
         Lato: ['"Lato"', 'sans-serif'],
         Sora: ['"Sora"', 'sans-serif'],
+        Codec: ['"Codec Cold"', 'sans-serif'],
       },
     },
   },

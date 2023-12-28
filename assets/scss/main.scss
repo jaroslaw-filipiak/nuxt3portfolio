@@ -21,6 +21,15 @@ button:focus {
   outline: none;
 }
 
+@font-face {
+  font-family: 'Codec Cold';
+  src: url('assets/fonts/CodecCold-Regular.woff2') format('woff2'),
+    url('assets/fonts/CodecCold-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 // ::-webkit-scrollbar {
 //   width: 10px;
 // }

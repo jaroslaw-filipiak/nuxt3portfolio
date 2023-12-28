@@ -1,6 +1,6 @@
 <template>
   <div class="page-content" ref="Infections">
-    <!-- <InfectionsHero /> -->
+    <InfectionsHero />
     <InfectionsFeatures />
     <InfectionsOffer />
     <InfectionsPricing />
