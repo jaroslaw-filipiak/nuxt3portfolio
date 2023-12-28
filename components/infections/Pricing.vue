@@ -24,11 +24,24 @@
             </p>
           </div>
 
-          <div class="w-full border-t border-dark-3 bg-yellow-400">
-            <div class="pt-12 pb-12 pl-8 pr-8">
-              <p class="text-xl lg:text-3xl">499 PLN / netto</p>
+          <NuxtLink
+            to="https://app.easycart.pl/checkout/28473636/czyszczenie-strony-www-po-infekcji"
+            class="w-full border-t border-dark-3 bg-yellow-400 flex items-center gap-3 pt-12 pb-12 pl-8 pr-8 hover:bg-dark-3 hover:text-light transition-all group"
+          >
+            <svg
+              class="fill-dark-3 group-hover:fill-light transition-all"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+              />
+            </svg>
+            <div class="">
+              <p class="text-xl lg:text-3xl">Kup teraz! 599 PLN</p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
 
         <!-- pricing item -->
@@ -133,11 +146,24 @@
             </ul>
           </div>
 
-          <div class="w-full border-t border-dark-3">
-            <div class="pt-12 pb-12 pl-8 pr-8">
+          <NuxtLink
+            to="https://app.easycart.pl/checkout/28473636/czyszczenie-strony-www-po-infekcji"
+            class="w-full border-t border-dark-3 bg-yellow-400 flex items-center gap-3 pt-12 pb-12 pl-8 pr-8 hover:bg-dark-3 hover:text-light transition-all group"
+          >
+            <svg
+              class="fill-dark-3 group-hover:fill-light transition-all"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+            >
+              <path
+                d="M11.293 4.707 17.586 11H4v2h13.586l-6.293 6.293 1.414 1.414L21.414 12l-8.707-8.707-1.414 1.414z"
+              />
+            </svg>
+            <div class="">
               <p class="text-xl lg:text-3xl">Skorzystaj już teraz!</p>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
