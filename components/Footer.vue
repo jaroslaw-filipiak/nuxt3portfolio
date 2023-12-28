@@ -78,7 +78,9 @@
             >
           </li>
           <li>
-            <NuxtLink class="text-xl font-Atkinson" to="oferta/usuwanie-wirusow"
+            <NuxtLink
+              class="text-xl font-Atkinson"
+              to="/oferta/usuwanie-wirusow"
               >Usuwanie wirusów z WordPress
             </NuxtLink>
           </li>
