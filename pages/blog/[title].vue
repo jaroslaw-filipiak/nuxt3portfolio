@@ -14,14 +14,12 @@
 <script setup>
   import { onMounted, ref } from 'vue';
   useHead({
-    title:
-      'Blog o grafice komputerowej, designie, tworzeniu stron internetowych a także programowaniu.',
+    title: `${route.params.title}`,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        title:
-          'Blog o grafice komputerowej, designie, tworzeniu stron internetowych a także programowaniu.',
+        title: `${route.params.title}`,
       },
       {
         hid: 'description',
