@@ -2,12 +2,13 @@
   <div class="page-content smooth-scroll" ref="main">
     <BlogHero />
     <main>
-      <BlogPosts />
+      <BlogPosts :posts="posts" />
     </main>
   </div>
 </template>
 
 <script setup>
+  import { onMounted, ref } from 'vue';
   useHead({
     title:
       'Blog o grafice komputerowej, designie, tworzeniu stron internetowych a także programowaniu.',
@@ -25,7 +26,7 @@
           'Znajdziesz tutaj zarówno poradniki dot.projektowania stron www, projektownia aplikacji mobilnych a także dużo informacji ze świata WordPressa i nie tylko.',
       },
 
-      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-typposte', property: 'og:type', content: 'website' },
       {
         hid: 'og-title',
         property: 'og:title',
@@ -47,6 +48,35 @@
     bodyAttrs: {
       class: 'page-about',
     },
+  });
+
+  const posts = ref([]);
+
+  const fetchBlogPosts = async () => {
+    const response = await fetch(
+      'https://j-filipiak.pl/api/wp-json/wp/v2/posts?per_page=6&_embed'
+    );
+
+    const data = await response.json();
+
+    const preparedData = data.map((item) => {
+      return {
+        id: item.id,
+        title: item.title?.rendered,
+        subtitle: item.acf?.subtitle,
+        content: item.content?.rendered,
+        excerpt: item.excerpt?.rendered,
+        date: item.date,
+        slug: item.slug,
+        featuredImage: item.featured_media,
+      };
+    });
+    console.log(preparedData);
+    posts.value = preparedData;
+  };
+
+  onMounted(() => {
+    fetchBlogPosts();
   });
 </script>
 

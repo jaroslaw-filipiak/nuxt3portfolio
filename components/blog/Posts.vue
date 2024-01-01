@@ -16,19 +16,19 @@
 
     <div class="w-full lg:w-11/12 mx-auto pl-8 pr-8 mt-12">
       <div class="grid grid-cols-1 lg:grid-cols-2">
-        <article class="flex flex-col gap-6" v-for="item in 6">
+        <article class="flex flex-col gap-6" v-for="item in posts">
           <img src="~/assets/uploads/administracja-www.jpg" alt="" />
           <header>
-            <p class="text-sm">16 czerwca 2024r.</p>
-            <h3 class="text-xl lg:text-3xl pb-5">
-              Jak sztuczna inteligencja rewolucjonizuje projektowanie graficzne:
-              Przyszłość branży
-            </h3>
-            <p>
-              W dzisiejszym artykule przyjrzymy się temu, jak sztuczna
-              inteligencja (AI) zmienia krajobraz projektowania graficznego i
-              wpływa na branżę. Rozwój AI przynosi za sobą nowe możliwości […]
+            <p class="text-sm">
+              {{ formattedData(item.date) }}
             </p>
+            <h3 class="text-xl lg:text-3xl">
+              {{ item.title }}
+            </h3>
+            <h4 class="text-xl lg:text-2xl pb-5">
+              {{ item.subtitle }}
+            </h4>
+            <p v-html="item.excerpt"></p>
             <button class="flex items-center mt-6 gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@
               </svg>
               <NuxtLink
                 class="link-with-undeline link-with-undeline__dark"
-                to="/oferta/opieka-nad-stronami-internetowymi"
+                :to="`/blog/${item.slug}`"
                 >Czytaj dalej
               </NuxtLink>
             </button>
@@ -53,7 +53,15 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+  import { defineProps } from 'vue';
+  const props = defineProps(['posts']);
+
+  const formattedData = (date) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Date(date).toLocaleDateString('pl-PL', options);
+  };
+</script>
 
 <style lang="scss" scoped>
   article {
