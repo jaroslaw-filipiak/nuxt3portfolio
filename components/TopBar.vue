@@ -52,12 +52,12 @@
         to="/about"
         >O mnie</NuxtLink
       >
-      <!-- <NuxtLink
+      <NuxtLink
         exact
         class="uppercase text-xs font-Atkinson hidden lg:flex lg:items-center lg:justify-center bg-yellow-500 pt-2 pb-2 pl-3 pr-3 dont-underline"
         to="/kontakt"
         >Wypełnij brief</NuxtLink
-      > -->
+      >
 
       <NuxtLink
         exact

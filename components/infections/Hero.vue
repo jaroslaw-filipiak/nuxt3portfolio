@@ -1,18 +1,20 @@
 <template>
-  <div class="hero__infections hidden xl:flex">
-    <div class="hero__infections--inner">
-      <div class="section--title xl:hidden">
-        <h1>Twoją stronę zaatakował wirus ?</h1>
-        <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
-      </div>
+  <header>
+    <div class="hero__infections hidden xl:flex">
+      <div class="hero__infections--inner">
+        <div class="section--title xl:hidden">
+          <h1>Twoją stronę zaatakował wirus ?</h1>
+          <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
+        </div>
 
-      <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6 xl:hidden">
-        Oczysczę twoją stronę ze złośliwego kodu i zabezpieczę przed
-        atakami.Prześlę raport z wykonanych prac oraz prześlę gwarancję na
-        wykonane prace.
-      </h2>
+        <h2 class="text-xl lg:text-3xl mt-2 font-normal mb-6 xl:hidden">
+          Oczysczę twoją stronę ze złośliwego kodu i zabezpieczę przed
+          atakami.Prześlę raport z wykonanych prac oraz prześlę gwarancję na
+          wykonane prace.
+        </h2>
+      </div>
     </div>
-  </div>
+  </header>
 </template>
 
 <script>
