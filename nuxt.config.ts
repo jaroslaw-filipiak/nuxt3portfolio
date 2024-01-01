@@ -12,14 +12,6 @@ export default defineNuxtConfig({
     url: 'https://j-filipiak.pl',
   },
 
-  nitro: {
-    prerender: {
-      routes: ['/blog/w-jaki-sposob-dodac-wlasny-typ-tresci-w-wordpress'],
-      crawlLinks: true,
-      failOnError: false,
-    },
-  },
-
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -57,8 +49,5 @@ export default defineNuxtConfig({
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
     id: 'AW-11423080410',
-  },
-  generate: {
-    routes: ['/blog/w-jaki-sposob-dodac-wlasny-typ-tresci-w-wordpress'],
   },
 });
