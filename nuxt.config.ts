@@ -52,6 +52,6 @@ export default defineNuxtConfig({
   },
 
   generate: {
-    routes: ['/generated-rouute'],
+    routes: ['/blog/generated-blog-post-route'],
   },
 });
