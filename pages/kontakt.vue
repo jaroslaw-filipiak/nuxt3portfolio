@@ -231,10 +231,7 @@
                   'bg-dark-3': resp?.data?.status !== 'mail_sent',
                 }"
               >
-                <p
-                  class="text-white text-2xl"
-                  :class="{ 'text-dark-3': resp?.data?.status === 'mail_sent' }"
-                >
+                <p>
                   {{ resp?.data?.message }}
                 </p>
                 <ul v-if="resp?.data?.invalid_fields.length" class="pt-3">
