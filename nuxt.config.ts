@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      // routes: ['/route1', '/route2', '/route3'],
+      routes: ['/blog/w-jaki-sposob-dodac-wlasny-typ-tresci-w-wordpress'],
       crawlLinks: true,
       failOnError: false,
     },
