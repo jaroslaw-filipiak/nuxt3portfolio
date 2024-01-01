@@ -50,8 +50,4 @@ export default defineNuxtConfig({
   gtag: {
     id: 'AW-11423080410',
   },
-
-  generate: {
-    routes: ['/blog/generated-blog-post-route'],
-  },
 });
