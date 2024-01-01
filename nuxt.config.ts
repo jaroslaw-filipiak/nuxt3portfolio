@@ -54,15 +54,4 @@ export default defineNuxtConfig({
   generate: {
     routes: ['/blog/generated-blog-post-route'],
   },
-  sitemap: {
-    sources: [
-      // fetch from an unauthenticated endpoint
-      'https://j-filipiak.pl/api/wp-json/wp/v2/posts?_fields=slug&per_page=100',
-      // fetch from an authenticated endpoint
-      // [
-      //   'https://authenticated-api.example.com/pages/urls',
-      //   { headers: { Authorization: 'Bearer <token>' } } // fetch options
-      // ]
-    ],
-  },
 });
