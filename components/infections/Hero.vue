@@ -30,7 +30,7 @@
     text-align: left;
 
     @media (min-width: 1280px) {
-      background-image: url('~/assets/uploads/usuwam-wirusy-ze-stron-www-light.webp');
+      background-image: url('~/assets/uploads/usuwam-wirusy-ze-stron-www-light.jpg');
     }
 
     &--inner {
