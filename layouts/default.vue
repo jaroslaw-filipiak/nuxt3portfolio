@@ -43,6 +43,10 @@
         src: '/hotjar.js',
         async: true,
       },
+      {
+        src: '/piwik.js',
+        async: true,
+      },
     ],
   });
 </script>
