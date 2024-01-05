@@ -31,7 +31,7 @@
             >info@j-filipiak.pl</a
           >
         </div>
-        <div>
+        <div class="hidden">
           <a
             class="link-with-undeline"
             href="https://calendly.com/jaroslaw-filipiak/30minmeeting"

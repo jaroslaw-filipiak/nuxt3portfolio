@@ -9,7 +9,7 @@
         >
           Strona internetowa<br />
           <span class="text-4xl xl:text-8xl font-extrabold">
-            <span class="text-accent">Do końca grudnia</span><br />
+            <span class="text-accent">Do końca stycznia</span><br />
             w cenie <br class="block lg:hidden" />1499 zł brutto</span
           >
         </h1>
@@ -637,7 +637,7 @@
 
     <!-- before payment -->
     <div
-      class="bg-yellow-400 font-Sora pt-20 pb-6 xl:pb-20 w-full xl:pl-20 xl:pr-20 pl-7 pr-7"
+      class="bg-yellow-400 font-Sora pt-20 pb-6 xl:pb-20 w-full xl:pl-20 xl:pr-20 pl-7 pr-7 hidden"
     >
       <div class="container">
         <div

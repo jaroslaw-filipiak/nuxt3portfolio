@@ -9,7 +9,7 @@
             <a href="mailto:info@j-filipiak.pl">Email: info@j-filipiak.pl</a>
           </li>
 
-          <li>
+          <li class="hidden">
             <a
               target="_blank"
               href="https://calendly.com/jaroslaw-filipiak/30minmeeting"
@@ -119,6 +119,12 @@
         >
       </small>
     </div>
+    <img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=283449068057732&ev=PageView&noscript=1"
+    />
   </div>
 </template>
 
