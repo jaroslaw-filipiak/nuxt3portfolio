@@ -47,6 +47,10 @@
         src: '/piwik.js',
         async: true,
       },
+      {
+        src: '/meta-pixel.js',
+        async: true,
+      },
     ],
   });
 </script>
