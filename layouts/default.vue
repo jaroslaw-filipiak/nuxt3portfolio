@@ -9,6 +9,14 @@
       <Menu />
     </div>
     <div class="lg:hidden"><Footer /></div>
+
+    <img
+      height="1"
+      width="1"
+      style="display: none"
+      src="https://www.facebook.com/tr?id=283449068057732&ev=PageView&noscript=1"
+    />
+    >;
   </div>
 </template>
 
