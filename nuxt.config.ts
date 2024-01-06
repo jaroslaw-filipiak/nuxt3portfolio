@@ -46,8 +46,18 @@ export default defineNuxtConfig({
     '/wyceny/**': { index: false },
   },
 
+  nitro: {
+    prerender: {
+      routes: ['/blog/nitro-prerendered'],
+    },
+  },
+
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
     id: 'AW-11423080410',
+  },
+
+  devtools: {
+    enabled: true,
   },
 });

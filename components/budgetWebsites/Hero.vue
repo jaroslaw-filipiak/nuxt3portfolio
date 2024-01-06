@@ -3,14 +3,14 @@
     <div class="hero__budget-websites--inner">
       <div class="section--title">
         <h1>
-          Pełnoprawna , w pełni profesjonalna strona www w przystępnej cenie ?
+          Pełnoprawna, w pełni profesjonalna strona www w przystępnej cenie ?
         </h1>
         <img class="pt-3" src="~/assets/uploads/smush-dark.svg" alt="" />
       </div>
 
       <h2 class="lg:text-3xl mt-2 font-normal mb-6">
-        Oczywiście że to możliwe! Oferuje profesjonalną stronę www , w pełni
-        przygotowaną pod SEO Strony dostarczam z gotowym panelem adminstratora
+        Oczywiście że to możliwe! Oferuje profesjonalną stronę www, w pełni
+        przygotowaną pod SEO. Strony dostarczam z gotowym panelem adminstratora
         dzięki któremu będziesz mógł samodzielnie edytować treści znajdujące się
         na stronie.
       </h2>

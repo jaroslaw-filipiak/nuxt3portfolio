@@ -27,7 +27,7 @@
           >
             <div>
               <div>
-                <h4>Niska cena! , już od 899 zł netto + VAT</h4>
+                <h4>Niska cena! , już od 999 zł netto + VAT</h4>
               </div>
               <div class="hidden">
                 <img src="" alt="" />

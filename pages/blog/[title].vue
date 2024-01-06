@@ -13,6 +13,21 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
+
+  const route = useRoute();
+  const post = ref([]);
+  console.log(route.params.title);
+
+  onMounted(async () => {
+    const response = await $fetch(
+      `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
+    );
+
+    // const data = await response.json();
+    // console.log(data);
+    post.value = response[0];
+  });
+
   useHead({
     title: `${route.params.title}`,
     meta: [
@@ -50,19 +65,6 @@
     bodyAttrs: {
       class: 'page-about',
     },
-  });
-
-  const route = useRoute();
-  const post = ref([]);
-  console.log(route.params.title);
-
-  onMounted(async () => {
-    const response = await fetch(
-      `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
-    );
-
-    const data = await response.json();
-    post.value = data[0];
   });
 </script>
 
