@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+import { blogRoutes } from './blog-routes';
+const blog = blogRoutes();
+
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -48,7 +51,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/blog/nitro-prerendered'],
+      routes: [...blog],
     },
   },
 
