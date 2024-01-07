@@ -20,6 +20,23 @@
   const store = useNavStore();
   const route = useRoute();
 
+  // const blogRoutes = async () => {
+  //   const { data } = await axios(
+  //     'https://www.j-filipiak.pl/api/wp-json/wp/v2/posts?per_page=100'
+  //   );
+
+  //   console.log(data);
+
+  //   const prepared = [];
+
+  //   data.map((route) => prepared.push('/blog/' + route.title?.rendered));
+
+  //   console.log(prepared);
+  //   return prepared;
+  // };
+
+  // const arr = await blogRoutes();
+
   function changeLogoTextContent(text) {
     const logo = document.querySelector('.gsap-change-fullname-to-sign');
     logo.innerHTML = text;
@@ -30,6 +47,11 @@
   });
 
   onMounted(() => {
+    // blogRoutes();
+    // console.log('arr', arr);
+    // console.log(arr);
+    // console.log('blog..');
+
     window.addEventListener('scroll', () => {
       let header = document.querySelector('.top-bar');
       header.classList.toggle('top-bar__sticky', window.scrollY > 0);

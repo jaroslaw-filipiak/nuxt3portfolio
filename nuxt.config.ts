@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
-import { blogRoutes } from './blog-routes';
-const blog = blogRoutes();
+import blogRoutes from './blog-routes';
 
 export default defineNuxtConfig({
   app: {
@@ -49,11 +48,18 @@ export default defineNuxtConfig({
     '/wyceny/**': { index: false },
   },
 
-  nitro: {
-    prerender: {
-      routes: [...blog],
+  generate: {
+    routes: async () => {
+      const routes = await blogRoutes();
+      return routes;
     },
   },
+
+  // nitro: {
+  //   prerender: {
+  //     routes: [...blog],
+  //   },
+  // },
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
@@ -62,5 +68,9 @@ export default defineNuxtConfig({
 
   devtools: {
     enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
   },
 });
