@@ -1,9 +1,18 @@
 <template>
   <div class="page-content smooth-scroll pb-0 blog-post--content" ref="main">
-    <SingleHero :post="post" />
+    <SingleHero :post="data[0]" />
     <div class="bg-[#fff] w-full pt-20 lg:pt-24 pb-20 lg:pb-24">
       <main class="w-full lg:w-11/12 mx-auto pl-8 pr-8 text-dark-3">
-        <div v-html="post.content?.rendered"></div>
+        <div v-html="data[0]?.content?.rendered"></div>
+        <!-- 
+        <div class="border border-red-600 p-10">
+          {{ data[0] }}
+        </div>
+        <pre class="text-dark-3">
+          <code>
+            {{ data[0] }}
+          </code>
+        </pre> -->
       </main>
     </div>
     <!-- <RecentsPosts /> -->
@@ -13,20 +22,30 @@
 
 <script setup>
   import { onMounted, ref } from 'vue';
-
   const route = useRoute();
   const post = ref([]);
   console.log(route.params.title);
 
-  onMounted(async () => {
-    const response = await $fetch(
-      `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
-    );
+  const { data, pending, error, refresh } = await useAsyncData(
+    'single-post',
+    () =>
+      $fetch(
+        `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
+      )
+  );
 
-    // const data = await response.json();
-    // console.log(data);
-    post.value = response[0];
+  onMounted(() => {
+    console.log(data);
   });
+  // onMounted(async () => {
+  //   const response = await $fetch(
+  //     `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
+  //   );
+
+  //   // const data = await response.json();
+  //   // console.log(data);
+  //   post.value = response[0];
+  // });
 
   useHead({
     title: `${route.params.title}`,
