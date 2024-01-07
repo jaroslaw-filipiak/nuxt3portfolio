@@ -73,7 +73,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/blog/no-spaces-in-urls', '/blog/another-post'],
+      routes: ['/blog/no-spaces-in-urls', '/blog/double-brackets'],
     },
   },
 
