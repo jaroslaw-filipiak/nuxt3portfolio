@@ -48,18 +48,22 @@ export default defineNuxtConfig({
     '/wyceny/**': { index: false },
   },
 
-  generate: {
-    routes: async () => {
-      const routes = await blogRoutes();
-      return routes;
-    },
-  },
-
-  // nitro: {
-  //   prerender: {
-  //     routes: [...blog],
+  // generate: {
+  //   routes: async () => {
+  //     const routes = await blogRoutes();
+  //     return routes;
   //   },
   // },
+
+  nitro: {
+    prerender: {
+      // routes: [...blog],
+      routes: async () => {
+        const routes = await blogRoutes();
+        return routes;
+      },
+    },
+  },
 
   // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
