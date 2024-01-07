@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-
+import { dirname } from 'path';
 const fs = require('fs');
-import blogRoutes from './blog-routes';
 
 // Read the routes from the file
 const routes = JSON.parse(fs.readFileSync(`${__dirname}/routes.json`, 'utf8'));
