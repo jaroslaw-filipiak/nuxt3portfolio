@@ -6,7 +6,7 @@
     "generate-routes": "node blog-routes.js",
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "npm run generate-routes && nuxt build",
+    "generate": "nuxt build",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
