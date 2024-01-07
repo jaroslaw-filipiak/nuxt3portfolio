@@ -1,3 +1,13 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+// import { dirname } from 'path';
+const fs = require('fs');
+
+// Read the routes from the file
+
+const routes = JSON.parse(
+  fs.readFileSync(`${__dirname}/blog-routes.json`, 'utf8')
+);
+
 export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
@@ -42,6 +52,29 @@ export default defineNuxtConfig({
   routeRules: {
     // Don't add any /secret/** URLs to the sitemap.xml
     '/wyceny/**': { index: false },
+  },
+
+  // generate: {
+  //   routes: async () => {
+  //     const routes = await blogRoutes();
+  //     return routes;
+  //   },
+  // },
+
+  // nitro: {
+  //   prerender: {
+  //     routes: [...blog],
+  //     // routes: async () => {
+  //     //   const routes = await blogRoutes();
+  //     //   return routes;
+  //     // },
+  //   },
+  // },
+
+  nitro: {
+    prerender: {
+      routes: routes,
+    },
   },
 
   gtag: {
