@@ -3,9 +3,10 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "generate-routes": "node blog-routes.js",
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "generate": "npm run generate-routes && nuxt build",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
