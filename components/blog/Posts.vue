@@ -17,18 +17,23 @@
     <div class="w-full lg:w-11/12 mx-auto pl-8 pr-8 mt-12">
       <div class="grid grid-cols-1 lg:grid-cols-2">
         <article class="flex flex-col gap-6" v-for="item in posts">
+          <!-- <pre class="text-dark-3">
+            <code> 
+              {{ item }}
+            </code>
+          </pre> -->
           <img src="~/assets/uploads/administracja-www.jpg" alt="" />
           <header>
             <p class="text-sm">
               {{ formattedData(item.date) }}
             </p>
             <h3 class="text-xl lg:text-3xl">
-              {{ item.title }}
+              {{ item.title?.rendered }}
             </h3>
             <h4 class="text-xl lg:text-2xl pb-5">
-              {{ item.subtitle }}
+              {{ item.acf?.subtitle }}
             </h4>
-            <p v-html="item.excerpt"></p>
+            <p v-html="item.excerpt?.rendered"></p>
             <button class="flex items-center mt-6 gap-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

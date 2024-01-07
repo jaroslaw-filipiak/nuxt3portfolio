@@ -2,7 +2,7 @@
   <div class="page-content smooth-scroll" ref="main">
     <BlogHero />
     <main>
-      <BlogPosts :posts="posts" />
+      <BlogPosts :posts="data" />
     </main>
   </div>
 </template>
@@ -50,33 +50,37 @@
     },
   });
 
-  const posts = ref([]);
+  const { data, pending, error, refresh } = await useAsyncData(
+    'blog-posts',
+    () =>
+      $fetch('https://j-filipiak.pl/api/wp-json/wp/v2/posts?per_page=6&_embed')
+  );
 
-  const fetchBlogPosts = async () => {
-    const response = await fetch(
-      'https://j-filipiak.pl/api/wp-json/wp/v2/posts?per_page=6&_embed'
-    );
+  // const fetchBlogPosts = async () => {
+  //   const response = await fetch(
+  //     'https://j-filipiak.pl/api/wp-json/wp/v2/posts?per_page=6&_embed'
+  //   );
 
-    const data = await response.json();
+  //   const data = await response.json();
 
-    const preparedData = data.map((item) => {
-      return {
-        id: item.id,
-        title: item.title?.rendered,
-        subtitle: item.acf?.subtitle,
-        content: item.content?.rendered,
-        excerpt: item.excerpt?.rendered,
-        date: item.date,
-        slug: item.slug,
-        featuredImage: item.featured_media,
-      };
-    });
-    console.log(preparedData);
-    posts.value = preparedData;
-  };
+  //   const preparedData = data.map((item) => {
+  //     return {
+  //       id: item.id,
+  //       title: item.title?.rendered,
+  //       subtitle: item.acf?.subtitle,
+  //       content: item.content?.rendered,
+  //       excerpt: item.excerpt?.rendered,
+  //       date: item.date,
+  //       slug: item.slug,
+  //       featuredImage: item.featured_media,
+  //     };
+  //   });
+  //   console.log(preparedData);
+  //   posts.value = preparedData;
+  // };
 
   onMounted(() => {
-    fetchBlogPosts();
+    // fetchBlogPosts();
   });
 </script>
 
