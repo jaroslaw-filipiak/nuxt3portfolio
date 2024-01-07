@@ -4,7 +4,7 @@ const fs = require('fs');
 import blogRoutes from './blog-routes';
 
 // Read the routes from the file
-const routes = JSON.parse(fs.readFileSync('routes.json', 'utf8'));
+const routes = JSON.parse(fs.readFileSync(`${__dirname}/routes.json`, 'utf8'));
 
 export default defineNuxtConfig({
   app: {
