@@ -1,9 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { dirname } from 'path';
-const fs = require('fs');
+// import { dirname } from 'path';
+// const fs = require('fs');
 
 // Read the routes from the file
-const routes = JSON.parse(fs.readFileSync(`${__dirname}/routes.json`, 'utf8'));
+// const routes = JSON.parse(fs.readFileSync(`${__dirname}/routes.json`, 'utf8'));
 
 export default defineNuxtConfig({
   app: {
@@ -68,22 +68,13 @@ export default defineNuxtConfig({
   //   },
   // },
 
-  nitro: {
-    prerender: {
-      routes: routes,
-    },
-  },
+  // nitro: {
+  //   prerender: {
+  //     routes: routes,
+  //   },
+  // },
 
-  // modules: ['@pinia/nuxt', 'nuxt-gtag', '@nuxtjs/device'],
   gtag: {
     id: 'AW-11423080410',
-  },
-
-  devtools: {
-    enabled: true,
-
-    timeline: {
-      enabled: true,
-    },
   },
 });
