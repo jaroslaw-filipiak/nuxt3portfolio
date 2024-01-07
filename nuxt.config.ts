@@ -73,12 +73,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: [
-        '/blog/no-spaces-in-urls',
-        '/blog/w jaki sposób wygenerować elementy graficzne z dynamiczną treścią?',
-        '/blog/Ile kosztuje strona www w 2024 roku?',
-        '/blog/W jaki sposób dodać własny typ treści w WordPress ?',
-      ],
+      routes: ['/blog/no-spaces-in-urls'],
     },
   },
 
