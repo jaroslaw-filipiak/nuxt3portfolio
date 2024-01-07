@@ -16,7 +16,7 @@ async function blogRoutes() {
     data.map((route) => prepared.push('/blog/' + route.title?.rendered));
 
     // Write the routes to a file
-    fs.writeFileSync(`${__dirname}/routes.json`, JSON.stringify(prepared));
+    fs.writeFileSync(`${__dirname}/blog-routes.json`, JSON.stringify(prepared));
 
     console.log('Routes generated successfully');
   } catch (error) {
