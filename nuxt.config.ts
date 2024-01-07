@@ -1,9 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// import { dirname } from 'path';
+import { dirname } from 'path';
 const fs = require('fs');
 
 // Read the routes from the file
-
 const routes = JSON.parse(
   fs.readFileSync(`${__dirname}/blog-routes.json`, 'utf8')
 );
@@ -73,7 +72,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/blog/no-spaces-in-urls', '/blog/double-brackets'],
+      routes: routes,
     },
   },
 
