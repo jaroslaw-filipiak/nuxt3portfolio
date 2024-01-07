@@ -13,7 +13,7 @@ async function blogRoutes() {
 
     const prepared = [];
 
-    data.map((route) => prepared.push('/blog/' + route.title?.rendered));
+    data.map((route) => prepared.push('/blog/' + route.slug));
 
     // Write the routes to a file
     fs.writeFileSync(`${__dirname}/blog-routes.json`, JSON.stringify(prepared));
