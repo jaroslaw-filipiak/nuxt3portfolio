@@ -1,4 +1,5 @@
 import axios from 'axios';
+import fs from 'fs';
 
 async function blogRoutes() {
   const { data } = await axios(
@@ -10,6 +11,9 @@ async function blogRoutes() {
   const prepared = [];
 
   data.map((route) => prepared.push('/blog/' + route.title?.rendered));
+
+  // Write the routes to a file
+  fs.writeFileSync('routes.json', JSON.stringify(prepared));
 
   console.log(prepared);
   return prepared;

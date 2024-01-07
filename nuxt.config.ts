@@ -1,6 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
+const fs = require('fs');
 import blogRoutes from './blog-routes';
+
+// Read the routes from the file
+const routes = JSON.parse(fs.readFileSync('routes.json', 'utf8'));
 
 export default defineNuxtConfig({
   app: {
@@ -55,13 +59,19 @@ export default defineNuxtConfig({
   //   },
   // },
 
+  // nitro: {
+  //   prerender: {
+  //     routes: [...blog],
+  //     // routes: async () => {
+  //     //   const routes = await blogRoutes();
+  //     //   return routes;
+  //     // },
+  //   },
+  // },
+
   nitro: {
     prerender: {
-      // routes: [...blog],
-      routes: async () => {
-        const routes = await blogRoutes();
-        return routes;
-      },
+      routes: routes,
     },
   },
 
