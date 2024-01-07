@@ -38,6 +38,16 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     'nuxt-swiper',
   ],
+  buildModules: ['@nuxtjs/pwa'],
+
+  pwa: {
+    meta: {
+      name: 'Jarek Filipiak - Frontend Developer',
+      author: 'Jarek Filipiak',
+      description: 'Frontend Developer',
+      lang: 'pl',
+    },
+  },
 
   googleFonts: {
     families: {

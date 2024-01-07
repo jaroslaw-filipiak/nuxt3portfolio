@@ -1,5 +1,7 @@
 {
-  "name": "nuxt-app",
+  "name": "Jarosław Filipak - front end developer",
+  "description": "Profesjonalne strony www , aplikacje mobilne ,usługi programistyczne",
+  "lang": "pl",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.1.1",
+    "@nuxtjs/pwa": "^3.3.5",
     "@nuxtseo/module": "^2.0.0-beta.45",
     "autoprefixer": "^10.4.16",
     "nuxt": "^3.8.1",

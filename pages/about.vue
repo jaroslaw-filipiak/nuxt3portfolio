@@ -47,6 +47,11 @@
       class: 'page-about',
     },
   });
+
+  definePageMeta({
+    title:
+      'Jarosław Filipiak, projektuje oraz wdrażam profesjonalne strony internetowe',
+  });
 </script>
 
 <style>

@@ -27,3 +27,6 @@ logs
 # assets PSD
 
 assets/raw
+
+# PWA
+sw.*
