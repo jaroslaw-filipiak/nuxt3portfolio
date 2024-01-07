@@ -19,7 +19,7 @@
   console.log(route.params.title);
 
   onMounted(async () => {
-    const response = await useFetch(
+    const response = await $fetch(
       `https://j-filipiak.pl/api/wp-json/wp/v2/posts?slug=${route.params.title}&_embed`
     );
 
