@@ -2,7 +2,7 @@
   <div class="page-content smooth-scroll pb-0 blog-post--content" ref="main">
     <SingleHero :post="data[0]" />
     <div class="bg-[#fff] w-full pt-20 lg:pt-24 pb-20 lg:pb-24">
-      <main class="w-full lg:w-11/12 mx-auto pl-8 pr-8 text-dark-3">
+      <main class="w-full lg:w-9/12 mx-auto pl-8 pr-8 text-dark-3">
         <div v-html="data[0]?.content?.rendered"></div>
         <!-- 
         <div class="border border-red-600 p-10">
