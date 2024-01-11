@@ -99,7 +99,11 @@
     ul {
       @apply text-dark-3;
 
-      @apply pb-10;
+      @apply pb-5;
+    }
+
+    ul {
+      @apply list-disc pl-4;
     }
 
     p {
