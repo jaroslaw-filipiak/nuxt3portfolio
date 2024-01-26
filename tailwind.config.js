@@ -27,6 +27,7 @@ module.exports = {
         'light-1': '#F0F0F1',
         nemo: '#38F0C2',
         accent: '#FF460C',
+        'accent-2': '#FF5C36',
         'dark-1': '#202020',
         'dark-2': '#242424',
         'dark-3': '#191919',

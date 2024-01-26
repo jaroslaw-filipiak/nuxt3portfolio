@@ -1,6 +1,8 @@
 <template>
   <div class="page-content" ref="main">
-    <Hero
+    <Hello />
+    <WhyFreelancer />
+    <!-- <Hero
       title="Projektuje oraz wdrażam profesjonalne"
       subtitle="strony internetowe"
       heading="Pomogę Tobie stworzyć wyjątkową i unikalną stronę www, która wzbudza
@@ -10,7 +12,7 @@
     <OfferDark />
     <Portfolio heading="Co ostatnio robiłem ?" hasImg />
     <CurrentlyDoing />
-    <CtaYellow />
+    <CtaYellow /> -->
   </div>
 </template>
 

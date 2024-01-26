@@ -7,6 +7,9 @@
         <h3 class="text-center max-w-6xl mx-auto lg:text-8xl gsap--why-me--pin">
           Dlaczego warto ze mną współpracować ?
         </h3>
+        <h4 class="text-center max-w-4xl mx-auto lg:text-4xl mt-10">
+          Dowiedz się dlaczego warto współpracować z doświadczonym freelancerem
+        </h4>
         <img
           class="pt-3 mx-auto"
           src="~/assets/uploads/smush-dark.svg"
