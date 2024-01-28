@@ -22,6 +22,7 @@
   let ctx;
 
   onMounted(() => {
+    console.log('..');
     ctx = gsap.context(() => {
       // const heroBG = document.querySelector('.gsap__hero-bg-size--anim');
       // const heroBGTrigger = document.querySelector(
